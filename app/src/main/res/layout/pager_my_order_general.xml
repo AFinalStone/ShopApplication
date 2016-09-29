@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorWhite_FFFFFFFF" >
+
+    <com.afinalstone.androidstudy.swiperefreshview.SwipeRefreshListView
+        android:id="@+id/swipeRefreshListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:divider="@null"
+        android:listSelector="@android:color/transparent" />
+
+</RelativeLayout>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <include
+        android:id="@+id/layout_title"
+        layout="@layout/layout_title" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout_changeShopName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout_title"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/myShopName"
+            android:textColor="@color/lightBlack"
+            android:textSize="@dimen/textFontSize_16" />
+
+        <TextView
+            android:id="@+id/tv_shopName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:paddingRight="10dp"
+            android:text="店铺名称"
+            android:textColor="@color/lightBlack"
+            android:textSize="@dimen/textFontSize_14" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/arrow_right" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout_settingGoods"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/linearLayout_changeShopName"
+        android:background="@color/darkGrayBackground"
+        android:gravity="center_vertical">
+
+        <LinearLayout
+            android:id="@+id/linearLayout_settingGoods"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/white"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_marginLeft="15dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/wxshop_icon_addgoods" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_weight="1"
+                android:text="@string/specialPricesGoodsSetting"
+                android:textSize="@dimen/textFontSize_16" />
+
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="16dp"
+                android:layout_marginRight="20dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/arrow_right" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_selectWXShopGoodsOfHome"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/relativeLayout_settingGoods"
+        android:layout_marginLeft="20dp"
+        android:gravity="center_vertical"
+        android:text="@string/selectWXShopGoodsOfHome"
+        android:textSize="@dimen/textFontSize_16" />
+
+    <View
+        android:id="@+id/view_border01"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/tv_selectWXShopGoodsOfHome"
+        android:background="@color/dividingLineColor" />
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view_border01" />
+
+    <View
+        android:id="@+id/view_border02"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/listView"
+        android:background="@color/dividingLineColor" />
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@id/view_border02"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/button_shape_inred_01"
+        android:text="@string/confirmSubmitWXShopGoods"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textFontSize3" />
+
+</RelativeLayout>

@@ -1,0 +1,465 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/layout_title" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <ScrollView
+                android:id="@+id/scrollView"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:scrollbars="none"
+                android:background="@color/lightGrey" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <ImageView
+                        android:id="@+id/iv_goodsImages"
+                        android:layout_width="match_parent"
+                        android:layout_height="240dp"
+                        android:paddingTop="10dp"
+                        android:layout_centerHorizontal="true"
+                        android:background="@color/white"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/ic_empty" />
+
+                    <View
+                        android:id="@+id/view_border01"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_below="@id/iv_goodsImages"
+                        android:background="@color/dividingLineColor" />
+
+                    <TextView
+                        android:id="@+id/tv_goodsName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/view_border01"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="25dp"
+                        android:layout_marginTop="10dp"
+                        android:maxLines="2"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textFontSize4" />
+
+                    <TextView
+                        android:id="@+id/tv_goodsNewPrices"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_goodsName"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="12dp"
+                        android:text="￥0"
+                        android:textColor="@color/darkRed"
+                        android:textSize="@dimen/textFontSize2" />
+
+                    <TextView
+                        android:id="@+id/tv_goodsOriginalPrice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_goodsNewPrices"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="5dp"
+                        android:text="￥0"
+                        android:textSize="@dimen/textFontSize5" />
+
+                    <TextView
+                        android:id="@+id/tv_flyCoinCanUsed"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/tv_goodsNewPrices"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@id/tv_goodsNewPrices"
+                        android:background="@color/orange"
+                        android:paddingBottom="1dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:paddingTop="1dp"
+                        android:text="可用0飞币"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/textFontSize5" />
+
+                    <View
+                        android:id="@+id/view_border02"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_below="@id/tv_goodsOriginalPrice"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/dividingLineColor" />
+
+                    <!-- 整点秒杀商品 -->
+
+                    <LinearLayout
+                        android:id="@+id/linearLayout_sportMesKill"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/view_border02"
+                        android:orientation="horizontal"
+                        android:visibility="invisible" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:background="@drawable/background_goods_sport"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="5dp"
+                            android:text="秒"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/textFontSize2" />
+
+                        <TextView
+                            android:id="@+id/tv_timeToBegin"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:background="@drawable/button_shape_inwhite_outgray_02"
+                            android:gravity="center_vertical"
+                            android:padding="5dp"
+                            android:text="00:00 开始"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/textFontSize4" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="20dp"
+                            android:gravity="center_vertical"
+                            android:text="倒计时"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/textFontSize4" />
+
+                        <TextView
+                            android:id="@+id/tv_hour"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:background="@drawable/button_shape_inwhite_outgray_02"
+                            android:gravity="center_vertical"
+                            android:padding="5dp"
+                            android:text="00"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/textFontSize4" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:gravity="center_vertical"
+                            android:text=":"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/textFontSize1" />
+
+                        <TextView
+                            android:id="@+id/tv_minute"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:background="@drawable/button_shape_inwhite_outgray_02"
+                            android:gravity="center_vertical"
+                            android:padding="5dp"
+                            android:text="00"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/textFontSize4" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:gravity="center_vertical"
+                            android:text=":"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/textFontSize1" />
+
+                        <TextView
+                            android:id="@+id/tv_second"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:background="@drawable/button_shape_inwhite_outgray_02"
+                            android:gravity="center_vertical"
+                            android:padding="5dp"
+                            android:text="00"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/textFontSize4" />
+                    </LinearLayout>
+                    <!-- 团购商品 -->
+
+                    <LinearLayout
+                        android:id="@+id/linearLayout_sportGroup"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/view_border02"
+                        android:orientation="horizontal"
+                        android:visibility="invisible" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:background="@drawable/background_goods_sport"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="5dp"
+                            android:text="团"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/textFontSize2" />
+
+                        <TextView
+                            android:id="@+id/tv_numHaveJoinGroup"
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="5dp"
+                            android:gravity="center_vertical"
+                            android:text="0件已参团(满0成团)"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/textFontSize4" />
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="5dp"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/iv_time_remain" />
+
+                        <TextView
+                            android:id="@+id/tv_timeToFinish"
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="5dp"
+                            android:gravity="center_vertical"
+                            android:singleLine="true"
+                            android:text="0月0日00:00结束"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/textFontSize4" />
+                    </LinearLayout>
+
+                    <!-- 限时抢购商品 -->
+
+                    <LinearLayout
+                        android:id="@+id/linearLayout_sportTimeLimited"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/view_border02"
+                        android:orientation="horizontal"
+                        android:visibility="invisible" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:background="@drawable/background_goods_sport"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="5dp"
+                            android:text="限"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/textFontSize2" />
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="5dp"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/iv_num_have_rob" />
+
+                        <TextView
+                            android:id="@+id/tv_numHaveRob"
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="10dp"
+                            android:gravity="center_vertical"
+                            android:text="已抢数量：0"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/textFontSize4" />
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="15dp"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/iv_time_remain" />
+
+                        <TextView
+                            android:id="@+id/tv_timeRemain"
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="5dp"
+                            android:gravity="center_vertical"
+                            android:text="结束"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/textFontSize4" />
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/view_border03"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_below="@id/linearLayout_sportMesKill"
+                        android:background="@color/dividingLineColor" />
+
+                    <RelativeLayout
+                        android:id="@+id/relativeLayout_selectPackageType"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/view_border03"
+                        android:padding="10dp" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:text="@string/selectPackageType"
+                            android:textSize="@dimen/textFontSize3" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="5dp"
+                            android:src="@drawable/arrow_right" />
+                    </RelativeLayout>
+
+                    <View
+                        android:id="@+id/view_border04"
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp"
+                        android:layout_below="@id/relativeLayout_selectPackageType"
+                        android:background="@color/darkGrey" />
+
+                    <RadioGroup
+                        android:id="@+id/rg_goodsGroup"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/view_border04"
+                        android:orientation="horizontal"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp" >
+
+                        <RadioButton
+                            android:id="@+id/rb_goodsDesc"
+                            style="@style/GoodsActivityRadioButtonStyle"
+                            android:text="@string/goodDesc" />
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/dividingLineColor" />
+
+                        <RadioButton
+                            android:id="@+id/rb_goodsParameter"
+                            style="@style/GoodsActivityRadioButtonStyle"
+                            android:text="@string/goodsSpec" />
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/dividingLineColor" />
+
+                        <RadioButton
+                            android:id="@+id/rb_goodsPackage"
+                            style="@style/GoodsActivityRadioButtonStyle"
+                            android:text="@string/goodsPackage" />
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/dividingLineColor" />
+                    </RadioGroup>
+
+                    <View
+                        android:id="@+id/view_border05"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_below="@id/rg_goodsGroup"
+                        android:background="@color/dividingLineColor" />
+
+                    <WebView
+                        android:id="@+id/webview_goodsDetail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/view_border05"
+                        android:layout_marginTop="2dp"
+                        android:gravity="center"
+                        tools:ignore="WebViewLayout" />
+                </RelativeLayout>
+            </ScrollView>
+
+            <LinearLayout
+                android:id="@+id/linearLayout_bottom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:padding="10dp" >
+
+                <Button
+                    android:id="@+id/btn_mesKill"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_selector_02"
+                    android:gravity="center"
+                    android:padding="0dp"
+                    android:text="@string/clickMesKill"
+                    android:textColor="@drawable/selector_text_color_01"
+                    android:textSize="@dimen/textFontSize4"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@+id/btn_justToJoinGroup"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_selector_02"
+                    android:gravity="center"
+                    android:padding="0dp"
+                    android:text="@string/justToJoinGroup"
+                    android:textColor="@drawable/selector_text_color_01"
+                    android:textSize="@dimen/textFontSize4"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@+id/btn_justToRob"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_selector_02"
+                    android:gravity="center"
+                    android:padding="0dp"
+                    android:text="@string/justToRob"
+                    android:textColor="@drawable/selector_text_color_01"
+                    android:textSize="@dimen/textFontSize4"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_openConverSation"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/open_conversation3" />
+    </RelativeLayout>
+
+</LinearLayout>

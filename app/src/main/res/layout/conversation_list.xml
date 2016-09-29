@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite_FFFFFFFF"
+>
+
+    <include
+        android:id="@+id/ly_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/titleBarHeight"
+        layout="@layout/layout_title" />
+
+    <FrameLayout
+        android:id="@+id/conversationlist"
+        android:layout_below="@id/ly_title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</RelativeLayout>

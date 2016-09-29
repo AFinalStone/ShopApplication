@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+     >
+
+    <ImageView
+        android:id="@+id/iv_functionType"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_empty" />
+
+    <TextView
+        android:id="@+id/tv_functionType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_functionType"
+        android:layout_centerHorizontal="true"
+        android:text="功能类型"
+        android:textColor="@color/lightBlack"
+        android:textSize="@dimen/textFontSize4" />
+
+
+</RelativeLayout> 

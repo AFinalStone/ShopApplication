@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="65dp"
+        android:layout_marginLeft="17dp"
+        android:gravity="center_vertical"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_bankCardName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="17dp"
+            android:layout_below="@id/iv_functionType"
+            android:layout_centerHorizontal="true"
+            android:text="银行卡名称"
+            android:textColor="@color/colorBlack_FF333333"
+            android:textSize="@dimen/textFontSize_15" />
+
+        <TextView
+            android:id="@+id/tv_bankCardDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="9dp"
+            android:text="银行卡描述"
+            android:textColor="@color/colorBlack_FF999999"
+            android:textSize="@dimen/textFontSize_9" />
+    </LinearLayout>
+
+    <CheckBox
+        android:id="@+id/cb_ifSelect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        android:focusable="false"
+        android:clickable="false"
+        android:layout_marginRight="16dp"
+        android:button="@drawable/checkbox_selector_02" />
+
+</LinearLayout>

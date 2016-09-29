@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+
+    <include
+        android:id="@+id/layout_title"
+        layout="@layout/layout_title"
+ />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="330dp"
+        android:orientation="vertical"
+        app:layout_scrollFlags="scroll">
+
+        <ImageView
+            android:id="@+id/iv_goodsImages"
+            android:layout_width="match_parent"
+            android:layout_height="240dp"
+            android:layout_centerHorizontal="true"
+            android:background="@color/white"
+            android:paddingTop="10dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_empty" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:padding="10dp">
+
+            <View
+                android:id="@+id/view_border01"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/dividingLineColor" />
+
+            <ImageView
+                android:id="@+id/iv_shareGoods"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/view_border01"
+                android:layout_margin="10dp"
+                android:src="@drawable/goods_share" />
+
+            <View
+                android:id="@+id/view_border02"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_alignBottom="@id/iv_shareGoods"
+                android:layout_alignTop="@id/iv_shareGoods"
+                android:layout_below="@id/view_border01"
+                android:layout_marginLeft="5dp"
+                android:layout_toLeftOf="@id/iv_shareGoods"
+                android:background="@color/dividingLineColor" />
+
+            <TextView
+                android:id="@+id/tv_goodsName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/view_border01"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_toLeftOf="@id/view_border02"
+                android:maxLines="2"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="@dimen/textFontSize4" />
+
+            <TextView
+                android:id="@+id/tv_goodsPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_goodsName"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:text="￥0"
+                android:textColor="@color/darkRed"
+                android:textSize="@dimen/textFontSize2" />
+
+            <TextView
+                android:id="@+id/tv_flyCoinCanUsed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/tv_goodsPrice"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@id/tv_goodsPrice"
+                android:background="@color/orange"
+                android:paddingBottom="1dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="1dp"
+                android:text="可用0飞币"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textFontSize5"
+                android:visibility="visible" />
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/view_border03"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:layout_below="@id/iv_shareGoods"
+            android:background="@color/darkGrey" />
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout_selectPackageType"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/view_border03"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="@string/selectPackageType"
+                android:textSize="@dimen/textFontSize3" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/arrow_right" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:layout_below="@id/relativeLayout_selectPackageType"
+            android:background="@color/darkGrey" />
+    </LinearLayout>
+
+    <RadioGroup
+        android:id="@+id/rg_goodsGroup"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_below="@id/view_border04"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_goodsDesc"
+            style="@style/GoodsActivityRadioButtonStyle"
+            android:text="@string/goodDesc" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/dividingLineColor" />
+
+        <RadioButton
+            android:id="@+id/rb_goodsParameter"
+            style="@style/GoodsActivityRadioButtonStyle"
+            android:text="@string/goodsSpec" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/dividingLineColor" />
+
+        <RadioButton
+            android:id="@+id/rb_goodsPackage"
+            style="@style/GoodsActivityRadioButtonStyle"
+            android:text="@string/goodsPackage" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/dividingLineColor" />
+    </RadioGroup>
+
+
+    <WebView
+        android:id="@+id/webview_goodsDetail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="2dp"
+        android:gravity="center"
+        android:scrollbars="none"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        app:layout_scrollFlags="scroll"
+        tools:ignore="WebViewLayout" />
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/linearLayout_openConverSation"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/icon_to_message_view" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/chat"
+                android:textSize="@dimen/textFontSize5" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout_toGoodsShopCart"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/iv_chat"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_centerInParent="true"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/icon_to_shopcart_view" />
+
+                <TextView
+                    android:id="@+id/tv_shopCartNumber"
+                    android:layout_width="14dp"
+                    android:layout_height="14dp"
+                    android:layout_toRightOf="@id/iv_chat"
+                    android:background="@drawable/icon_number"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textFontSize6" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/rb_shopcart"
+                android:textSize="@dimen/textFontSize5" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_agentGoods"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="@drawable/button_shape_inorange_02"
+            android:gravity="center"
+            android:padding="0dp"
+            android:text="@string/agentThisGoods"
+            android:textColor="@color/pureWhiteFont"
+            android:textSize="@dimen/textFontSize4" />
+
+        <Button
+            android:id="@+id/btn_addShoppingCart"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:background="@drawable/button_shape_inred_02"
+            android:gravity="center"
+            android:padding="0dp"
+            android:text="@string/addShoppingCart"
+            android:textColor="@color/pureWhiteFont"
+            android:textSize="@dimen/textFontSize4" />
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,87 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/colorWhite_FFFFFFFF">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp">
+
+        <CheckBox
+            android:id="@+id/cb_whetherSelect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/checkbox_selector_01"
+            android:button="@null"
+            android:focusable="false" />
+
+        <Button
+            android:id="@+id/tv_addPrice"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@color/orange"
+            android:focusable="false"
+            android:gravity="center"
+            android:text="加价"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/textFontSize4" />
+
+        <ImageView
+            android:id="@+id/shoping_goods_image"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@id/cb_whetherSelect"
+            android:background="@drawable/ic_empty" />
+
+        <TextView
+            android:id="@+id/shoping_goods_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/shoping_goods_image"
+            android:layout_toLeftOf="@id/tv_addPrice"
+            android:layout_toRightOf="@id/shoping_goods_image"
+            android:ellipsize="end"
+            android:maxLines="3"
+            android:text="@string/goodsName"
+            android:textColor="#000000"
+            android:textSize="@dimen/textFontSize4" />
+
+        <TextView
+            android:id="@+id/shoping_goods_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/shoping_goods_image"
+            android:layout_alignLeft="@id/shoping_goods_title"
+            android:gravity="center_horizontal"
+            android:text="商品价格"
+            android:textColor="@color/lightRed"
+            android:textSize="@dimen/textFontSize4" />
+
+        <TextView
+            android:id="@+id/tv_agentAddMoney"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/shoping_goods_image"
+            android:layout_toRightOf="@id/shoping_goods_price"
+            android:gravity="center_horizontal"
+            android:text="代理加价"
+            android:textColor="@color/lightGreyFont"
+            android:textSize="@dimen/textFontSize5" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/dividingLineColor" />
+</LinearLayout>

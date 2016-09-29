@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="10dp"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal"
+            android:padding="2dp"
+            android:text="自动加价规则:"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textFontSize5" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:padding="2dp"
+            android:text="0-100+一倍"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textFontSize5" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:padding="2dp"
+            android:text="100-500+100"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textFontSize5" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:padding="2dp"
+            android:text="500-1000+200"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textFontSize5" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:padding="2dp"
+            android:text="1000-2000+300"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textFontSize5" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:padding="2dp"
+            android:text="2000以上+500"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textFontSize5" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:padding="2dp"
+            android:text="(如需调整,请在个人中心“代理商品”修改)"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textFontSize5" />
+
+        <TextView
+            android:id="@+id/tv_IfAgentGoods"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:layout_gravity="center"
+            android:textColor="@color/orange"
+            android:text="@string/tvIfAgentTheseGoods"
+            android:textSize="@dimen/textFontSize3" />
+
+    </LinearLayout>
+
+

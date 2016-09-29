@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <CheckBox
+        android:id="@+id/cb_productPackage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/checkbox_selector_dispath_method"
+        android:button="@null"
+        android:gravity="center"
+        android:textColor="@color/lightBlack"
+        android:textSize="@dimen/textFontSize3" />
+
+</LinearLayout> <!-- 店铺LOG广告位 -->

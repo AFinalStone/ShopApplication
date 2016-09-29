@@ -1,0 +1,111 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/ly_title"
+        layout="@layout/layout_title" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/ly_title"
+        android:scaleType="fitXY"
+        android:src="@drawable/background_login_dainifei" />
+
+    <ImageView
+        android:id="@+id/iv_loginLogo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/ly_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/icon_login_dainifei_logo" />
+
+    <EditText
+        android:id="@+id/et_userNumber"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/iv_loginLogo"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/button_shape_intran_outwhite_01"
+        android:hint="@string/userNumberHint"
+        android:paddingBottom="0dp"
+        android:paddingLeft="40dp"
+        android:paddingRight="5dp"
+        android:paddingTop="0dp"
+        android:singleLine="true"
+        android:textSize="@dimen/textFontSize3ex" />
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignLeft="@id/et_userNumber"
+        android:layout_alignTop="@id/et_userNumber"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/icon_customer_header_01" />
+
+    <EditText
+        android:id="@+id/et_userPassword"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@id/et_userNumber"
+        android:layout_alignRight="@id/et_userNumber"
+        android:layout_below="@id/et_userNumber"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button_shape_intran_outwhite_01"
+        android:hint="@string/userPasswordHint"
+        android:inputType="textWebPassword"
+        android:paddingBottom="0dp"
+        android:paddingLeft="40dp"
+        android:paddingRight="5dp"
+        android:paddingTop="0dp"
+        android:singleLine="true"
+        android:textSize="@dimen/textFontSize3ex" />
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignLeft="@id/et_userPassword"
+        android:layout_alignTop="@id/et_userPassword"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/password" />
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@id/et_userNumber"
+        android:layout_alignRight="@id/et_userNumber"
+        android:layout_below="@id/et_userPassword"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_shape_inred_01"
+        android:gravity="center"
+        android:padding="0dp"
+        android:text="@string/loginButton"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textFontSize3" />
+
+    <TextView
+        android:id="@+id/tv_forgotPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/btn_login"
+        android:layout_below="@id/btn_login"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:padding="0dp"
+        android:text="@string/forgotPassword"
+        android:textColor="@color/lightBlack"
+        android:textSize="@dimen/textFontSize3" />
+
+</RelativeLayout>

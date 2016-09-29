@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+    android:interpolator="@android:anim/accelerate_interpolator" >
+
+    <!--  上下滑入式  -->
+    <translate
+        android:duration="@integer/config_durnTime"
+        android:fromYDelta="100%p"
+        android:toYDelta="0%p" />
+    
+    
+</set>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite_FFFFFFFF"
+    android:orientation="vertical" >
+
+    <include layout="@layout/layout_title" />
+
+    <LinearLayout
+        android:id="@+id/linearlayout_searchWidget"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/titleBarHeight"
+        android:background="@color/white"
+        android:gravity="center_vertical">
+
+        <EditText
+            android:id="@+id/et_searchContext"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/search_left"
+            android:gravity="center_vertical"
+            android:hint="@string/searchHint"
+            android:paddingLeft="10dp"
+            android:textSize="@dimen/textFontSize5" />
+
+        <Button
+            android:id="@+id/btn_searchContext"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:background="@drawable/search_right"
+            android:gravity="center"
+            android:text="@string/search"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/textFontSize4" />
+
+        <Button
+            android:id="@+id/btn_sorting"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/submit"
+            android:gravity="center"
+            android:text="@string/classify"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/textFontSize4" />
+    </LinearLayout>
+
+
+    <com.afinalstone.androidstudy.swiperefreshview.SwipeRefreshMenuListView
+        android:id="@+id/swipeRefreshMenuListView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="@null"
+        android:listSelector="@android:color/transparent"
+        android:visibility="visible" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/dividingLineColor"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bottomBarHeight"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <CheckBox
+            android:id="@+id/cb_selectAll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:button="@drawable/checkbox_selector_01"
+            android:text="全选"
+            android:textSize="@dimen/textFontSize4" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/btn_addAllPrice"
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/button_shape_inred_01"
+            android:gravity="center"
+            android:text="@string/addAllPrice"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textFontSize3" />
+    </LinearLayout>
+
+</LinearLayout>

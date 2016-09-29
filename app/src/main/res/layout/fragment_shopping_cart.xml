@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite_FFFFFFFF"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/layout_title"
+        layout="@layout/layout_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/titleBarHeight" />
+
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <ListView
+            android:id="@+id/listView_ShoppingCart"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorWhite_FFFFFFFF"
+            android:divider="@null"
+            android:scrollbars="none" />
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/dividingLineColor" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="@color/colorWhite_FFFFFFFF"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="总金额:"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textFontSize3" />
+
+            <TextView
+                android:id="@+id/tv_totalPrices"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:ellipsize="end"
+                android:gravity="left"
+                android:singleLine="true"
+                android:text="￥0.00"
+                android:textColor="@color/redTitleBarBackground"
+                android:textSize="@dimen/textFontSize3" />
+
+            <Button
+                android:id="@+id/btn_submit"
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/button_shape_inred_02"
+                android:gravity="center"
+                android:text="@string/submitOrder"
+                android:textColor="@color/whiteFont"
+                android:textSize="@dimen/textFontSize4" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

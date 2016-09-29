@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorWhite_FFFFFFFF"
+    android:paddingBottom="10dp"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:textSize="@dimen/textFontSize_18"
+        android:textColor="@color/colorBlack_FF323232"
+        android:text="@string/tv_titleVersionUpdate"/>
+
+    <TextView
+        android:id="@+id/tv_newVersionName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="版本序号：v2.6.01"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:textSize="@dimen/textFontSize_14"
+        android:textColor="@color/colorBlack_FF646464"
+        />
+
+    <TextView
+        android:id="@+id/tv_newVersionSize"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="版本大小：9.33M"
+        android:layout_marginLeft="10dp"
+        android:textSize="@dimen/textFontSize_14"
+        android:textColor="@color/colorBlack_FF646464"
+        />
+
+    <TextView
+        android:id="@+id/tv_newVersionDesc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="新版特性：\n1.版本升级文字说明1\n2.版本升级文字说明2\n3.版本升级文字说明3"
+        android:layout_marginLeft="10dp"
+        android:textSize="@dimen/textFontSize_14"
+        android:textColor="@color/colorBlack_FF646464"
+        />
+
+    </LinearLayout>
+
+

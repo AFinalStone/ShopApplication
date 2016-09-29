@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorWhite_FFFFFFFF"
+    android:orientation="vertical">
+
+    <com.afinalstone.androidstudy.swiperefreshview.SwipeRefreshListView
+        android:id="@+id/swipeRefreshListView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_above="@id/linearLayout_bottom"
+        android:divider="@null"
+        android:listSelector="@android:color/transparent"
+        android:scrollbars="none" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:visibility="gone"
+        android:orientation="vertical">
+
+        <View
+            android:id="@+id/view_border"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/dividingLineColor" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/iv_selectAll"
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="20dp"
+                android:paddingTop="10dp"
+                android:src="@drawable/icon_select_off_02" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/selectAll"
+                android:textSize="@dimen/textFontSize_16" />
+
+            <Button
+                android:id="@+id/btn_orderToPay"
+                android:layout_width="150dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/button_shape_inred_01"
+                android:gravity="center"
+                android:text="@string/btn_MyOrderToPayPagerBatchPayOrder"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textFontSize_16" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

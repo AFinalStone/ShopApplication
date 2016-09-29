@@ -1,0 +1,119 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/ly_title"
+        android:scaleType="fitXY"
+        android:src="@drawable/background_login_jvhe" />
+
+    <ImageView
+        android:id="@+id/iv_loginLogo"
+        android:layout_width="240dp"
+        android:layout_height="120dp"
+        android:layout_below="@id/ly_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="48dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/icon_login_jvhe_shuimunianhua_logo" />
+
+    <EditText
+        android:id="@+id/et_userNumber"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/iv_loginLogo"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/button_shape_red_bottom_line_selector"
+        android:hint="@string/userNumberHint"
+        android:textColorHint="@color/colorBlack_FF999999"
+        android:paddingLeft="45dp"
+        android:singleLine="true"
+        android:textSize="@dimen/textFontSize_13" />
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignLeft="@id/et_userNumber"
+        android:layout_alignTop="@id/et_userNumber"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/icon_customer_header_03" />
+
+    <EditText
+        android:id="@+id/et_userPassword"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@id/et_userNumber"
+        android:layout_alignRight="@id/et_userNumber"
+        android:layout_below="@id/et_userNumber"
+        android:background="@drawable/button_shape_red_bottom_line_selector"
+        android:layout_marginTop="30dp"
+        android:hint="@string/userPasswordHint"
+        android:textColorHint="@color/colorBlack_FF999999"
+        android:textColor="@color/colorBlack_FF323232"
+        android:inputType="textWebPassword"
+        android:paddingLeft="45dp"
+        android:singleLine="true"
+        android:textSize="@dimen/textFontSize_13" />
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignLeft="@id/et_userPassword"
+        android:layout_alignTop="@id/et_userPassword"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/icon_customer_password" />
+
+
+    <TextView
+        android:id="@+id/tv_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/et_userPassword"
+        android:layout_below="@id/et_userPassword"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="20dp"
+        android:gravity="center"
+        android:padding="0dp"
+        android:text="@string/register"
+        android:textColor="@color/colorRed_FFE10005"
+        android:textSize="@dimen/textFontSize_14" />
+
+    <TextView
+        android:id="@+id/tv_forgotPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/et_userPassword"
+        android:layout_below="@id/et_userPassword"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center"
+        android:padding="0dp"
+        android:text="@string/forgotPassword_Q"
+        android:textColor="@color/colorRed_FFE10005"
+        android:textSize="@dimen/textFontSize_14" />
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@id/et_userNumber"
+        android:layout_alignRight="@id/et_userNumber"
+        android:layout_below="@id/tv_forgotPassword"
+        android:layout_marginTop="17dp"
+        android:background="@drawable/selector_button_commen_01"
+        android:gravity="center"
+        android:padding="0dp"
+        android:text="@string/loginButton"
+        android:textColor="@drawable/selector_button_commen_01"
+        android:textSize="@dimen/textFontSize_20" />
+
+
+</RelativeLayout>

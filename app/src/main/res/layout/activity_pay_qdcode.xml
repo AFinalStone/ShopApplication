@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.PayMoneyByQDCodeActivity">
+
+    <include
+        android:id="@+id/layout_title"
+        layout="@layout/layout_title" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_vertical"
+        android:paddingRight="10dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="20dp"
+            android:text="@string/tv_payChargeDesc" />
+
+        <Button
+            android:id="@+id/btn_payByQDCodeFinish"
+            android:layout_width="108dp"
+            android:layout_height="34dp"
+            android:enabled="false"
+            android:background="@drawable/selector_button_pay_by_qdcode_finish"
+            android:text="@string/btn_payByQDCodeFinish"
+            android:textColor="@drawable/selector_button_pay_by_qdcode_finish" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout_title"
+        android:layout_above="@id/linearLayout_bottom"
+        android:layout_marginTop="100dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_totalPrices"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="￥3560"
+            android:textColor="@color/colorRed_FFE83821"
+            android:textSize="@dimen/textFontSize_18" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/iv_QDCode"
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:layout_centerInParent="true"
+                android:background="@color/colorWhite_FFFFFFFF"
+                android:scaleType="centerInside" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,568 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.shuimunianhua.xianglixiangqin">
+
+    <!-- 极光推送相关 -->
+    <permission
+        android:name="com.shuimunianhua.xianglixiangqin.permission.JPUSH_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <!-- Required  一些系统要求的权限，如访问网络等 -->
+    <uses-permission android:name="com.shi.xianglixiangqin.permission.JPUSH_MESSAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+
+    <!-- 融云权限 -->
+    <!-- 允许访问网络权限 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 读写外部存储卡 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 获取当前位置信息 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- 获取机型信息权限 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS_FULL" />
+    <!-- 查看 Wi-Fi 状态 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 查看网络状态 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <!-- 录音 -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <!-- 控制振动器 -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <!-- 防止设备休眠 -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+    <!-- 获取联系人信息，demo中演示发送通讯录消息 -->
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <!-- 融云权限结束 -->
+
+
+    <!-- 蓝牙分享所需的权限 -->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <!-- SD卡读取权限 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" />
+
+    <application
+        android:name="com.shuimunianhua.xianglixiangqin.app.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher_shuimunianhua"
+        android:label="@string/app_name_shuimunianhua"
+        android:supportsRtl="true"
+        android:theme="@style/MyAppTheme">
+
+        <!-- 引导界面 -->
+        <activity
+            android:name="com.shuimunianhua.xianglixiangqin.activity.SplashActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/SplashTheme"
+            android:windowSoftInputMode="adjustPan|stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- 引导页界面 -->
+        <activity
+            android:name="com.shuimunianhua.xianglixiangqin.activity.GuideActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!-- 带你飞登陆界面 -->
+        <activity
+            android:name="com.shuimunianhua.xianglixiangqin.activity.LoginDaiNiFeiActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!-- 聚合网络登陆界面 -->
+        <activity
+            android:name="com.shuimunianhua.xianglixiangqin.activity.LoginJvHeActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!-- 聚合网络登陆界面 -->
+        <activity
+            android:name="com.shuimunianhua.xianglixiangqin.activity.LoginShuiMuNianHuaActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!-- 注册界面第一步 -->
+        <activity
+            android:name="com.shuimunianhua.xianglixiangqin.activity.RegisterFirstActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!-- 注册界面第二步 -->
+        <activity
+            android:name="com.shuimunianhua.xianglixiangqin.activity.RegisterSecoundActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!-- 找回密码界面 -->
+        <activity
+            android:name="com.shuimunianhua.xianglixiangqin.activity.PasswordChangeFirstActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!-- 修改密码界面 -->
+        <activity
+            android:name="com.shuimunianhua.xianglixiangqin.activity.PasswordChangeSecoundActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!-- 主页界面 -->
+        <activity
+            android:name="com.shuimunianhua.xianglixiangqin.activity.MainActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyAppTheme"
+            android:windowSoftInputMode="adjustPan|stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:host="com.shuimunianhua.xianglixiangqin"
+                    android:pathPrefix="/conversationlist"
+                    android:scheme="rong" />
+
+            </intent-filter>
+        </activity>
+        <!-- 限时抢购 -->
+        <activity
+            android:name="com.shuimunianhua.xianglixiangqin.activity.SportSaleBuyTimeLimitedActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!-- 限时抢购 -->
+        <activity
+            android:name="com.shuimunianhua.xianglixiangqin.activity.SportSaleBuyCrazyActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!-- 精品团购 -->
+        <activity
+            android:name="com.shuimunianhua.xianglixiangqin.activity.SportSaleBuyGroupActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!-- 主题街 -->
+        <activity
+            android:name="com.shuimunianhua.xianglixiangqin.activity.ThemeTypeActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!-- 精品推荐 -->
+        <activity
+            android:name="com.shuimunianhua.xianglixiangqin.activity.SportSaleBuyRecommendActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name="com.shuimunianhua.xianglixiangqin.activity.MyOrderActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!-- 订单详情界面 -->
+        <activity
+            android:name="com.shuimunianhua.xianglixiangqin.activity.MyOrderDetailActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!-- 银行卡绑定界面 -->
+        <activity
+            android:name="com.shuimunianhua.xianglixiangqin.activity.PayByNewBankCardActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!-- 银行卡更换 -->
+        <activity
+            android:name="com.shuimunianhua.xianglixiangqin.activity.MyBankCardActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <!-- 一级筛选界面 -->
+        <activity
+            android:name="com.shuimunianhua.xianglixiangqin.activity.FilterFirstActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!-- 二级筛选界面 -->
+        <activity
+            android:name="com.shuimunianhua.xianglixiangqin.activity.FilterSecondActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!-- 管理收货地址 -->
+        <activity
+            android:name="com.shuimunianhua.xianglixiangqin.activity.ReceiveAddressManageActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!-- 收货地址界面 -->
+        <activity
+            android:name="com.shuimunianhua.xianglixiangqin.activity.ReceiveAddressEditActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <!-- 店铺web界面 -->
+        <activity
+            android:name="com.shuimunianhua.xianglixiangqin.activity.MyShopWebActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!-- 店铺界面 -->
+        <activity
+            android:name="com.shuimunianhua.xianglixiangqin.activity.ShopActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity android:name="com.shuimunianhua.xianglixiangqin.activity.ShopRecommendActivity" />
+
+        <!-- 店铺商品分类详情搜索界面 -->
+        <activity
+            android:name="com.shuimunianhua.xianglixiangqin.activity.SearchGoodsActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!-- 当前店铺商品的分类信息界面 -->
+        <activity
+            android:name="com.shuimunianhua.xianglixiangqin.activity.SearchGoodsClassTypeActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!-- 一般商品详情界面 -->
+        <activity
+            android:name="com.shuimunianhua.xianglixiangqin.activity.GoodsDetailGeneralActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!-- 活动商品详情界面 -->
+        <activity
+            android:name="com.shuimunianhua.xianglixiangqin.activity.GoodsDetailSportActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!-- 套餐选择界面 -->
+        <activity
+            android:name="com.shuimunianhua.xianglixiangqin.activity.GoodsPackageActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeWindowIsTranslucent"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <!-- 确认提交页面 -->
+        <activity
+            android:name="com.shuimunianhua.xianglixiangqin.activity.ConfirmOrderGeneralActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeWindowIsTranslucent"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!-- 支付方式选择界面 -->
+        <activity
+            android:name="com.shuimunianhua.xianglixiangqin.activity.PayMethodSelectActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeWindowIsTranslucent"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!-- 支付方式选择界面 -->
+        <activity
+            android:name="com.shuimunianhua.xianglixiangqin.activity.PayMethodSelectActivityEx"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeWindowIsTranslucent"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity android:name="com.shuimunianhua.xianglixiangqin.activity.OtherOrderActivity" />
+        <activity android:name="com.shuimunianhua.xianglixiangqin.activity.ShoppingCartActivity" />
+
+        <!-- 银行卡支付界面 -->
+        <activity
+            android:name="com.shuimunianhua.xianglixiangqin.activity.PayMoneyOldActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeWindowIsTranslucent"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name="com.shuimunianhua.xianglixiangqin.activity.PayBankCardSelectActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeWindowIsTranslucent"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!-- 确认订单页 -->
+        <activity
+            android:name="com.shuimunianhua.xianglixiangqin.activity.ConfirmOrderSportActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!-- 个人代理商品分类界面 -->
+        <activity
+            android:name="com.shuimunianhua.xianglixiangqin.activity.SearchGoodsMyAgentClassTypeActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!-- 我的代理界面 -->
+        <activity
+            android:name="com.shuimunianhua.xianglixiangqin.activity.SearchGoodsMyAgentActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!-- 微店管理界面 -->
+        <activity
+            android:name="com.shuimunianhua.xianglixiangqin.activity.WXShopGoodsManageActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!-- 微店商品分类界面 -->
+        <activity
+            android:name="com.shuimunianhua.xianglixiangqin.activity.WXShopGoodsClassTypeActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!-- 设置微店特价商品界面 -->
+        <activity
+            android:name="com.shuimunianhua.xianglixiangqin.activity.WXShopAddGoods"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!-- 设置微店推荐商品类型 -->
+        <activity
+            android:name="com.shuimunianhua.xianglixiangqin.activity.WXShopTypeSelectActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!-- 城市选择界面 -->
+        <activity
+            android:name="com.shuimunianhua.xianglixiangqin.activity.AddressPositionSelectActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!-- 设置中心界面 -->
+        <activity
+            android:name="com.shuimunianhua.xianglixiangqin.activity.SettingCenterActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!-- 完善个人信息界面 -->
+        <activity
+            android:name="com.shuimunianhua.xianglixiangqin.activity.CompletePersonalInformationActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!-- 订单生成成功之后的界面 -->
+        <activity
+            android:name="com.shuimunianhua.xianglixiangqin.activity.PayConfirmResultActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeWindowIsTranslucent"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!-- 强制用户下线 -->
+        <activity
+            android:name="com.shuimunianhua.xianglixiangqin.activity.PressLogoutActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeWindowIsTranslucent"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name="com.mob.tools.MobUIShell"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+            <intent-filter>
+                <data android:scheme="tencent100371282" />
+
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <!-- 微信分享回调 -->
+        <activity
+            android:name="com.shuimunianhua.xianglixiangqin.wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <!-- 更新服务 -->
+        <service android:name="com.shuimunianhua.xianglixiangqin.service.UpdateAppService" />
+        <!-- 融云会话列表Activity -->
+
+
+        <!-- 会话界面 -->
+        <activity
+            android:name="com.shuimunianhua.xianglixiangqin.rongyun.ConversationGeneralActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:host="com.shuimunianhua.xianglixiangqin"
+                    android:pathPrefix="/conversation/"
+                    android:scheme="rong" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name="io.rong.push.PushService"
+            android:process="io.rong.push">
+
+            <!-- Waring: The name of the push process can't be changed!!! -->
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <action android:name="io.rong.push" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="io.rong.push.CommandService"
+            android:process="io.rong.push">
+
+            <!-- Waring: The name of the push process can't be changed!!! -->
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <action android:name="io.rong.command" />
+            </intent-filter>
+        </service>
+
+        <receiver
+            android:name="io.rong.push.PushReceiver"
+            android:process="io.rong.push">
+
+            <!-- Waring: The name of the push process can't be changed!!! -->
+            <intent-filter>
+                <action android:name="io.rong.imlib.action.push.heartbeat" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="io.rong.imlib.ConnectChangeReceiver" />
+        <receiver android:name="io.rong.imlib.ipc.PushMessageReceiver">
+            <intent-filter>
+                <action android:name="io.rong.push.message" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="io.rong.imlib.HeartbeatReceiver"
+            android:process=":ipc" />
+
+        <activity
+            android:name="io.rong.imkit.tools.SelectPictureActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="io.rong.imkit.tools.PreviewPictureActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="io.rong.imkit.tools.RongWebviewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="io.rong.imkit.widget.provider.TakingPicturesActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+
+        <service
+            android:name="io.rong.imlib.ipc.RongService"
+            android:process=":ipc" />
+        <service android:name="io.rong.imlib.ReConnectService" />
+
+        <meta-data
+            android:name="RONG_CLOUD_APP_KEY"
+            android:value="m7ua80gbuxl3m" />
+
+        <!-- 下面的和极光推送相关 -->
+        <activity
+            android:name="cn.jpush.android.ui.PushActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:exported="false"
+            android:theme="@android:style/Theme.NoTitleBar">
+            <intent-filter>
+                <action android:name="cn.jpush.android.ui.PushActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="com.shi.xianglixiangqin" />
+            </intent-filter>
+        </activity>
+
+        <!-- Required  SDK核心功能 -->
+        <service
+            android:name="cn.jpush.android.service.DownloadService"
+            android:enabled="true"
+            android:exported="false" />
+
+        <!-- Required SDK 核心功能 -->
+        <!-- 可配置android:process参数将PushService放在其他进程中 -->
+        <service
+            android:name="cn.jpush.android.service.PushService"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTER" />
+                <action android:name="cn.jpush.android.intent.REPORT" />
+                <action android:name="cn.jpush.android.intent.PushService" />
+                <action android:name="cn.jpush.android.intent.PUSH_TIME" />
+            </intent-filter>
+        </service>
+
+        <!-- Required SDK核心功能 -->
+        <receiver
+            android:name="cn.jpush.android.service.PushReceiver"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter android:priority="1000">
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED_PROXY" />
+                <!-- Required  显示通知栏 -->
+                <category android:name="com.shi.xianglixiangqin" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+            <!-- Optional -->
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+
+        <!-- Required SDK核心功能 -->
+        <receiver
+            android:name="cn.jpush.android.service.AlarmReceiver"
+            android:exported="false" />
+
+        <!-- User defined.  For test only  用户自定义的广播接收器 -->
+        <receiver
+            android:name="com.shuimunianhua.xianglixiangqin.receiver.JpushReceiver"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTRATION" />
+                <!-- Required  用户注册SDK的intent -->
+                <action android:name="cn.jpush.android.intent.UNREGISTRATION" />
+                <action android:name="cn.jpush.android.intent.MESSAGE_RECEIVED" />
+                <!-- Required  用户接收SDK消息的intent -->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED" />
+                <!-- Required  用户接收SDK通知栏信息的intent -->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_OPENED" />
+                <!-- Required  用户打开自定义通知栏的intent -->
+                <action android:name="cn.jpush.android.intent.ACTION_RICHPUSH_CALLBACK" />
+                <!-- Optional 用户接受Rich Push Javascript 回调函数的intent -->
+                <action android:name="cn.jpush.android.intent.CONNECTION" />
+                <!-- 接收网络变化 连接/断开 since 1.6.3 -->
+                <category android:name="com.shi.xianglixiangqin" />
+            </intent-filter>
+        </receiver>
+
+        <!-- Required  . Enable it you can get statistics data with channel -->
+        <meta-data
+            android:name="JPUSH_CHANNEL"
+            android:value="developer-default" />
+        <meta-data
+            android:name="JPUSH_APPKEY"
+            android:value="0da6b6f5090bf1038810cbf7" />
+        <!-- </>值来自开发者平台取得的AppKey -->
+
+        <activity android:name="com.shuimunianhua.xianglixiangqin.activity.PayMoneyInputPasswordActivity" />
+        <activity android:name="com.shuimunianhua.xianglixiangqin.activity.PayPasswordChangeActivity" />
+        <activity android:name="com.shuimunianhua.xianglixiangqin.activity.PayPasswordSetActivity" />
+        <activity android:name="com.shuimunianhua.xianglixiangqin.activity.PayMoneyByQDCodeActivity"/>
+    </application>
+
+</manifest>

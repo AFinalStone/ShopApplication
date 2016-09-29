@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/button_shape_inwhite_outgray_01"
+    android:paddingBottom="5dp"
+    android:paddingTop="5dp">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout_timeRemain"
+        android:layout_width="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_height="35dp"
+        android:visibility="visible"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_timeRemain"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="00 : 00 : 00 : 00"
+            android:textColor="@color/colorRed_FFE83821"
+            android:textSize="@dimen/textFontSize_14" />
+
+        <TextView
+            android:id="@+id/tv_timeRemainDesc"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="天  小时  分   秒 "
+            android:textColor="@color/colorBlack_FF999999"
+            android:textSize="@dimen/textFontSize_14" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_saleOnGoing"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_alignLeft="@id/linearLayout_timeRemain"
+        android:layout_alignRight="@id/linearLayout_timeRemain"
+        android:layout_centerHorizontal="true"
+        android:scaleType="centerInside"
+        android:visibility="visible"
+        android:src="@drawable/icon_sport_model_buy_crazy_on_going" />
+
+    <TextView
+        android:id="@+id/tv_saleHaveFinish"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_alignTop="@id/linearLayout_timeLimited"
+        android:layout_alignBottom="@id/linearLayout_timeLimited"
+        android:layout_alignLeft="@id/linearLayout_timeRemain"
+        android:layout_alignRight="@id/linearLayout_timeRemain"
+        android:gravity="center"
+        android:textSize="@dimen/textFontSize_15"
+        android:textColor="@color/colorBlack_FF646464"
+        android:text="@string/tv_sportSaleBuyCrazyPagerHaveFinish"/>
+
+    <ImageView
+        android:id="@+id/iv_goodsImage"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_below="@id/linearLayout_timeRemain"
+        android:layout_centerHorizontal="true"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_empty" />
+
+    <TextView
+        android:id="@+id/tv_goodsName"
+        android:layout_width="140dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/iv_goodsImage"
+        android:layout_centerHorizontal="true"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxLines="2"
+        android:text="商品名称"
+        android:textColor="@color/black"
+        android:textSize="@dimen/textFontSize_16" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout_goodsPrice"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/tv_goodsName"
+        android:layout_below="@id/tv_goodsName"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_goodsPrice_old"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="￥5590"
+            android:textColor="@color/lightGreyFont"
+            android:textSize="@dimen/textFontSize_12" />
+
+        <TextView
+            android:id="@+id/tv_goodsPrice_new"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:text="￥4590"
+            android:textColor="@color/colorRed_FFE83821"
+            android:textSize="@dimen/textFontSize_14" />
+
+    </LinearLayout>
+</RelativeLayout>

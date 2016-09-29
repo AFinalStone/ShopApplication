@@ -1,0 +1,281 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+    android:orientation="horizontal"
+    android:background="@color/dividingLineColor">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout_sportModel01"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:paddingBottom="8dp"
+        android:background="@color/colorWhite_FFFFFFFF">
+
+        <ImageView
+            android:id="@+id/iv_icon01"
+            android:layout_width="13dp"
+            android:layout_height="13dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/icon_sport_model_buy_crazy" />
+
+        <TextView
+            android:id="@+id/tv_modelNameByChina01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="8dp"
+            android:layout_toRightOf="@id/iv_icon01"
+            android:text="@string/tv_sportModelBuyCrazyTypeChina"
+            android:textColor="@color/colorBlack_FF323232"
+            android:textSize="@dimen/textFontSize_14" />
+
+        <TextView
+            android:id="@+id/tv_modelNameByEnglish01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/tv_modelNameByChina01"
+            android:layout_below="@id/tv_modelNameByChina01"
+            android:layout_marginTop="5dp"
+            android:text="@string/tv_sportModelBuyCrazyTypeEnglish"
+            android:textColor="@color/colorBlack_FF323232"
+            android:textSize="@dimen/textFontSize_14" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout_timeLimited01"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_below="@id/tv_modelNameByEnglish01"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="invisible">
+
+            <TextView
+                android:id="@+id/tv_hour01"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@color/colorBlack_FF000000"
+                android:gravity="center"
+                android:text="00"
+                android:textColor="@color/colorWhite_FFFFFFFF"
+                android:textSize="@dimen/textFontSize_12" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:gravity="center"
+                android:padding="0dp"
+                android:text=" : "
+                android:textSize="@dimen/textFontSize_16" />
+
+            <TextView
+                android:id="@+id/tv_minute01"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@color/colorBlack_FF000000"
+                android:gravity="center"
+                android:text="00"
+                android:textColor="@color/colorWhite_FFFFFFFF"
+                android:textSize="@dimen/textFontSize_12" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:gravity="center"
+                android:padding="0dp"
+                android:text=" : "
+                android:textSize="@dimen/textFontSize_16" />
+
+            <TextView
+                android:id="@+id/tv_second01"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@color/colorBlack_FF000000"
+                android:gravity="center"
+                android:text="00"
+                android:textColor="@color/colorWhite_FFFFFFFF"
+                android:textSize="@dimen/textFontSize_12" />
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tv_sportOnGoing01"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/linearLayout_timeLimited01"
+            android:layout_alignLeft="@id/linearLayout_timeLimited01"
+            android:layout_alignRight="@id/linearLayout_timeLimited01"
+            android:layout_alignTop="@id/linearLayout_timeLimited01"
+            android:gravity="center"
+            android:text="活动进行中..."
+            android:textColor="@color/colorRed_FFE83821"
+            android:textSize="@dimen/textFontSize_16"
+            android:visibility="invisible"/>
+
+        <ImageView
+            android:id="@+id/iv_goodsImages01"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/linearLayout_timeLimited01"
+            android:scaleType="centerInside"
+            android:src="@drawable/icon_sport_model_buy_crazy_flag_nothing"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/tv_goodsPrice01"
+            android:layout_width="wrap_content"
+            android:layout_height="18dp"
+            android:layout_alignRight="@id/iv_goodsImages01"
+            android:background="@drawable/background_buy_model"
+            android:gravity="center"
+            android:text="2360元"
+            android:textColor="@color/colorWhite_FFFFFFFF"
+            android:textSize="@dimen/textFontSize_10" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="5dp"
+        android:layout_height="match_parent" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout_sportModel02"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:paddingBottom="8dp"
+        android:background="@color/colorWhite_FFFFFFFF">
+
+
+        <ImageView
+            android:id="@+id/iv_icon02"
+            android:layout_width="13dp"
+            android:layout_height="13dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/icon_sport_model_buy_time_limit" />
+
+        <TextView
+            android:id="@+id/tv_modelNameByChina02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/iv_icon02"
+            android:text="@string/tv_sportModelBuyTimeLimitedTypeChina"
+            android:textColor="@color/colorBlack_FF323232"
+            android:textSize="@dimen/textFontSize_14" />
+
+        <TextView
+            android:id="@+id/tv_modelNameByEnglish02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/tv_modelNameByChina02"
+            android:layout_below="@id/tv_modelNameByChina02"
+            android:layout_marginTop="5dp"
+            android:text="@string/tv_sportModelBuyTimeLimitedTypeEnglish"
+            android:textColor="@color/colorBlack_FF323232"
+            android:textSize="@dimen/textFontSize_14" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout_timeLimited02"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:gravity="center_vertical"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:orientation="horizontal"
+            android:layout_below="@id/tv_modelNameByEnglish02"
+            android:visibility="invisible">
+
+            <TextView
+                android:id="@+id/tv_hour02"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@color/colorBlack_FF000000"
+                android:gravity="center"
+                android:text="00"
+                android:textSize="@dimen/textFontSize_12"
+                android:textColor="@color/colorWhite_FFFFFFFF" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:padding="0dp"
+                android:text=" : "
+                android:gravity="center"
+                android:textSize="@dimen/textFontSize_16" />
+
+            <TextView
+                android:id="@+id/tv_minute02"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@color/colorBlack_FF000000"
+                android:gravity="center"
+                android:text="00"
+                android:textSize="@dimen/textFontSize_12"
+                android:textColor="@color/colorWhite_FFFFFFFF" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:padding="0dp"
+                android:text=" : "
+                android:gravity="center"
+                android:textSize="@dimen/textFontSize_16"  />
+
+            <TextView
+                android:id="@+id/tv_second02"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@color/colorBlack_FF000000"
+                android:gravity="center"
+                android:text="00"
+                android:textSize="@dimen/textFontSize_12"
+                android:textColor="@color/colorWhite_FFFFFFFF" />
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tv_sportOnGoing02"
+            android:layout_width="match_parent"
+            android:layout_alignLeft="@id/linearLayout_timeLimited02"
+            android:layout_alignRight="@id/linearLayout_timeLimited02"
+            android:layout_alignTop="@id/linearLayout_timeLimited02"
+            android:layout_alignBottom="@id/linearLayout_timeLimited02"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorRed_FFE83821"
+            android:textSize="@dimen/textFontSize_16"
+            android:text="@string/tv_sportModelBuyOnGoing"
+            android:visibility="invisible"/>
+
+        <ImageView
+            android:id="@+id/iv_goodsImages02"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_toRightOf="@id/linearLayout_timeLimited02"
+            android:layout_marginLeft="5dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/icon_sport_model_buy_time_limit_flag_nothing"
+            android:visibility="visible"/>
+
+        <TextView
+            android:id="@+id/tv_goodsPrice02"
+            android:layout_width="wrap_content"
+            android:layout_height="18dp"
+            android:layout_alignRight="@id/iv_goodsImages02"
+            android:text="2360元"
+            android:gravity="center"
+            android:textColor="@color/colorWhite_FFFFFFFF"
+            android:textSize="@dimen/textFontSize_10"
+            android:background="@drawable/background_buy_model"/>
+    </RelativeLayout>
+</LinearLayout>

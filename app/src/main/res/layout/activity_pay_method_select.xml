@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/shadeBackground_66000000"
+    tools:context=".activity.PayMethodSelectActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout_background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:paddingBottom="10dp"
+        android:background="@color/colorWhite_FFFFFFFF">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:text="支付订单"
+            android:textColor="@color/colorBlack_FF323232"
+            android:textSize="@dimen/textFontSize_14" />
+
+        <ImageView
+            android:id="@+id/iv_closeActivity"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/iv_close_view" />
+
+        <View
+            android:id="@+id/view_border01"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/tv_title"
+            android:background="@color/dividingLineColor" />
+
+        <TextView
+            android:id="@+id/tv_totalPrices"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/view_border01"
+            android:gravity="center"
+            android:text="已选择0个订单，合计：00.00"
+            android:textColor="@color/colorBlack_FF646464"
+            android:textSize="@dimen/textFontSize_16" />
+
+        <View
+            android:id="@+id/view_border02"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:layout_below="@id/tv_totalPrices"
+            android:background="@color/dividingLineColor" />
+
+        <TextView
+            android:id="@+id/tv_selectPayMethod"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/view_border02"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/tv_selectPayMethod_"
+            android:textColor="@color/colorBlack_FF323232"
+            android:textSize="@dimen/textFontSize_12" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout_selectPayMethod"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_below="@id/tv_selectPayMethod"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/cb_payMethodByOnline"
+                    android:layout_width="match_parent"
+                    android:layout_height="27dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:button="@drawable/checkbox_selector_02" />
+
+                <TextView
+                    android:layout_alignLeft="@id/cb_payMethodByOnline"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/colorBlack_FF323232"
+                    android:textSize="@dimen/textFontSize_16"
+                    android:layout_marginLeft="40dp"
+                    android:text="在线支付"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/cb_payMethodByCredit"
+                    android:layout_width="match_parent"
+                    android:layout_height="27dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:button="@drawable/checkbox_selector_02" />
+
+                <TextView
+                    android:layout_alignLeft="@id/cb_payMethodByCredit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/colorBlack_FF323232"
+                    android:textSize="@dimen/textFontSize_16"
+                    android:layout_marginLeft="40dp"
+                    android:text="信用支付"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/view_border03"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:layout_below="@id/linearLayout_selectPayMethod"
+            android:background="@color/dividingLineColor" />
+        
+        <Button
+            android:id="@+id/btn_queryToPay"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/view_border03"
+            android:background="@drawable/button_shape_inred_01"
+            android:text="@string/btn_queryToPay"
+            android:textColor="@color/colorWhite_FFFFFFFF"
+            android:textSize="@dimen/textFontSize_14"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="10dp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

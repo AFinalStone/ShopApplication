@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:paddingBottom="25dp" >
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="标题"
+        android:textSize="@dimen/textFontSize2" />
+
+    <EditText
+        android:id="@+id/et_message"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_title"
+        android:layout_centerHorizontal="true"
+        android:background="@null"
+        android:gravity="center"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:text="内容"
+        android:textColor="@color/lightBlue"
+        android:textSize="@dimen/textFontSize4" />
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_alignLeft="@id/et_message"
+        android:layout_alignRight="@id/et_message"
+        android:layout_below="@id/et_message"
+        android:background="@color/dividingLineColor"
+        android:paddingBottom="5dp" />
+
+</RelativeLayout>

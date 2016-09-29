@@ -1,0 +1,131 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/colorWhite_FFFFFFFF">
+
+
+        <ImageView
+            android:id="@+id/iv_icon"
+            android:layout_width="13dp"
+            android:layout_height="13dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/icon_sport_model_buy_crazy" />
+
+        <TextView
+            android:id="@+id/tv_modelNameByChina"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/iv_icon"
+            android:text="限时抢购"
+            android:textColor="@color/colorBlack_FF323232"
+            android:textSize="@dimen/textFontSize_14" />
+
+    <TextView
+        android:id="@+id/tv_modelNameByEnglish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/tv_modelNameByChina"
+        android:layout_below="@id/tv_modelNameByChina"
+        android:layout_marginTop="5dp"
+        android:text="TIME LIMIT"
+        android:textColor="@color/colorBlack_FF323232"
+        android:textSize="@dimen/textFontSize_14" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout_timeLimited"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:gravity="center_vertical"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:orientation="horizontal"
+        android:layout_below="@id/tv_modelNameByEnglish"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/tv_hour"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:background="@color/colorBlack_FF000000"
+            android:gravity="center"
+            android:text="00"
+            android:textSize="@dimen/textFontSize_12"
+            android:textColor="@color/colorWhite_FFFFFFFF" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:padding="0dp"
+            android:text=" : "
+            android:gravity="center"
+            android:textSize="@dimen/textFontSize_16" />
+
+        <TextView
+            android:id="@+id/tv_minute"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:background="@color/colorBlack_FF000000"
+            android:gravity="center"
+            android:text="00"
+            android:textSize="@dimen/textFontSize_12"
+            android:textColor="@color/colorWhite_FFFFFFFF" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:padding="0dp"
+            android:text=" : "
+            android:gravity="center"
+            android:textSize="@dimen/textFontSize_16"  />
+
+        <TextView
+            android:id="@+id/tv_second"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:background="@color/colorBlack_FF000000"
+            android:gravity="center"
+            android:text="00"
+            android:textSize="@dimen/textFontSize_12"
+            android:textColor="@color/colorWhite_FFFFFFFF" />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/tv_sportOnGoing"
+        android:layout_width="match_parent"
+        android:layout_alignLeft="@id/linearLayout_timeLimited"
+        android:layout_alignRight="@id/linearLayout_timeLimited"
+        android:layout_alignTop="@id/linearLayout_timeLimited"
+        android:layout_alignBottom="@id/linearLayout_timeLimited"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorRed_FFE83821"
+        android:textSize="@dimen/textFontSize_15"
+        android:text="活动进行中..."/>
+
+    <ImageView
+        android:id="@+id/iv_goodsImages"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_toRightOf="@id/linearLayout_timeLimited"
+        android:layout_marginLeft="5dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/imageview_a02"
+        android:visibility="visible"/>
+
+    <TextView
+        android:id="@+id/tv_goodsPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="18dp"
+        android:layout_alignRight="@id/iv_goodsImages"
+        android:text="2360元"
+        android:gravity="center"
+        android:textColor="@color/colorWhite_FFFFFFFF"
+        android:textSize="@dimen/textFontSize_10"
+        android:background="@drawable/background_buy_model"/>
+</RelativeLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/darkGrayBackground" >
+
+    <include layout="@layout/layout_title" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+   <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@color/colorWhite_FFFFFFFF" >
+
+        <com.afinalstone.androidstudy.view.TabIndicatorView
+            android:id="@+id/tabIndicatorView"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginRight="30dp" />
+
+        <CheckBox
+            android:id="@+id/cb_saleTypeSelect"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center"
+            android:button="@null"
+            android:drawableTop="@drawable/iv_saleby_sport_type"
+            android:gravity="center" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp" />
+    </LinearLayout>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+</LinearLayout>

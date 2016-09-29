@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:paddingLeft="10dp"
+    android:paddingTop="10dp" >
+
+    <TextView
+        android:id="@+id/tv_filterName"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_below="@id/relativeLayout_settingGoods"
+        android:layout_marginLeft="20dp"
+        android:gravity="center_vertical"
+        android:text="商品分类"
+        android:textColor="@color/lightBlack"
+        android:textSize="@dimen/textFontSize2ex" />
+
+</LinearLayout> <!-- 产品定位子项 -->

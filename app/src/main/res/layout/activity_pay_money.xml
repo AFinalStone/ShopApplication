@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/shadeBackground_66000000"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout_background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:visibility="visible"
+        android:background="@color/colorWhite_FFFFFFFF" >
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="5dp"
+            android:text="支付订单"
+            android:textColor="@color/lightBlack"
+            android:textSize="@dimen/textFontSize1" />
+
+        <ImageView
+            android:id="@+id/iv_closeActivity"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignBottom="@id/tv_title"
+            android:layout_alignParentRight="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/iv_close_view" />
+
+        <View
+            android:id="@+id/view_border01"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/tv_title"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/dividingLineColor" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout_context"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/view_border01"
+            android:orientation="horizontal" >
+
+            <!-- 绑定银行卡 -->
+
+            <LinearLayout
+                android:id="@+id/linearLayout_bindingBankCard"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="bottom"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="20dp"
+                    android:src="@drawable/iv_tobind_bankbard" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="5dp"
+                    android:gravity="center"
+                    android:text="你尚未绑定银行卡"
+                    android:textColor="@color/lightBlack"
+                    android:textSize="@dimen/textFontSize2" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="30dp"
+                    android:gravity="center"
+                    android:text="绑定银行卡之后才可进行支付"
+                    android:textColor="@color/lightBlack"
+                    android:textSize="@dimen/textFontSize2" />
+
+                <Button
+                    android:id="@+id/btn_bindingBankCard"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/button_shape_inred_01"
+                    android:text="去绑定"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+            <!-- 付款 -->
+
+            <LinearLayout
+                android:id="@+id/linearLayout_payMoney"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="bottom"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="15dp"
+                    android:gravity="center"
+                    android:text="带你飞订单付款"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/textFontSize3" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="15dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="付款金额："
+                        android:textColor="@color/lightBlack"
+                        android:textSize="@dimen/textFontSize3" />
+
+                    <TextView
+                        android:id="@+id/tv_payMoneyNumber"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="0元"
+                        android:textColor="@color/redTitleBarBackground"
+                        android:textSize="@dimen/textFontSize2" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/dividingLineColor" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="10dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="付款银行卡："
+                        android:textColor="@color/lightBlack"
+                        android:textSize="@dimen/textFontSize4" />
+
+                    <TextView
+                        android:id="@+id/tv_payBankCardDesc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="中国工商银行(尾号9999)"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textFontSize4" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/dividingLineColor" />
+
+                <LinearLayout
+                    android:id="@+id/linearLayout_payPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/button_shape_inwhite_outgray_01"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="19dp"
+                        android:layout_height="19dp"
+                        android:layout_margin="8dp"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/iv_smsg_num" />
+
+                    <EditText
+                        android:id="@+id/et_payPassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:background="@null"
+                        android:hint="请输入交易密码"
+                        android:paddingRight="0dp"
+                        android:singleLine="true"
+                        android:inputType="textPassword"
+                        android:textColor="@color/lightBlack"
+                        android:textColorHint="@color/grayFont"
+                        android:textSize="@dimen/textFontSize4" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btn_payMoney"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/button_shape_inred_01"
+                    android:text="确认付款"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textFontSize3" />
+            </LinearLayout>
+            <!-- 付款成功 -->
+
+            <LinearLayout
+                android:id="@+id/linearLayout_paySuccess"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="bottom"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/iv_paymoney_success" />
+"
+                
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="40dp"
+                    android:text="付款成功"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/textFontSize1" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

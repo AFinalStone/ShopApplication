@@ -1,0 +1,20 @@
+<LinearLayout android:gravity="center_horizontal"
+    android:id="@+id/linearLayout_nothingOrder"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        android:layout_height="100dp"
+        android:layout_marginTop="40dp"
+        android:layout_width="100dp"
+        android:src="@drawable/iv_nothing_order" />
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:padding="10dp"
+        android:text="@string/tv_otherOrderNothing"
+        android:textSize="@dimen/textFontSize_16" />
+</LinearLayout>

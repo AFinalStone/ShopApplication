@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/background_goods_special_prices"/>
+
+    <ImageView
+        android:id="@+id/iv_specialPricesGoods"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="fitXY" />
+
+    <TextView
+        android:id="@+id/tv_specialPricesGoodsTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/iv_specialPricesGoods"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="-10dp"
+        android:layout_toRightOf="@id/iv_specialPricesGoods"
+        android:singleLine="true"
+        android:text="今日特价全体验，畅享实惠"
+        android:textColor="@color/lightBlue"
+        android:textSize="@dimen/textFontSize_18" />
+
+    <TextView
+        android:id="@+id/tv_specialPricesGoodsName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/tv_specialPricesGoodsTitle"
+        android:layout_below="@id/tv_specialPricesGoodsTitle"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="10dp"
+        android:maxLines="2"
+        android:text="戴尔(DELL)XPS 13-9350-R1708"
+        android:textSize="@dimen/textFontSize5ex" />
+
+    <TextView
+        android:id="@+id/tv_specialPricesGoodsDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_alignLeft="@id/tv_specialPricesGoodsTitle"
+        android:layout_below="@id/tv_specialPricesGoodsName"
+        android:layout_marginRight="8dp"
+        android:maxLines="2"
+        android:text="超窄边框设计！第六代处理器+Win10提升档的重要装备"
+        android:textColor="@color/lightBlack"
+        android:textSize="@dimen/textFontSize6ex" />
+    
+   <TextView
+        android:id="@+id/tv_specialPricesGoodsPrices"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/tv_specialPricesGoodsTitle"
+        android:layout_alignBottom="@id/iv_specialPricesGoods"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="8dp"
+        android:singleLine="true"
+        android:text="价格"
+        android:textColor="@color/lightRed"
+        android:textSize="@dimen/textFontSize1ex" />
+   
+    <TextView
+        android:layout_width="70dp"
+        android:layout_height="25dp"
+        android:layout_alignBottom="@id/iv_specialPricesGoods"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:gravity="center"
+        android:background="@drawable/submit"
+        android:text="@string/getQuery"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/textFontSize4" />
+</RelativeLayout>

@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/darkGrayBackground" >
+
+    <include
+        android:id="@+id/layout_title"
+        layout="@layout/layout_title" />
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/layout_title" >
+
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            android:scrollbars="@null" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <!-- 轮播图片 -->
+
+                <com.afinalstone.androidstudy.view.roolpager.RollViewPager
+                    android:id="@+id/rollViewpager"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp" />
+
+                <RelativeLayout
+                    android:id="@+id/relativeLayout_goodsByGroupBuy"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/white"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/goodsByGroupBuy"
+                        android:textSize="@dimen/textFontSize3" />
+
+                    <LinearLayout
+                        android:id="@+id/linearLayout_goodsByGroupBuy"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@color/redTitleBarBackground"
+                        android:orientation="horizontal"
+                        android:paddingRight="10dp" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:gravity="center"
+                            android:text="@string/centerOfGroupBuy"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/textFontSize5" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:src="@drawable/iv_centerof_groupbuy" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <com.shuimunianhua.xianglixiangqin.view.ScrollListView
+                    android:id="@+id/listView_goodsByGroupBuy"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <RelativeLayout
+                    android:id="@+id/relativeLayout_salesByTimeLimited"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/white"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/salesByTimeLimited"
+                        android:textSize="@dimen/textFontSize3" />
+
+                    <LinearLayout
+                        android:id="@+id/linearLayout_moreSalesByTimeLimited"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingRight="10dp" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/moreSalesByTimeLimited"
+                            android:textColor="@color/lightRed"
+                            android:textSize="@dimen/textFontSize5" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:src="@drawable/iv_next_forecast" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scrollbars="@null" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <GridView
+                            android:id="@+id/gridView_saleByTimeLimited"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/dividingLineColor"
+                            android:gravity="center"
+                            android:horizontalSpacing="1dp"
+                            android:numColumns="auto_fit"
+                            android:paddingBottom="1dp"
+                            android:paddingTop="1dp"
+                            android:stretchMode="columnWidth"
+                            android:verticalSpacing="1dp" />
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+
+                <RelativeLayout
+                    android:id="@+id/relativeLayout_morejpRecomment"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/white"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/jpRecomment"
+                        android:textSize="@dimen/textFontSize3" />
+
+                    <LinearLayout
+                        android:id="@+id/linearLayout_morejpRecomment"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingRight="10dp" >
+
+                        <TextView
+                            android:id="@+id/tv_morejpRecomment"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/morejpRecomment"
+                            android:textColor="@color/lightRed"
+                            android:textSize="@dimen/textFontSize5" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:src="@drawable/iv_next_forecast" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scrollbars="@null" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <com.shuimunianhua.xianglixiangqin.view.ScrollGridView
+                            android:id="@+id/gridView_jpRecomment"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="1dp"
+                            android:background="@color/dividingLineColor"
+                            android:gravity="center"
+                            android:horizontalSpacing="1dp"
+                            android:numColumns="2"
+                            android:paddingBottom="1dp"
+                            android:paddingTop="1dp"
+                            android:stretchMode="columnWidth"
+                            android:verticalSpacing="1dp" />
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="5dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/iv_advertisement_02" />
+
+                <com.afinalstone.androidstudy.view.TabIndicatorView
+                    android:id="@+id/tabIndicatorView"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/white" />
+
+                <com.shuimunianhua.xianglixiangqin.view.ScrollViewPager
+                    android:id="@+id/viewPager"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="3dp" />
+            </LinearLayout>
+        </ScrollView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</RelativeLayout>

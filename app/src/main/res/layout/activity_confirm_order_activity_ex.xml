@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/darkGrayBackground">
+
+    <include
+        android:id="@+id/layout_title"
+        layout="@layout/layout_title" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bottomBarHeight"
+        android:layout_alignParentBottom="true"
+        android:background="#3e3f3f"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:text="@string/totalPrice"
+            android:textColor="@color/colorWhite_FFFFFFFF"
+            android:textSize="@dimen/textFontSize_16" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/moneyFlag"
+            android:textColor="@color/colorRed_FFE83821"
+            android:textSize="@dimen/textFontSize_16"/>
+
+        <TextView
+            android:id="@+id/tv_totalOrdersPrices"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="6"
+            android:ellipsize="end"
+            android:gravity="left"
+            android:singleLine="true"
+            android:text="0.00"
+            android:textColor="@color/colorRed_FFE83821"
+            android:textSize="@dimen/textFontSize_16" />
+
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:background="@drawable/button_shape_inred_02"
+            android:gravity="center"
+            android:text="@string/confirmSubmit"
+            android:textColor="@color/whiteFont"
+            android:textSize="@dimen/textFontSize3" />
+    </LinearLayout>
+
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:scrollbars="none"
+        android:layout_below="@id/layout_title"
+        android:layout_above="@id/linearLayout_bottom"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

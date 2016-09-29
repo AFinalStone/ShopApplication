@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="jellyBall_red01">#FC2C2C</color>
+    <color name="jellyBall_red02">#55FC2C2C</color>
+    <color name="wheel_line_border">#C7C7C7</color>
+
+
+    <!-- 透明 -->
+    <color name="transparent">#00000000</color>
+    <!-- 白色字体 -->
+    <color name="whiteFont">#FDFFFF</color>
+    <!-- 白色 -->
+    <color name="white">#ffffffff</color>
+    <!-- 浅黑色 -->
+    <color name="lightBlack">#3D4045</color>
+    <!-- 纯白色字体 -->
+    <color name="pureWhiteFont">#ffffff</color>
+    <!-- 黑色字体 -->
+    <color name="black">#000000</color>
+    <!-- 浅灰字体 -->
+    <color name="lightGrey">#EEEEEE</color>
+    <!-- 深灰色 -->
+    <color name="darkGrey">#DCDCDC</color>
+    <!-- 蓝色字体 -->
+    <color name="blueTheme">#3A95CE</color>
+    <!-- 浅蓝色 -->
+    <color name="lightBlue">#3079FF</color>
+    <!-- 深蓝色 -->
+    <color name="darktBlue">#484E61</color>
+    <!-- 橙色 -->
+    <color name="orange">#FE5D14</color>
+
+    <!-- 浅红色 -->
+    <color name="lightRed">#E93820</color>
+    <!-- 红色字体 -->
+    <color name="red">#ffcc0000</color>
+    <!-- 深红色 -->
+    <color name="darkRed">#ffcc0000</color>
+
+    <!-- 灰色字体 -->
+    <color name="grayFont">#999999</color>
+    <!-- 浅灰色字体 -->
+    <color name="lightGreyFont">#7E7E7E</color>
+    <!-- 分割线颜色 -->
+    <color name="dividingLineColor">#66CACACA</color>
+    <!-- 深灰色背景 -->
+    <color name="darkGrayBackground">#EEEEEE</color>
+    <!-- 浅灰色标题栏背景 -->
+    <color name="lightGrayTitleBarBackground">#F9F9F9</color>
+    <!-- 红色标题栏背景 -->
+    <color name="redTitleBarBackground">#E73920</color>
+
+    <!-- 	255 FF
+        165 A5
+        127 7F
+        139 8B -->
+    <!-- 彩虹七种颜色 -->
+    <color name="rainbow_01">#AAFF0000</color>
+    <color name="rainbow_02">#AAFFA500</color>
+    <color name="rainbow_03">#AAFFFF00</color>
+    <color name="rainbow_04">#AA00FF00</color>
+    <color name="rainbow_05">#AA007F00</color>
+    <color name="rainbow_06">#AA0000FF</color>
+    <color name="rainbow_07">#AA8B00FF</color>
+    <color name="toast_color">#ff2E76B9</color>
+
+
+    <color name="shadeBackground_66000000">#66000000</color>
+    <!--红色-->
+    <color name="colorRed_33E83821">#33E83821</color>
+    <color name="colorRed_FFE83821">#FFE83821</color>
+    <color name="colorRed_FFFF0000">#FFFF0000</color>
+    <color name="colorRed_FFE10005">#FFE10005</color>
+    <!-- 黑色 -->
+    <color name="colorBlack_FF646464">#FF646464</color>
+    <color name="colorBlack_FF999999">#FF999999</color>
+    <color name="colorBlack_FF323232">#FF323232</color>
+    <color name="colorBlack_FF333333">#FF333333</color>
+    <color name="colorBlack_FF7E7E7E">#FF7E7E7E</color>
+    <color name="colorBlack_FF000000">#FF000000</color>
+    <color name="colorBlack_FFF8F8F8">#FFF8F8F8</color>
+    <!--灰色-->
+    <color name="colorGray_FFCACACA">#FFCACACA</color>
+    <color name="colorGray_FFCDCDCD">#FFCDCDCD</color>
+    <color name="colorGray_FFEEEEEE">#FFEEEEEE</color>
+    <!-- 橙色 -->
+    <color name="colorOrange_FFFF8623">#FFFF8623</color>
+    <!--纯白颜色-->
+    <color name="colorWhite_FFFFFFFF">#FFFFFFFF</color>
+    <!--透明颜色-->
+    <color name="colorTransparent_FFFFFFFF">#00000000</color>
+    <!-- 浅蓝色 -->
+    <color name="colorBlue_FF3079FF">#FF3079FF</color>
+    <color name="colorBlue_FF3E9CCF">#FF3E9CCF</color>
+    <color name="colorBlue_FF484E6">#FF484E61</color>
+    <color name="colorBlue_FF49D5B2">#FF49D5B2</color>
+
+
+</resources>

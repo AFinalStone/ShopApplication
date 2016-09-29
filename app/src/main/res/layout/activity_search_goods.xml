@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/darkGrayBackground"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_title" />
+
+    <!--搜索栏-->
+    <LinearLayout
+        android:id="@+id/linearLayout_search"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="5dp"
+
+            android:layout_weight="1"
+            android:background="@drawable/button_shape_inwhite_outgray_02"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_marginLeft="8dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/icon_search_03" />
+
+            <EditText
+                android:id="@+id/et_searchContext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@null"
+                android:hint="@string/searchHint"
+                android:inputType="none"
+                android:paddingLeft="5dp"
+                android:singleLine="true"
+                android:gravity="center_vertical"
+                android:textColor="@color/colorBlack_FF323232"
+                android:textColorHint="@color/colorBlack_FF999999"
+                android:textSize="@dimen/textFontSize_16" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_search"
+            android:layout_width="55dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="5dp"
+            android:gravity="center"
+            android:text="@string/search"
+            android:background="@drawable/button_shape_inred_outwhite_01"
+            android:textColor="@color/colorWhite_FFFFFFFF"
+            android:textSize="@dimen/textFontSize_16" />
+        <TextView
+            android:id="@+id/tv_sorting"
+            android:layout_width="55dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:gravity="center"
+            android:text="@string/classify"
+            android:background="@drawable/button_shape_inred_outwhite_01"
+            android:textColor="@color/colorWhite_FFFFFFFF"
+            android:textSize="@dimen/textFontSize_16"/>
+    </LinearLayout>
+
+    <RadioGroup
+        android:id="@+id/rg_sortType"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="@color/lightGrey"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_defaultSort"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:padding="0dp"
+            android:text="@string/comprehensiveSorting"
+            android:textColor="@drawable/selector_text_color_03"
+            android:textSize="@dimen/textFontSize3" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:background="@color/darkGrey" />
+
+        <RadioButton
+            android:id="@+id/rb_salesSort"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:padding="0dp"
+            android:text="@string/prioritySales"
+            android:textColor="@drawable/selector_text_color_03"
+            android:textSize="@dimen/textFontSize3" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:background="@color/darkGrey" />
+
+        <RadioButton
+            android:id="@+id/rb_priceSort"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:padding="0dp"
+            android:text="@string/priceSort"
+            android:textColor="@drawable/selector_text_color_03"
+            android:textSize="@dimen/textFontSize3" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/lightGrey" />
+
+    <com.afinalstone.androidstudy.swiperefreshview.SwipeRefreshListView
+        android:id="@+id/swipeRefreshListView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="@null"
+        android:scrollbars="none"
+        android:listSelector="@android:color/transparent"
+        android:visibility="visible" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bottomBarHeight"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/cb_selectAll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:button="@drawable/checkbox_selector_01" />
+
+        <Button
+            android:id="@+id/btn_agentGoods"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_shape_inorange_01"
+            android:gravity="center"
+            android:text="@string/agentAllGoods"
+            android:textColor="@color/whiteFont"
+            android:textSize="@dimen/textFontSize3" />
+
+        <Button
+            android:id="@+id/btn_addToShopCart"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_shape_inred_01"
+            android:gravity="center"
+            android:text="@string/addShoppingCart"
+            android:textColor="@color/whiteFont"
+            android:textSize="@dimen/textFontSize3" />
+    </LinearLayout>
+
+</LinearLayout>

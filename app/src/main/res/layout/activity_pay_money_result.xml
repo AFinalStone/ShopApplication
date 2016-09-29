@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#66000000"
+    android:gravity="center"
+    android:padding="10dp" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#EFffffff"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/iv_confirmOrderResultDesc"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="40dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/iv_confirm_order_success" />
+
+            <TextView
+                android:id="@+id/tv_confirmOrderResultDesc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:paddingTop="20dp"
+                android:text="订单提交成功!"
+                android:textColor="@color/lightBlack"
+                android:textSize="@dimen/textFontSize2" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:paddingTop="20dp"
+                android:text="超过12小时未处理的订单将自动删除"
+                android:textColor="@color/redTitleBarBackground"
+                android:textSize="@dimen/textFontSize4" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/view_border"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="5dp"
+            android:background="@color/dividingLineColor" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="visible" >
+
+            <LinearLayout
+                android:id="@+id/linearLayout_continueToShopping"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/button_shape_inred_01"
+                android:gravity="center"
+                android:visibility="gone" >
+
+                <ImageView
+                    android:id="@+id/iv_continueToShopping"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/iv_continue_to_shopping" />
+
+                <TextView
+                    android:id="@+id/tv_continueToShopping"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="继续购物"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout_continueToMyOrder"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/button_shape_inred_01"
+                android:gravity="center"
+                android:visibility="gone" >
+
+                <ImageView
+                    android:id="@+id/iv_continueToMyOrder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/iv_continue_to_my_order" />
+
+                <TextView
+                    android:id="@+id/tv_continueToMyOrder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="处理订单"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout_continueToConfirmOrder"
+                android:layout_width="180dp"
+                android:layout_height="30dp"
+                android:layout_margin="20dp"
+                android:background="@drawable/button_shape_inred_01"
+                android:gravity="center"
+                android:visibility="visible" >
+
+                <ImageView
+                    android:id="@+id/iv_continueToConfirmOrder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/icon_back_01" />
+
+                <TextView
+                    android:id="@+id/tv_continueToConfirmOrder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="返回提交订单界面"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

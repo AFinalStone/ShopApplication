@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout_goodsInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/iv_goodsImages"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/ic_empty" />
+
+        <TextView
+            android:id="@+id/tv_goodsName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/iv_goodsImages"
+            android:layout_toRightOf="@id/iv_goodsImages"
+            android:maxLines="3"
+            android:layout_marginLeft="5dp"
+            android:text=""
+            android:textColor="@color/lightBlack"
+            android:textSize="@dimen/textFontSize4" />
+
+        <TextView
+            android:id="@+id/tv_goodsPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/iv_goodsImages"
+            android:layout_toRightOf="@id/iv_goodsImages"
+            android:singleLine="true"
+            android:layout_marginLeft="5dp"
+            android:text=""
+            android:textColor="@color/redTitleBarBackground"
+            android:textSize="@dimen/textFontSize4" />
+    </RelativeLayout>
+
+</RelativeLayout>

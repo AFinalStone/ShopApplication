@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Button xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="80dp"
+    android:layout_height="35dp"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:text="活动类型"
+    android:textColor="@drawable/selector_text_color_03"
+    android:background="@drawable/button_selector_03"
+    android:textSize="@dimen/textFontSize3" />

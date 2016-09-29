@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@android:color/white" >
+
+          <RelativeLayout android:layout_width="match_parent"
+              android:layout_height="30dp"
+              android:background="@drawable/goodshop_menu">
+              <TextView 
+                  android:id="@+id/tv_type"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_alignParentLeft="true"
+                  android:layout_centerVertical="true"
+                  android:layout_marginLeft="20dp"
+                  android:textSize="@dimen/textFontSize3"                   
+                  />
+
+              <TextView android:id="@+id/tv_moreNewGoodsData"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_alignParentRight="true"
+                  android:layout_centerVertical="true"
+                  android:layout_marginRight="10dp"
+                  android:text="@string/moreNewGoodsData"
+                  android:textColor="@color/lightRed"
+                  android:textSize="@dimen/textFontSize5"
+                  />
+              
+	</RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@color/darkGrayBackground"  />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/RelativeLayout1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginBottom="5dp"
+            >
+
+            <ImageView
+                android:id="@+id/iv_specialPricesGoods1"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/ic_empty"
+                android:scaleType="fitXY" />
+
+            <TextView
+                android:id="@+id/tv_specialPricesGoodsName1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_specialPricesGoods1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="8dp"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text="APPle iPhone 5s (A1530) 16GB 金色 移动联通  4G 手机"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textFontSize5ex" />
+
+            <TextView
+                android:id="@+id/tv_specialPricesGoodsPrices1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/tv_specialPricesGoodsName1"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="8dp"
+                android:text="￥1590"
+                android:textColor="@color/lightRed"
+                android:textSize="@dimen/textFontSize4" />
+
+            <TextView
+                android:id="@+id/tv_seeDataDetail1"
+                android:layout_width="60dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/tv_specialPricesGoodsName1"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:text="已售0件"
+                android:textColor="@color/lightBlack"
+                android:textSize="@dimen/textFontSize5ex" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="10dp"
+            android:layout_height="match_parent"
+            android:background="@color/darkGrayBackground" />
+
+        <RelativeLayout
+            android:id="@+id/RelativeLayout2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" 
+            android:layout_marginBottom="5dp"            >
+
+            <ImageView
+                android:id="@+id/iv_specialPricesGoods2"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/ic_empty"
+                android:scaleType="fitXY" />
+
+            <TextView
+                android:id="@+id/tv_specialPricesGoodsName2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_specialPricesGoods2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="8dp"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text="APPle iPhone 5s (A1530) 16GB 金色 移动联通  4G 手机"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textFontSize5ex" />
+
+            <TextView
+                android:id="@+id/tv_specialPricesGoodsPrices2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/tv_specialPricesGoodsName2"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="8dp"
+                android:text="￥1590"
+                android:textColor="@color/lightRed"
+                android:textSize="@dimen/textFontSize4" />
+
+            <TextView
+                android:id="@+id/tv_seeDataDetail2"
+                android:layout_width="60dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/tv_specialPricesGoodsName2"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:text="已售0件"
+                android:textColor="@color/lightBlack"
+                android:textSize="@dimen/textFontSize5ex" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/darkGrayBackground"  />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/RelativeLayout3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginBottom="5dp">
+
+            <ImageView
+                android:id="@+id/iv_specialPricesGoods3"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/ic_empty"
+                android:scaleType="fitXY" />
+
+            <TextView
+                android:id="@+id/tv_specialPricesGoodsName3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_specialPricesGoods3"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="8dp"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text="APPle iPhone 5s (A1530) 16GB 金色 移动联通  4G 手机"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textFontSize5ex" />
+
+            <TextView
+                android:id="@+id/tv_specialPricesGoodsPrices3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/tv_specialPricesGoodsName3"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="8dp"
+                android:text="￥1590"
+                android:textColor="@color/lightRed"
+                android:textSize="@dimen/textFontSize4" />
+
+            <TextView
+                android:id="@+id/tv_seeDataDetail3"
+                android:layout_width="60dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/tv_specialPricesGoodsName3"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:text="已售0件"
+                android:textColor="@color/lightBlack"
+                android:textSize="@dimen/textFontSize5ex" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="10dp"
+            android:layout_height="match_parent"
+            android:background="@color/darkGrayBackground"  />
+
+        <RelativeLayout
+            android:id="@+id/RelativeLayout4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginBottom="5dp" >
+
+            <ImageView
+                android:id="@+id/iv_specialPricesGoods4"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/ic_empty"
+                android:scaleType="fitXY" />
+
+            <TextView
+                android:id="@+id/tv_specialPricesGoodsName4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_specialPricesGoods4"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="8dp"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text="APPle iPhone 5s (A1530) 16GB 金色 移动联通  4G 手机"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textFontSize5ex" />
+
+            <TextView
+                android:id="@+id/tv_specialPricesGoodsPrices4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/tv_specialPricesGoodsName4"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="8dp"
+                android:text="￥1590"
+                android:textColor="@color/lightRed"
+                android:textSize="@dimen/textFontSize4" />
+
+            <TextView
+                android:id="@+id/tv_seeDataDetail4"
+                android:layout_width="60dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/tv_specialPricesGoodsName4"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:text="已售0件"
+                android:textColor="@color/lightBlack"
+                android:textSize="@dimen/textFontSize5ex" />
+        </RelativeLayout>
+    </LinearLayout>
+	<View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/darkGrayBackground"  />
+	<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/RelativeLayout5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginBottom="5dp"
+            >
+
+            <ImageView
+                android:id="@+id/iv_specialPricesGoods5"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/ic_empty"
+                android:scaleType="fitXY" />
+
+            <TextView
+                android:id="@+id/tv_specialPricesGoodsName5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_specialPricesGoods5"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="8dp"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text="APPle iPhone 5s (A1530) 16GB 金色 移动联通  4G 手机"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textFontSize5ex" />
+
+            <TextView
+                android:id="@+id/tv_specialPricesGoodsPrices5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/tv_specialPricesGoodsName5"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="8dp"
+                android:text="￥1590"
+                android:textColor="@color/lightRed"
+                android:textSize="@dimen/textFontSize4" />
+
+            <TextView
+                android:id="@+id/tv_seeDataDetail5"
+                android:layout_width="60dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/tv_specialPricesGoodsName5"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:text="已售0件"
+                android:textColor="@color/lightBlack"
+                android:textSize="@dimen/textFontSize5ex" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="10dp"
+            android:layout_height="match_parent"
+            android:background="@color/darkGrayBackground"  />
+
+        <RelativeLayout
+            android:id="@+id/RelativeLayout6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" 
+            android:layout_marginBottom="5dp"            >
+
+            <ImageView
+                android:id="@+id/iv_specialPricesGoods6"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/ic_empty"
+                android:scaleType="fitXY" />
+
+            <TextView
+                android:id="@+id/tv_specialPricesGoodsName6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_specialPricesGoods6"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="8dp"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text="APPle iPhone 5s (A1530) 16GB 金色 移动联通  4G 手机"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textFontSize5ex" />
+
+            <TextView
+                android:id="@+id/tv_specialPricesGoodsPrices6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/tv_specialPricesGoodsName6"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="8dp"
+                android:text="￥1590"
+                android:textColor="@color/lightRed"
+                android:textSize="@dimen/textFontSize4" />
+
+            <TextView
+                android:id="@+id/tv_seeDataDetail6"
+                android:layout_width="60dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/tv_specialPricesGoodsName6"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:text="已售0件"
+                android:textColor="@color/lightBlack"
+                android:textSize="@dimen/textFontSize5ex" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

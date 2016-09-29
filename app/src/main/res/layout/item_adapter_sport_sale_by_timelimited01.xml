@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/dividingLineColor"
+    android:paddingBottom="1px"
+    android:paddingLeft="1px"
+    android:paddingRight="1px"
+    android:paddingTop="1px">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite_FFFFFFFF"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp">
+
+        <ImageView
+            android:id="@+id/iv_productImage"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_empty" />
+
+        <TextView
+            android:id="@+id/tv_productName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_productImage"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:padding="0dp"
+            android:singleLine="true"
+            android:text="商品名称"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textFontSize5ex" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout_productPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_productName"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_productPrice_new"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="￥4590"
+                android:textColor="@color/redTitleBarBackground"
+                android:textSize="@dimen/textFontSize3" />
+
+            <TextView
+                android:id="@+id/tv_productPrice_old"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="￥5590"
+                android:textColor="@color/lightGreyFont"
+                android:textSize="@dimen/textFontSize4ex" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_justToRob"
+            android:layout_width="80dp"
+            android:layout_height="25dp"
+            android:layout_below="@id/linearLayout_productPrice"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/button_selector_01"
+            android:clickable="false"
+            android:focusable="false"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="@string/justToRob"
+            android:textColor="@drawable/selector_text_color_01"
+            android:textSize="@dimen/textFontSize_14" />
+
+
+    </RelativeLayout>
+</RelativeLayout>

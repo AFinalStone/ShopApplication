@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@color/colorWhite_FFFFFFFF"
+    android:visibility="visible">
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="160dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/iv_shoppingcart_empty" />
+
+    <Button
+        android:id="@+id/btn_gotoHome"
+        android:layout_width="120dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_shape_inwhite_outgray_01"
+        android:gravity="center"
+        android:text="@string/gotoHome"
+        android:textColor="@color/colorBlack_FF323232"
+        android:textSize="@dimen/textFontSize_18" />
+</LinearLayout>

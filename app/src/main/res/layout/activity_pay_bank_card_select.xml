@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite_FFFFFFFF"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/titleBarHeight"
+        android:orientation="horizontal"
+        >
+
+        <ImageView
+            android:id="@+id/iv_closeActivity"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:padding="10dp"
+            android:src="@drawable/ic_menu_back"
+            android:background="@null"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="40dp"
+            android:textSize="@dimen/textFontSize_17"
+            android:gravity="center"
+            android:text="@string/title_payMoneySelectBankCard"
+            android:textColor="@color/colorBlack_FF333333"/>
+
+    </LinearLayout>
+    
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/dividingLineColor"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_marginLeft="16dp"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/textFontSize_15"
+            android:textColor="@color/colorBlack_FF333333"
+            android:text="@string/tv_payBankCardSelectNeedPayMoney"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/tv_totalPrices"
+            android:layout_width="0dp"
+            android:layout_marginLeft="16dp"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/textFontSize_24"
+            android:textColor="@color/colorBlack_FF333333"
+            android:text="00.00元"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:background="@color/dividingLineColor"/>
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+</LinearLayout>

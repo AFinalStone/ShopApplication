@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_title" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1" />
+
+    <RadioGroup
+        android:id="@+id/shop_main_radio"
+        android:layout_width="fill_parent"
+        android:layout_height="65dp"
+        android:orientation="horizontal"
+        android:padding="0dp">
+
+        <RadioButton
+            android:id="@+id/rb_shop_home"
+            style="@style/ShopTabBottomStyle"
+            android:drawableTop="@drawable/tab_shop_home_selector" />
+
+        <RadioButton
+            android:id="@+id/rb_shop_class"
+            style="@style/ShopTabBottomStyle"
+            android:drawableTop="@drawable/tab_shop_class_selector" />
+
+        <RadioButton
+            android:id="@+id/rb_shop_detail"
+            style="@style/ShopTabBottomStyle"
+            android:drawableTop="@drawable/tab_shop_information_selector" />
+
+
+    </RadioGroup>
+
+</LinearLayout>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/whiteFont">
+
+    <TextView
+        android:id="@+id/tv_orderAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="3dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="3dp"
+        android:text="@string/tv_customerReceiverAddress"
+        android:textSize="@dimen/textFontSize3" />
+
+    <View
+        android:id="@+id/view_border01"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/tv_orderAddress"
+        android:background="@color/dividingLineColor" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout_customerReceiverAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view_border01"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/icon_location_01" />
+
+                <TextView
+                    android:id="@+id/tv_customerName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:singleLine="true"
+                    android:textColor="@color/lightBlack"
+                    android:textSize="@dimen/textFontSize3" />
+
+                <TextView
+                    android:id="@+id/tv_customerPhone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:textColor="@color/lightBlack"
+                    android:textSize="@dimen/textFontSize3" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_customerReceiverAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:paddingLeft="5dp"
+                android:maxLines="1"
+                android:textColor="@color/lightBlack"
+                android:textSize="@dimen/textFontSize3" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_managerReceiverAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/arrow_right" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view_border02"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_below="@id/linearLayout_customerReceiverAddress"
+        android:background="@color/dividingLineColor" />
+</RelativeLayout>

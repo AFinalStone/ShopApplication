@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="1px"
+    android:background="@color/dividingLineColor">
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="10dp"
+        android:background="@color/colorWhite_FFFFFFFF">
+    <TextView
+        android:id="@+id/tv_goodsName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:maxLines="1"
+        android:text="商品名称"
+        android:layout_marginTop="10dp"
+        android:textSize="@dimen/textFontSize_14"
+        android:textColor="@color/colorBlue_FF3E9CCF"/>
+
+    <ImageView
+        android:id="@+id/iv_goodsImages"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_empty"/>
+
+    <TextView
+        android:id="@+id/tv_goodsDesc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorBlack_FF323232"
+        android:textSize="@dimen/textFontSize_14"
+        android:maxLines="2"
+        android:gravity="center"
+        android:text="戴尔(DELL) 917s 19英寸5:4正屏IPS屏液"/>
+
+    <TextView
+        android:id="@+id/tv_goodsPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3150"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="@dimen/textFontSize_16"
+        android:textColor="@color/colorBlack_FF000000"/>
+    </LinearLayout>
+</LinearLayout>

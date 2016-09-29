@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:padding="3dp" >
+
+    <ImageView
+        android:id="@+id/notificationImage"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginRight="10dp"
+        android:layout_centerVertical="true"
+        android:scaleType="centerInside"/>
+
+    <TextView
+        android:id="@+id/notificationTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/notificationImage"
+        android:text="软件更新包下载"
+        android:textSize="18sp" />
+
+    <ProgressBar
+        android:id="@+id/notificationProgress"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/notificationTitle"
+        android:layout_toRightOf="@+id/notificationImage" />
+
+    <TextView
+        android:id="@+id/notificationPercent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/notificationProgress"
+        android:layout_toRightOf="@+id/notificationImage"
+        android:text="已下载0%" /> 
+
+</RelativeLayout>

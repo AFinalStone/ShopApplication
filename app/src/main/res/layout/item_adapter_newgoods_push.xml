@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:paddingBottom="25dp"
+    android:background="@drawable/background_goods_new_recommend"
+    >
+
+    <ImageView
+        android:id="@+id/iv_specialPricesGoods"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_empty" />
+
+    <TextView
+        android:id="@+id/tv_specialPricesGoodsName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_specialPricesGoods"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_marginTop="5dp"
+       	android:singleLine="true"
+        android:text="APPle iPhone 5s (A1530) 16GB 金色 移动联通  4G 手机"
+        android:textColor="@color/black"
+        android:textSize="@dimen/textFontSize_12" />
+
+    <TextView
+        android:id="@+id/tv_specialPricesGoodsPrices"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_alignLeft="@id/tv_specialPricesGoodsName"
+        android:layout_below="@id/tv_specialPricesGoodsName"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:text="￥1590"
+        android:textColor="@color/lightRed"
+        android:textSize="@dimen/textFontSize4" />
+
+    <Button
+        android:id="@+id/btn_seeDataDetail"
+        android:layout_width="70dp"
+        android:layout_height="25dp"
+        android:layout_alignRight="@id/tv_specialPricesGoodsName"
+        android:layout_alignBottom="@id/tv_specialPricesGoodsPrices"
+        android:background="@drawable/button_shape_inred_01"
+        android:gravity="center"
+        android:focusable="false"
+        android:clickable="false"
+        android:text="@string/seeDataDetail"
+        android:textColor="@color/colorWhite_FFFFFFFF"
+        android:textSize="@dimen/textFontSize4" />
+
+</RelativeLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#CCEEEEEE"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/btn_left"
+            android:layout_width="30dp"
+            android:layout_height="50dp"
+            android:background="@null"
+            android:src="@drawable/iv_city_position_arrows_left"
+            android:text="left" />
+
+        <HorizontalScrollView
+            android:id="@+id/hscrollView_indicator"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:scrollbars="@null" >
+
+            <RadioGroup
+                android:id="@+id/radioGroup_indicator"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" />
+        </HorizontalScrollView>
+
+        <ImageButton
+            android:id="@+id/btn_right"
+            android:layout_width="30dp"
+            android:layout_height="50dp"
+            android:background="@null"
+            android:src="@drawable/iv_city_position_arrows_right"
+            android:text="left" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/dividingLineColor" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

@@ -1,0 +1,92 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF">
+
+    <CheckBox
+        android:id="@+id/cb_whetherSelect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5dp"
+        android:background="@drawable/checkbox_selector_01"
+        android:button="@null"
+        android:focusable="false" />
+
+    <ImageView
+        android:id="@+id/shoping_goods_image"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/cb_whetherSelect"
+        android:background="@drawable/ic_empty" />
+
+    <TextView
+        android:id="@+id/shoping_goods_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/shoping_goods_image"
+        android:layout_marginRight="20dp"
+        android:layout_toRightOf="@id/shoping_goods_image"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:text="@string/goodsName"
+        android:textColor="@color/lightBlack"
+        android:textSize="@dimen/textFontSize5" />
+
+    <TextView
+        android:id="@+id/tv_saleCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/shoping_goods_image"
+        android:layout_marginRight="10dp"
+        android:layout_toRightOf="@id/shoping_goods_image"
+        android:gravity="center_horizontal"
+        android:text="0人已经付货"
+        android:textColor="@color/lightGreyFont"
+        android:textSize="@dimen/textFontSize5ex" />
+
+    <TextView
+        android:id="@+id/shoping_goods_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/tv_saleCount"
+        android:layout_alignLeft="@id/tv_saleCount"
+        android:layout_marginBottom="3dp"
+        android:gravity="center_horizontal"
+        android:text="商品价格"
+        android:textColor="@color/lightRed"
+        android:textSize="@dimen/textFontSize4" />
+
+    <ImageView
+        android:id="@+id/iv_addToShopCart"
+        android:layout_width="60dp"
+        android:layout_height="35dp"
+        android:layout_alignBottom="@id/shoping_goods_image"
+        android:layout_alignParentRight="true"
+        android:paddingLeft="10dp"
+        android:paddingRight="20dp"
+        android:src="@drawable/goods_search_addto_shopcart" />
+
+    <TextView
+        android:id="@+id/tv_notStoneCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignBottom="@id/shoping_goods_image"
+        android:layout_marginRight="70dp"
+        android:gravity="center_horizontal"
+        android:text="@string/noStoneCount"
+        android:textColor="@color/lightRed"
+        android:textSize="@dimen/textFontSize4" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/shoping_goods_image"
+        android:background="@color/dividingLineColor" />
+
+</RelativeLayout>

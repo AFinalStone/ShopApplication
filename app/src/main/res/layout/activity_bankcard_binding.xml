@@ -1,0 +1,245 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/darkGrayBackground" >
+
+    <include
+        android:id="@+id/layout_title"
+        layout="@layout/layout_title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout_title"
+        android:layout_marginTop="20dp" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:id="@+id/linearLayout_selectBank"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/selectBank"
+                    android:textSize="@dimen/textFontSize_14" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/button_shape_inwhite_outgray_01"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10dp" >
+
+                    <TextView
+                        android:id="@+id/tv_selectBank"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="@string/pleaseSelectBankHint"
+                        android:textSize="@dimen/textFontSize_14" />
+
+                    <CheckBox
+                        android:id="@+id/cb_selectBank"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:button="@null"
+                        android:drawableTop="@drawable/iv_saleby_sport_type"
+                        android:gravity="center"
+                        android:padding="0dp"
+                        android:scaleType="center" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout_selectPosition"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/linearLayout_selectBank"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/selectProvince"
+                    android:textSize="@dimen/textFontSize4" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="@drawable/button_shape_inwhite_outgray_01"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10dp" >
+
+                    <TextView
+                        android:id="@+id/tv_selectProvince"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="@string/pleaseSelectProvinceHint"
+                        android:textSize="@dimen/textFontSize4" />
+
+                    <CheckBox
+                        android:id="@+id/cb_selectPosition"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:button="@null"
+                        android:drawableTop="@drawable/iv_saleby_sport_type"
+                        android:gravity="center"
+                        android:padding="0dp"
+                        android:scaleType="center" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view_border01"
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_below="@id/linearLayout_selectPosition"
+                android:layout_marginTop="20dp"
+                android:background="@color/dividingLineColor" />
+
+            <TextView
+                android:id="@+id/tv_bankCardNumberLeft"
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:layout_below="@id/view_border01"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center_vertical"
+                android:text="@string/bankCardNumber"
+                android:textSize="@dimen/textFontSize4" />
+
+            <EditText
+                android:id="@+id/et_bankCardNumber"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_alignBottom="@id/tv_bankCardNumberLeft"
+                android:layout_marginRight="10dp"
+                android:layout_toRightOf="@id/tv_bankCardNumberLeft"
+                android:background="@drawable/button_shape_inwhite_outgray_01"
+                android:gravity="center_vertical"
+                android:hint="@string/pleaseInputBankCardNumberHint"
+                android:inputType="number"
+                android:paddingLeft="10dp"
+                android:textSize="@dimen/textFontSize4" />
+
+            <TextView
+                android:id="@+id/tv_bankCardUserNameLeft"
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:layout_below="@id/et_bankCardNumber"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center_vertical"
+                android:text="@string/bankCardUserName"
+                android:textSize="@dimen/textFontSize4" />
+
+            <EditText
+                android:id="@+id/et_bankCardUserName"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_alignBottom="@id/tv_bankCardUserNameLeft"
+                android:layout_marginRight="10dp"
+                android:layout_toRightOf="@id/tv_bankCardUserNameLeft"
+                android:background="@drawable/button_shape_inwhite_outgray_01"
+                android:gravity="center_vertical"
+                android:hint="@string/pleaseInputBankCardUserName"
+                android:paddingLeft="10dp"
+                android:textSize="@dimen/textFontSize4" />
+
+            <TextView
+                android:id="@+id/tv_bankCardUserCardIDLeft"
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:layout_below="@id/et_bankCardUserName"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center_vertical"
+                android:text="@string/bankCardUserCardID"
+                android:textSize="@dimen/textFontSize4" />
+
+            <EditText
+                android:id="@+id/et_bankCardUserCardID"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_alignBottom="@id/tv_bankCardUserCardIDLeft"
+                android:layout_marginRight="10dp"
+                android:layout_toRightOf="@id/tv_bankCardUserCardIDLeft"
+                android:background="@drawable/button_shape_inwhite_outgray_01"
+                android:gravity="center_vertical"
+                android:hint="@string/pleaseInputBankCardUserCardID"
+                android:inputType="number"
+                android:paddingLeft="10dp"
+                android:textSize="@dimen/textFontSize4" />
+
+            <TextView
+                android:id="@+id/tv_bankCardBindPhone"
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:layout_below="@id/tv_bankCardUserCardIDLeft"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center_vertical"
+                android:text="@string/bankCardBingPhone"
+                android:textSize="@dimen/textFontSize4" />
+
+            <EditText
+                android:id="@+id/et_bankCardBindPhone"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_alignBottom="@id/tv_bankCardBindPhone"
+                android:layout_marginRight="10dp"
+                android:layout_toRightOf="@id/tv_bankCardBindPhone"
+                android:background="@drawable/button_shape_inwhite_outgray_01"
+                android:gravity="center_vertical"
+                android:hint="@string/pleaseInputBankCardBingPhone"
+                android:inputType="number"
+                android:paddingLeft="10dp"
+                android:textSize="@dimen/textFontSize4" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/linearLayout_bindingBankCard"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_nextStep"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/button_shape_inred_01"
+            android:padding="0dp"
+            android:text="@string/btn_nextStep"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textFontSize_16" />
+    </LinearLayout>
+
+</RelativeLayout>

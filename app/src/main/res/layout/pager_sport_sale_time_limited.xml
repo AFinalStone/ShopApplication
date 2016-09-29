@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    android:background="@color/colorWhite_FFFFFFFF" >
+
+    <ImageView
+        android:id="@+id/iv_empty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="centerInside"
+        android:src="@drawable/icon_sport_model_buy_crazy_empty"/>
+
+    <com.afinalstone.androidstudy.swiperefreshview.SwipeRefreshGridView
+        android:id="@+id/swipeRefreshGridView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:listSelector="@null"
+        android:gravity="center"
+        android:scrollbars="none"
+        android:horizontalSpacing="5dp"
+        android:numColumns="2"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="5dp" />
+
+</RelativeLayout>

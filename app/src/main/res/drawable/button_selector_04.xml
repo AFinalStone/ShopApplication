@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/button_shape_inorange_01" android:state_enabled="false"/>
+    <item android:drawable="@drawable/button_shape_inred_01" />
+</selector>

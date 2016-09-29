@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorWhite_FFFFFFFF"
+    android:paddingBottom="10dp">
+
+    <View
+        android:id="@+id/view_border01"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/dividingLineColor"/>
+
+    <ImageView
+        android:id="@+id/iv_productImage"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/view_border01"
+        android:layout_marginLeft="10dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_empty" />
+
+    <Button
+        android:id="@+id/btn_justToJoinGroup"
+        android:layout_width="150dp"
+        android:layout_height="25dp"
+        android:layout_alignBottom="@id/iv_productImage"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_toRightOf="@id/iv_productImage"
+        android:background="@drawable/button_selector_01"
+        android:clickable="false"
+        android:focusable="false"
+        android:gravity="center"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:text="@string/justToJoinGroup"
+        android:textColor="@drawable/selector_text_color_01"
+        android:textSize="@dimen/textFontSize_14" />
+
+    <ImageView
+        android:id="@+id/iv_numOfJoinGroup"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_above="@id/btn_justToJoinGroup"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/iv_productImage"
+        android:scaleType="fitCenter"
+        android:src="@drawable/iv_num_have_joingroup" />
+
+    <TextView
+        android:id="@+id/tv_numOfJoinGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/iv_numOfJoinGroup"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/iv_numOfJoinGroup"
+        android:text="0件已参团"
+        android:textSize="@dimen/textFontSize5" />
+
+    <TextView
+        android:id="@+id/tv_productPrice_new"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/iv_numOfJoinGroup"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/iv_productImage"
+        android:text="0"
+        android:textColor="@color/red"
+        android:textSize="@dimen/textFontSize3" />
+
+    <TextView
+        android:id="@+id/tv_productPrice_old"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/tv_productPrice_new"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@id/tv_productPrice_new"
+        android:text="0"
+        android:textColor="@color/lightGreyFont"
+        android:textSize="@dimen/textFontSize4ex" />
+
+    <TextView
+        android:id="@+id/tv_productName"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_above="@id/tv_productPrice_new"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:gravity="center_vertical"
+        android:layout_marginRight="10dp"
+        android:layout_toRightOf="@id/iv_productImage"
+        android:maxLines="2"
+        android:text="三星 GalaxyA5(SM-A5100) 魔幻金全网通手机双卡双待"
+        android:textColor="@color/black"
+        android:textSize="@dimen/textFontSize5ex" />
+</RelativeLayout>

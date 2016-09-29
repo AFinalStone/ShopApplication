@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/button_shape_inwhite_outgray_01">
+
+    <TextView
+        android:id="@+id/tv_sportStateDesc"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:textColor="@color/colorBlack_FF646464"
+        android:textSize="@dimen/textFontSize_14"
+        android:text="特卖未开始"/>
+
+    <ImageView
+        android:id="@+id/iv_goodsImage"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_below="@id/tv_sportStateDesc"
+        android:layout_centerHorizontal="true"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_empty" />
+
+    <TextView
+        android:id="@+id/tv_timeState"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:gravity="center"
+        android:layout_marginTop="-25dp"
+        android:layout_below="@id/iv_goodsImage"
+        android:textColor="@color/colorWhite_FFFFFFFF"
+        android:textSize="@dimen/textFontSize_12"
+        android:background="#66323232"
+        android:text="剩余时间"/>
+
+    <TextView
+        android:id="@+id/tv_goodsName"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/tv_timeState"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxLines="2"
+        android:padding="0dp"
+        android:text="商品名称"
+        android:textColor="@color/black"
+        android:textSize="@dimen/textFontSize_16" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:padding="5dp"
+        android:gravity="center_vertical"
+        android:layout_below="@id/tv_goodsName"
+        android:layout_centerHorizontal="true">
+
+    <LinearLayout
+        android:id="@+id/linearLayout_goodsPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_goodsPrice_old"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="￥5590"
+            android:textColor="@color/lightGreyFont"
+            android:textSize="@dimen/textFontSize_12" />
+
+        <TextView
+            android:id="@+id/tv_goodsPrice_new"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="￥4590"
+            android:textColor="@color/redTitleBarBackground"
+            android:textSize="@dimen/textFontSize_14" />
+
+    </LinearLayout>
+        
+        <Button
+            android:id="@+id/btn_justToRob"
+            android:layout_width="80dp"
+            android:gravity="center"
+            android:focusable="false"
+            android:background="@drawable/button_selector_01"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/colorWhite_FFFFFFFF"
+            android:text="@string/justToRob"/>
+    </RelativeLayout>
+
+</RelativeLayout>

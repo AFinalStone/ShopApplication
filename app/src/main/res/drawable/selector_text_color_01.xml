@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+    <!-- 可用是白色不可用是黑色 -->
+    <item android:color="@color/lightBlack" android:state_enabled="false"></item>
+    <item android:color="@color/white" ></item>
+    
+</selector>
+ 
