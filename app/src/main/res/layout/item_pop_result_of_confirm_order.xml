@@ -42,7 +42,7 @@
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal"
                 android:paddingTop="20dp"
-                android:text="超过12小时未处理的订单将自动删除"
+                android:text=""
                 android:textColor="@color/redTitleBarBackground"
                 android:textSize="@dimen/textFontSize4"
                 android:visibility="visible"/>

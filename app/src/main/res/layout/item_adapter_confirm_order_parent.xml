@@ -24,7 +24,8 @@
         <ImageView
             android:layout_width="20dp"
             android:layout_height="20dp"
-            android:scaleType="centerInside"
+            android:scaleType="fitCenter"
+            android:padding="2dp"
             android:src="@drawable/icon_shop_sign_01" />
 
 
@@ -78,7 +79,7 @@
             android:layout_height="28dp"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
-            android:background="@drawable/button_shape_inwhite_outgray_02"
+            android:background="@drawable/button_shape_inwhite_outgray_circle_02"
             android:hint="@string/tv_confirmOrderOrderRemarkHint"
             android:paddingLeft="10dp"
             android:textColorHint="@color/colorBlack_FF999999"
@@ -173,7 +174,7 @@
             android:paddingLeft="10dp"
             android:textColorHint="@color/colorBlack_FF999999"
             android:textColor="@color/colorBlack_FF323232"
-            android:background="@drawable/button_shape_inwhite_outgray_02"
+            android:background="@drawable/button_shape_inwhite_outgray_circle_02"
             android:textSize="@dimen/textFontSize_12"
             android:hint="@string/et_pleaseInputInvoiceHint"/>
 
@@ -208,6 +209,15 @@
             android:text="0"
             android:textColor="@color/colorRed_FFE83821"
             android:textSize="@dimen/textFontSize_14" />
+
+        <TextView
+            android:id="@+id/tv_privilegeFlyCoinDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="(该订单最高可抵25飞币，您有35飞币)"
+            android:textColor="@color/colorRed_FFE83821"
+            android:textSize="@dimen/textFontSize_9" />
 
     </LinearLayout>
 

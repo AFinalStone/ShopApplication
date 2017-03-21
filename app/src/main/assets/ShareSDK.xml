@@ -61,10 +61,10 @@
         SortId="6"
         AppId="wxbb7e57024cf7e0a6"
         AppSecret="bf7d4eee265e0f83f7f210905993a62d"
-        Enable="true" />    -->
+        Enable="true" />-->
 
     <!--聚合批发系统-->
-    <Wechat
+     <Wechat
         Id="4"
         SortId="4"
         AppId="wxb832cb4e613a3d30"
@@ -86,5 +86,29 @@
         AppId="wxb832cb4e613a3d30"
         AppSecret="62dc04684d761b4dee1ca6769f87be41"
         Enable="true" />
+
+    <!--水木年华系统 shiangqin-->
+<!--    <Wechat
+        Id="4"
+        SortId="4"
+        AppId="wx5872867bd388c054"
+        AppSecret="6ab829cffacde1ed73ac197af22f78c3"
+        BypassApproval="false"
+        Enable="true" />
+
+    <WechatMoments
+        Id="5"
+        SortId="5"
+        AppId="wx5872867bd388c054"
+        AppSecret="6ab829cffacde1ed73ac197af22f78c3"
+        BypassApproval="false"
+        Enable="true" />
+
+	<WechatFavorite
+        Id="6"
+        SortId="6"
+        AppId="wx5872867bd388c054"
+        AppSecret="6ab829cffacde1ed73ac197af22f78c3"
+        Enable="true" />-->
     
 </DevInfor>

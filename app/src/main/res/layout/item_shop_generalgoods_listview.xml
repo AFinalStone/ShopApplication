@@ -8,14 +8,14 @@
           <RelativeLayout android:layout_width="match_parent"
               android:layout_height="30dp"
               android:background="@drawable/goodshop_menu">
-              <TextView 
+              <TextView
                   android:id="@+id/tv_type"
                   android:layout_width="wrap_content"
                   android:layout_height="wrap_content"
                   android:layout_alignParentLeft="true"
                   android:layout_centerVertical="true"
                   android:layout_marginLeft="20dp"
-                  android:textSize="@dimen/textFontSize3"                   
+                  android:textSize="@dimen/textFontSize3"
                   />
 
               <TextView android:id="@+id/tv_moreNewGoodsData"
@@ -28,7 +28,7 @@
                   android:textColor="@color/lightRed"
                   android:textSize="@dimen/textFontSize5"
                   />
-              
+
 	</RelativeLayout>
     <View
         android:layout_width="match_parent"
@@ -94,7 +94,7 @@
                 android:gravity="center"
                 android:text="已售0件"
                 android:textColor="@color/lightBlack"
-                android:textSize="@dimen/textFontSize5ex" />
+                android:textSize="@dimen/textFontSize_10" />
         </RelativeLayout>
 
         <View
@@ -106,7 +106,7 @@
             android:id="@+id/RelativeLayout2"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="1" 
+            android:layout_weight="1"
             android:layout_marginBottom="5dp"            >
 
             <ImageView
@@ -156,7 +156,7 @@
                 android:gravity="center"
                 android:text="已售0件"
                 android:textColor="@color/lightBlack"
-                android:textSize="@dimen/textFontSize5ex" />
+                android:textSize="@dimen/textFontSize_10" />
         </RelativeLayout>
     </LinearLayout>
 
@@ -224,7 +224,7 @@
                 android:gravity="center"
                 android:text="已售0件"
                 android:textColor="@color/lightBlack"
-                android:textSize="@dimen/textFontSize5ex" />
+                android:textSize="@dimen/textFontSize_10" />
         </RelativeLayout>
 
         <View
@@ -286,7 +286,7 @@
                 android:gravity="center"
                 android:text="已售0件"
                 android:textColor="@color/lightBlack"
-                android:textSize="@dimen/textFontSize5ex" />
+                android:textSize="@dimen/textFontSize_10" />
         </RelativeLayout>
     </LinearLayout>
 	<View
@@ -353,7 +353,7 @@
                 android:gravity="center"
                 android:text="已售0件"
                 android:textColor="@color/lightBlack"
-                android:textSize="@dimen/textFontSize5ex" />
+                android:textSize="@dimen/textFontSize_10" />
         </RelativeLayout>
 
         <View
@@ -365,7 +365,7 @@
             android:id="@+id/RelativeLayout6"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="1" 
+            android:layout_weight="1"
             android:layout_marginBottom="5dp"            >
 
             <ImageView
@@ -415,7 +415,7 @@
                 android:gravity="center"
                 android:text="已售0件"
                 android:textColor="@color/lightBlack"
-                android:textSize="@dimen/textFontSize5ex" />
+                android:textSize="@dimen/textFontSize_10" />
         </RelativeLayout>
     </LinearLayout>
 </LinearLayout>

@@ -58,7 +58,7 @@
             android:layout_marginLeft="5dp"
             android:layout_toLeftOf="@id/btn_search"
             android:layout_toRightOf="@id/iv_location"
-            android:background="@drawable/button_shape_inwhite_outgray_02"
+            android:background="@drawable/button_shape_inwhite_outgray_circle_02"
             android:gravity="center_vertical"
             android:hint="请输入商品关键字搜索"
             android:paddingBottom="0dp"
@@ -105,7 +105,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="200dp" />
 
-                <com.shuimunianhua.xianglixiangqin.view.ScrollGridView
+                <com.shi.xianglixiangqin.view.ScrollGridView
                     android:id="@+id/gridView_functionModel"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -232,7 +232,7 @@
                     </LinearLayout>
                 </RelativeLayout>
 
-                <com.shuimunianhua.xianglixiangqin.view.ScrollListView
+                <com.shi.xianglixiangqin.view.ScrollListView
                     android:id="@+id/listView_goodsByGroupBuy"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content" />
@@ -327,7 +327,7 @@
                     android:textSize="@dimen/textFontSize3"
                     android:visibility="gone" />
 
-                <com.shuimunianhua.xianglixiangqin.view.ScrollGridView
+                <com.shi.xianglixiangqin.view.ScrollGridView
                     android:id="@+id/gridView_themeType01"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -339,7 +339,7 @@
                     android:stretchMode="columnWidth"
                     android:verticalSpacing="1dp" />
 
-                <com.shuimunianhua.xianglixiangqin.view.ScrollGridView
+                <com.shi.xianglixiangqin.view.ScrollGridView
                     android:id="@+id/gridView_themeType02"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -382,7 +382,7 @@
                         android:visibility="invisible" />
                 </RelativeLayout>
 
-                <com.shuimunianhua.xianglixiangqin.view.ScrollGridView
+                <com.shi.xianglixiangqin.view.ScrollGridView
                     android:id="@+id/gridView_newGoodsPush"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -418,7 +418,7 @@
                     android:textSize="@dimen/textFontSize3"
                     android:visibility="gone" />
 
-                <com.shuimunianhua.xianglixiangqin.view.ScrollGridView
+                <com.shi.xianglixiangqin.view.ScrollGridView
                     android:id="@+id/gridView_niceShopPush"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"

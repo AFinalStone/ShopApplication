@@ -1,6 +1,6 @@
 [
     {
-        "outputFile": "D:\\AndroidStudioProject\\XiangLiXiangQin-pifaxitong\\rongIMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\values-sw\\values-sw.xml",
+        "outputFile": "D:\\AndroidStudioProject\\XiangLiXiangQin\\rongIMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\values-sw\\values-sw.xml",
         "map": [
             {
                 "to": {
@@ -11,7 +11,7 @@
                     "endOffset": 128
                 },
                 "from": {
-                    "file": "D:\\AndroidStudioProject\\XiangLiXiangQin-pifaxitong\\rongIMKit\\build\\intermediates\\bundles\\debug\\res\\values-sw\\values-sw.xml",
+                    "file": "D:\\AndroidStudioProject\\XiangLiXiangQin\\rongIMKit\\build\\intermediates\\bundles\\debug\\res\\values-sw\\values-sw.xml",
                     "position": {
                         "startLine": 2,
                         "startColumn": 4,
@@ -30,7 +30,7 @@
                     "endOffset": 222
                 },
                 "from": {
-                    "file": "D:\\AndroidStudioProject\\XiangLiXiangQin-pifaxitong\\rongIMKit\\build\\intermediates\\bundles\\debug\\res\\values-sw\\values-sw.xml",
+                    "file": "D:\\AndroidStudioProject\\XiangLiXiangQin\\rongIMKit\\build\\intermediates\\bundles\\debug\\res\\values-sw\\values-sw.xml",
                     "position": {
                         "startLine": 3,
                         "startColumn": 4,
@@ -49,7 +49,7 @@
                     "endOffset": 299
                 },
                 "from": {
-                    "file": "D:\\AndroidStudioProject\\XiangLiXiangQin-pifaxitong\\rongIMKit\\build\\intermediates\\bundles\\debug\\res\\values-sw\\values-sw.xml",
+                    "file": "D:\\AndroidStudioProject\\XiangLiXiangQin\\rongIMKit\\build\\intermediates\\bundles\\debug\\res\\values-sw\\values-sw.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,

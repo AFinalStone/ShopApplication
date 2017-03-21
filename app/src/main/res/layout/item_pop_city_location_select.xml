@@ -23,7 +23,7 @@
             android:layout_width="0dp"
             android:layout_height="50dp"
             android:layout_weight="1"
-            android:scrollbars="@null" >
+            android:scrollbars="none" >
 
             <RadioGroup
                 android:id="@+id/radioGroup_indicator"

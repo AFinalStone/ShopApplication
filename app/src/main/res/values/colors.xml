@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#3F51B5</color>
-    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorPrimary">#E73920</color>
+    <color name="colorPrimaryDark">#D92910</color>
     <color name="colorAccent">#FF4081</color>
 
-    <color name="jellyBall_red01">#FC2C2C</color>
-    <color name="jellyBall_red02">#55FC2C2C</color>
     <color name="wheel_line_border">#C7C7C7</color>
 
 
@@ -73,24 +71,41 @@
     <!--红色-->
     <color name="colorRed_33E83821">#33E83821</color>
     <color name="colorRed_FFE83821">#FFE83821</color>
+    <color name="colorRed_FFFF5E00">#FFFF5E00</color>
     <color name="colorRed_FFFF0000">#FFFF0000</color>
     <color name="colorRed_FFE10005">#FFE10005</color>
+    <color name="colorRed_FFCC0000">#FFCC0000</color>
+    <color name="colorRed_FFEF0E10">#FFEF0E10</color>
+    <color name="colorRed_FFFC3C3B">#FFFC3C3B</color>
+    <color name="colorRed_FFE80000">#FFE80000</color>
+    <color name="colorRed_FFDE1D2b">#FFDE1D2B</color>
     <!-- 黑色 -->
     <color name="colorBlack_FF646464">#FF646464</color>
     <color name="colorBlack_FF999999">#FF999999</color>
     <color name="colorBlack_FF323232">#FF323232</color>
     <color name="colorBlack_FF333333">#FF333333</color>
     <color name="colorBlack_FF7E7E7E">#FF7E7E7E</color>
+    <color name="colorBlack_FFF0F2F5">#FFF0F2F5</color>
     <color name="colorBlack_FF000000">#FF000000</color>
     <color name="colorBlack_FFF8F8F8">#FFF8F8F8</color>
+    <color name="colorBlack_FF3D4045">#FF3D4045</color>
+    <color name="colorBlack_FF666666">#FF666666</color>
+    <color name="colorBlack_66000000">#66000000</color>
+    <color name="colorBlack_FFCCCCCC">#FFCCCCCC</color>
+    <color name="colorBlack_FF444444">#FF444444</color>
+    <color name="colorBlack_FFDEDEDE">#FFDEDEDE</color>
+
     <!--灰色-->
     <color name="colorGray_FFCACACA">#FFCACACA</color>
     <color name="colorGray_FFCDCDCD">#FFCDCDCD</color>
+    <color name="colorGray_FFCCCCCC">#FFCCCCCC</color>
     <color name="colorGray_FFEEEEEE">#FFEEEEEE</color>
+    <color name="colorGray_FFFFADAD">#FFFFADAD</color>
     <!-- 橙色 -->
     <color name="colorOrange_FFFF8623">#FFFF8623</color>
     <!--纯白颜色-->
     <color name="colorWhite_FFFFFFFF">#FFFFFFFF</color>
+    <color name="colorWhite_4DFFFFFF">#4DFFFFFF</color>
     <!--透明颜色-->
     <color name="colorTransparent_FFFFFFFF">#00000000</color>
     <!-- 浅蓝色 -->
@@ -98,6 +113,8 @@
     <color name="colorBlue_FF3E9CCF">#FF3E9CCF</color>
     <color name="colorBlue_FF484E6">#FF484E61</color>
     <color name="colorBlue_FF49D5B2">#FF49D5B2</color>
+    <color name="colorBlue_FF26CDBB">#FF26CDBB</color>
+
 
 
 </resources>

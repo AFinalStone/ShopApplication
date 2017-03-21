@@ -1,4 +1,4 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
 
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
@@ -13,30 +13,54 @@
         <item name="android:textColor">@color/lightBlack</item>
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
+        <item name="toolbarStyle">@style/ClubToolbar</item>
+        <item name="android:actionBarSize">45dp</item>
     </style>
 
-    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" >
+    <style name="ClubToolbar" parent="Widget.AppCompat.Toolbar">
+        <item name="contentInsetStart">0dp</item><!-- 设置该属性解决空白部分-->
+    </style>
 
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
         <item name="colorPrimary">@color/transparent</item>
         <item name="colorPrimaryDark">@color/transparent</item>
         <item name="colorAccent">@color/transparent</item>
         <item name="android:background">@color/transparent</item>
-
     </style>
 
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
     <style name="SplashTheme" parent="AppTheme">
-        <item name="android:windowBackground">@drawable/background_splash_shuimunianhua</item>
+        <item name="android:windowBackground">@mipmap/background_splash</item>
         <item name="android:windowFullscreen">true</item>
     </style>
 
     <style name="AppThemeWindowIsTranslucent" parent="MyAppTheme">
-        <!-- 背景透明 -->
+        <!-- 去除Activity顶部黑线 -->
+        <item name="android:windowContentOverlay">@null</item>
+        <!-- 状态栏背景设置透明 -->
+        <item name="android:windowDrawsSystemBarBackgrounds" tools:targetApi="lollipop">@color/transparent</item>
+        <!-- Activity背景 -->
         <item name="android:windowIsTranslucent">true</item>
-        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowBackground">@color/transparent</item>
         <!-- 背景模糊 -->
         <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+   <style name="AppThemeDialogIsTranslucent" parent="Theme.AppCompat.Light.Dialog">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowFrame">@null</item>
+        <!--边框-->
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <!--是否启用标题栏-->
+        <item name="android:background">@null</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowFullscreen">true</item>
     </style>
 
     <!-- 好店推荐 -->
@@ -95,4 +119,12 @@
         <item name="android:windowExitAnimation">@anim/pop_out_to_bottom</item>
     </style>
 
+    <style name="MyAppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="MyAppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <!--水波纹按钮效果-->
+    <style name="AppTheme.Button" parent="Widget.AppCompat.Button">
+        <item name="colorControlHighlight">@color/colorPrimaryDark</item>//按钮按下的水波纹改变颜色
+    </style>
 </resources>

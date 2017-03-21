@@ -2,6 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorWhite_FFFFFFFF"
     android:orientation="vertical" >
 
 	<include layout="@layout/layout_title"/>
@@ -9,6 +10,7 @@
     <com.afinalstone.androidstudy.swiperefreshview.SwipeRefreshListView
         android:id="@+id/swipeRefreshListView"
         android:layout_width="match_parent"
+        android:divider="@null"
         android:layout_height="0dp"
         android:layout_weight="1" />
 
@@ -32,7 +34,7 @@
                 android:background="@drawable/button_shape_ingray_02"
                 android:padding="0dp"
                 android:gravity="center"
-                android:text="@string/clearFilter" />
+                android:text="@string/GoodsFilter_btnReset" />
 
             <Button
                 android:id="@+id/btn_confirmFilter"
@@ -42,7 +44,7 @@
                 android:layout_weight="1"
                 android:background="@drawable/button_shape_inred_02"
                 android:gravity="center"
-                android:text="@string/complete"
+                android:text="@string/GoodsFilter_btnOK"
                 android:textColor="@color/pureWhiteFont" />
         </LinearLayout>
     </RelativeLayout>

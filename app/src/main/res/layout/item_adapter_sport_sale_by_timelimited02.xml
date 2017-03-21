@@ -48,28 +48,31 @@
         android:padding="0dp"
         android:text="商品名称"
         android:textColor="@color/black"
-        android:textSize="@dimen/textFontSize_16" />
+        android:textSize="@dimen/textFontSize_12" />
 
-    <RelativeLayout
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="45dp"
         android:padding="5dp"
+        android:orientation="horizontal"
         android:gravity="center_vertical"
         android:layout_below="@id/tv_goodsName"
         android:layout_centerHorizontal="true">
 
     <LinearLayout
         android:id="@+id/linearLayout_goodsPrice"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
+        android:layout_weight="1"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
-        android:gravity="center"
+        android:gravity="center|left"
         android:orientation="vertical" >
 
         <TextView
             android:id="@+id/tv_goodsPrice_old"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:singleLine="true"
             android:layout_marginLeft="5dp"
             android:text="￥5590"
             android:textColor="@color/lightGreyFont"
@@ -80,21 +83,22 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="￥4590"
+            android:singleLine="true"
             android:textColor="@color/redTitleBarBackground"
             android:textSize="@dimen/textFontSize_14" />
 
     </LinearLayout>
         
-        <Button
-            android:id="@+id/btn_justToRob"
-            android:layout_width="80dp"
+        <TextView
+            android:id="@+id/tv_justToRob"
+            android:layout_width="70dp"
             android:gravity="center"
-            android:focusable="false"
             android:background="@drawable/button_selector_01"
             android:layout_height="30dp"
             android:layout_alignParentRight="true"
+            android:textSize="@dimen/textFontSize_12"
             android:textColor="@color/colorWhite_FFFFFFFF"
             android:text="@string/justToRob"/>
-    </RelativeLayout>
+    </LinearLayout>
 
 </RelativeLayout>

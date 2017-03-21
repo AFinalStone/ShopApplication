@@ -41,7 +41,7 @@ public abstract class BaseWheelTextAdapter<T> extends BaseWheelAdapter {
     public static final int DEFAULT_TEXT_COLOR = 0xFF585858;
     
     /** Default text color */
-    public static final int LABEL_COLOR = 0xFF700070;
+    public static final int LABEL_COLOR = 0xFF323232;
     
     /** Default text size */
     public static final int DEFAULT_TEXT_SIZE = 18;

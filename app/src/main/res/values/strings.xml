@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">聚合批发</string>
-    <string name="app_name_shuimunianhua">批发系统</string>
+    <!--    <string name="app_name">聚合批发</string>-->
+    <!--    <string name="app_name_shuimunianhua">批发系统</string>-->
     <!--    <string name="app_name">带你飞</string>-->
     <string name="action_settings">Settings</string>
     <!-- 登陆界面 -->
-    <string name="loninTitle">登录</string>
     <string name="userNumber">用户名</string>
     <string name="userNumberHint">请输入账号或手机号码</string>
     <string name="userPassword">登录密码</string>
@@ -18,8 +17,14 @@
     <string name="forgotPassword">忘记密码</string>
     <string name="forgotPassword_Q">忘记密码?</string>
 
+
+    <!--获取验证码-->
+    <string name="tv_getSecurityTitle">获取验证码</string>
+
+
     <!-- 注册界面 -->
     <string name="registerTitle">注册</string>
+    <string name="tv_registerTitle">欢迎注册</string>
     <string name="registerToLoginView">登录</string>
     <string name="pleaseSelectRegisterCustomerType">请选择您要注册的身份</string>
     <string name="registerDealer">经销商</string>
@@ -30,18 +35,18 @@
     <string name="newStep">下一步</string>
     <string name="pleaseSelectRegisterLocation">请选择注册地：</string>
     <string name="registerLocationSelect">省市区选择</string>
-    <string name="registerLocationHint">请选择注册地</string>
-    <string name="registerInvitationCodeHint">请输入邀请码(没有可不填)</string>
-    <string name="registerPasswordHint">请输入密码</string>
-    <string name="registerPasswordConfirmHint">请再次输入密码</string>
+    <string name="registerLocationHint">请选择所在地区</string>
+    <string name="et_registerUserNameHint">请输入姓名</string>
+    <string name="et_registerCompanyNameHint">请输入公司名称</string>
+    <string name="et_registerPasswordHint">请输入密码</string>
+    <string name="et_registerPasswordConfirmHint">请确认密码</string>
     <string name="registerBtn">注 册</string>
 
-    <!-- 修改密码界面 -->
-    <string name="passwordChangeFirstTitle">获取验证码</string>
-    <string name="passwordChangeSecoundTitle">修改密码</string>
-    <string name="newPasswordHint">请设置新密码</string>
-    <string name="confirmNewPasswordHint">请再次输入新密码</string>
-    <string name="changePasswordSubmitBtn">确认提交</string>
+    <!-- 修改登陆密码界面 -->
+    <string name="tv_userLoginPasswordChangeTitle">修改密码</string>
+    <string name="et_userLoginPasswordChangeNewPasswordHint">请设置新密码</string>
+    <string name="et_userLoginPasswordChangeConfirmNewPasswordHint">请确认新密码</string>
+    <string name="btn_userLoginPasswordChangeQueryChangePassword">确认修改</string>
 
     <!-- MainActivity相关 -->
     <string name="rb_home">首页</string>
@@ -50,6 +55,7 @@
     <string name="rb_shopcart">购物车</string>
     <string name="rb_person">个人中心</string>
     <!-- 首页界面 -->
+    <string name="FragmentHome_search">搜索</string>
     <string name="searchPrompt">搜索商品/品牌</string>
     <string name="newProducts">新品推荐</string>
     <string name="specialsProduct">特价商品</string>
@@ -79,17 +85,21 @@
     <string name="joinGroupFailed">成团失败</string>
     <string name="justToRob">立即抢购</string>
     <string name="haveFinishRob">已经抢光</string>
-    <string name="title_sportSaleByTimeLimitedActivity">限时特卖</string>
-    <string name="title_sportSaleBuyCrazyActivity">限时秒杀</string>
-    <string name="tv_sportSaleByTimeNoBegin">特卖未开始</string>
-    <string name="tv_sportSaleByTimeOnGoing">特卖进行中</string>
-    <string name="tv_sportSaleByTimeHaveFinish">特卖已结束</string>
+    <string name="title_sportSaleByTimeLimitedActivity">限时抢购</string>
+    <string name="title_sportSaleBuyCrazyActivity">疯狂秒杀</string>
+    <string name="tv_sportSaleByTimeNoBegin">抢购未开始</string>
+    <string name="tv_sportSaleByTimeOnGoing">抢购进行中</string>
+    <string name="tv_sportSaleByTimeHaveFinish">抢购已结束</string>
+    <string name="tv_sportSaleByTimeSaleCompleted">商品已抢光</string>
     <string name="tv_sportModelBuyCrazyTypeChina">疯狂秒杀</string>
     <string name="tv_sportModelBuyCrazyTypeEnglish">TIME LIMIT</string>
     <string name="tv_sportModelBuyOnGoing">活动进行中...</string>
-    <string name="tv_sportModelBuyTimeLimitedTypeChina">限时特卖</string>
+    <string name="tv_sportModelBuyTimeLimitedTypeChina">限时抢购</string>
     <string name="tv_sportModelBuyTimeLimitedTypeEnglish">LIMIT SALE</string>
-    <string name="tv_sportSaleBuyCrazyPagerHaveFinish">秒杀已结束</string>
+    <string name="tv_sportSaleBuyCrazyPagerHaveFinish">已结束</string>
+    <string name="tv_sportSaleBuyCrazyPagerSaleCompleted">已抢光</string>
+    <string name="tv_sportSaleBuyCrazyPagerBuyNow">正在秒杀</string>
+    <string name="tv_sportSaleBuyCrazyPagerNotBegin">未开始</string>
     <!-- 普通商品详情 -->
     <string name="goodsName">商品名称</string>
     <string name="goodsPrices">商品价格</string>
@@ -129,6 +139,8 @@
     <string name="myRealName">真实姓名</string>
     <string name="myShopName">店铺名称</string>
     <!-- 收货地址编辑界面 -->
+    <string name="addressManageActivity_edit">编辑</string>
+    <string name="addressManageActivity_delete">删除</string>
     <string name="receiverName">收件人</string>
     <string name="receiverNameHint">请输入收件人姓名</string>
     <string name="userPhone">手机号码</string>
@@ -136,7 +148,7 @@
     <string name="postCode">邮政编号</string>
     <string name="postCodeHint">请输入邮政编号</string>
     <string name="receiverAddress">收货地址</string>
-    <string name="receiverAddressHint">输入详细地址</string>
+    <string name="receiverAddressHint">请填写详细地址，不少于5个字</string>
     <string name="selectPosition">请选择省、市、区</string>
     <string name="confirm">确认</string>
 
@@ -155,40 +167,43 @@
     <string name="firstDistribution">一级分销</string>
     <string name="secondDistribution">二级分销</string>
     <string name="thirdDistribution">三级分销</string>
-    <string name="zero">0</string>
     <string name="selectAll">选择全部</string>
     <string name="addAllPrice">批量加价</string>
+    <string name="cancelAgent">取消代理</string>
+    <string name="SearchGoodsMyAgent_search">搜索</string>
     <!-- 微信店铺管理界面 -->
     <string name="wxShopManageTitle">特价商品设置</string>
     <string name="setToSpecialPricesGoods">设为特价</string>
     <string name="specialPricesGoods">特价商品</string>
-    <string name="cancleSettingSpecialPrices">取消代理</string>
+    <string name="cancelSettingSpecialPrices">取消设置</string>
     <string name="addToSpecialPricesGoods">添加为特价商品</string>
     <string name="selectAllSimply">全选</string>
+    <string name="WXShopManage_search">搜索</string>
     <!-- 添加特价商品界面 -->
-    <string name="wxShopAddGoodsTitle">添加特价商品</string>
+    <string name="wxShopAddGoodsTitle">微信店铺管理</string>
     <string name="specialPricesGoodsSetting">特价商品设置</string>
     <string name="selectWXShopGoodsOfHome">选择微信店铺首页展示的商品分类</string>
     <string name="selectWXShopGoodsClass">选择商品分类</string>
     <string name="confirmSubmitWXShopGoods">确认提交</string>
 
     <!-- 搜索 -->
-    <string name="comprehensiveSorting">综合排序 </string>
-    <string name="prioritySales">销量优先 </string>
-    <string name="priceSort">价格排序 </string>
-    <string name="price">价格 </string>
-    <string name="search">搜索  </string>
-    <string name="noStoneCount">暂无货</string>
-    <!-- 筛选 -->
-    <string name="filter">筛选 </string>
-    <string name="complete">完成 </string>
-    <string name="clearFilter">清空筛选 </string>
-    <string name="allBrands">全部</string>
+    <string name="SearchGoods_title">综合排序</string>
+    <string name="SearchGoods_comprehensiveSorting">综合排序</string>
+    <string name="SearchGoods_prioritySales">销量优先</string>
+    <string name="SearchGoods_priceSort">价格排序</string>
+    <string name="SearchGoods_price">价格</string>
+    <string name="SearchGoods_search">搜索</string>
+    <string name="SearchGoods_tvSorting">筛选</string>
+    <string name="SearchGoods_tvNoStoneCount">暂无货</string>
+    <!-- 商品分类筛选 -->
+    <string name="title_GoodsFilter">筛选</string>
+    <string name="GoodsFilter_tvFilter">筛选</string>
+    <string name="GoodsFilter_tvAllBrands">全部</string>
+    <string name="GoodsFilter_btnOK">确定</string>
+    <string name="GoodsFilter_btnReset">重置</string>
     <!-- 产品定位 -->
-    <string name="determine">确定 </string>
-    <!-- 店铺 -->
-    <string name="shop">店铺 </string>
-    <string name="shoptitle">店铺 :</string>
+    <string name="determine">确定</string>
+    <string name="btn_goodsDetailGeneralActivityQueryAgent">确认代理</string>
 
     <!-- 自定义组件 -->
     <string name="lastUpdateTime">最近更新：%s</string>
@@ -204,10 +219,13 @@
     <string name="cancelSelectAll">取消</string>
     <string name="gotoHome">去逛逛</string>
     <string name="submitOrder">提交订单</string>
-
+    <!-- 选择组合界面 -->
+    <string name="GoodsCombinationSelect_title">选择组合</string>
+    <string name="goodsCombinationSelect_buyNow">立即购买</string>
+    <string name="goodsCombinationSelect_selectGoodsProperty">请选择商品属性</string>
+    <string name="goodsCombinationPackage_query">确定</string>
 
     <!-- 提交订单界面 -->
-    <string name="title_confirmOrder">提交订单</string>
     <string name="deliveryMethod">配送方式：</string>
     <string name="receiverPerson">收件人:</string>
     <string name="receiverPhone">联系方式:</string>
@@ -221,7 +239,8 @@
     <string name="bill">发票</string>
     <string name="yes">是</string>
     <string name="no">否</string>
-    <string name="totalPrice">合计</string>
+    <string name="confirmOrderGeneralActivity_tv_totalPrices">实付款</string>
+    <string name="confirmOrderGeneralActivity_title">提交订单</string>
     <string name="moneyFlag">￥</string>
     <string name="confirmSubmit">确认提交</string>
     <!-- 我的订单界面 -->
@@ -232,7 +251,7 @@
 
 
     <!-- 新银行卡支付界面 -->
-    <string name="title_binkBankCardBinding">完善银行卡信息</string>
+    <string name="BinkBankCardBinding_title">完善银行卡信息</string>
     <string name="selectBank">选择银行</string>
     <string name="selectProvince">选择省</string>
     <string name="pleaseSelectBankHint">请选择银行</string>
@@ -263,6 +282,7 @@
     <string name="seeDataDetail">查看详情</string>
     <string name="allGoods">所有商品</string>
     <string name="agentAllGoods">批量代理</string>
+    <string name="MyShop_search">搜索</string>
 
     <!-- 后台任务执行，前台的进度对话框标题 -->
     <string name="str_loadingMsg">请稍等...</string>
@@ -288,7 +308,7 @@
     <string name="cb_dispatchByMySelf">上门自提</string>
     <string name="tv_confirmOrderDeliveryMethod_C">配送方式：</string>
     <string name="tv_confirmOrderIfOpenBilling">是否开发票：</string>
-    <string name="tv_confirmOrderOrderRemark">添加备注：</string>
+    <string name="tv_confirmOrderOrderRemark">订单备注：</string>
     <string name="tv_confirmOrderOrderRemarkHint">请在这里添加备注</string>
     <string name="tv_customerReceiverAddress">收货地址</string>
     <string name="et_pleaseInputInvoiceHint">请输入发票抬头</string>
@@ -296,13 +316,15 @@
 
     <!--付款界面-->
     <string name="tv_selectPayMethod_">支付方式</string>
+    <string name="createOrderMethodSelectActivity_title">订单类型</string>
+    <string name="createOrderMethodSelectActivity_tv_nextStep">下一步</string>
     <string name="btn_queryToPay">确认支付</string>
 
     <!--订单列表界面-->
     <string name="tv_myOrderTotalPrices_C">合计：</string>
 
     <!-- 订单详情界面 -->
-    <string name="title_myOrderDetail">订单详情</string>
+    <string name="MyOrderDetail_title">订单详情</string>
     <string name="tv_myOrderDetailRemark_C">备注：</string>
     <string name="tv_myOrderDetailDeliveryMethod_C">配送方式：</string>
     <string name="tv_myOrderDetailDeliveryCompanyName_C">快递公司：</string>
@@ -310,10 +332,12 @@
     <string name="tv_myOrderDetailDeliveryNum_C">快递单号：</string>
     <string name="tv_myOrderDetailInvoiceNumCode_C">发票内容：</string>
     <string name="tv_myOrderDetailPrivilegeFlyCoinPay_C">飞币抵扣：</string>
+    <string name="tv_myOrderDetailPrivilegeIntegralPay_C">积分抵扣：</string>
+    <string name="tv_myOrderDetailDiscountPrices_C">优惠金额：</string>
     <string name="tv_titleVersionUpdate">版本升级</string>
 
     <!--商家推荐界面-->
-    <string name="title_shopRecommend">优质商家推荐</string>
+    <string name="shopRecommendActivity_title">优质商家推荐</string>
     <string name="btn_shopRecommendIntoShop">进入店铺</string>
     <string name="tv_newGoodsRecommend">新品推荐</string>
 
@@ -321,8 +345,11 @@
     <string name="title_otherOrder">客户订单</string>
     <string name="tv_otherOrderNothing">暂无客户订单</string>
 
+
+    <string name="payMethodSelectActivity_tv_nextStep">下一步</string>
+
     <!--支付银行卡选择界面-->
-    <string name="title_payMoneySelectBankCard">支付订单</string>
+    <string name="payMoneySelectBankCard_title">支付订单</string>
     <string name="tv_payBankCardSelectNeedPayMoney">需付款</string>
     <string name="tv_payBankCardSelectAddNewBankCard">添加新银行卡付款</string>
     <string name="tv_PayBankCardSelectBankCardDesc">已绑定银行卡 (支付服务由银联提供)</string>
@@ -352,7 +379,68 @@
     <!--扫码支付界面-->
     <string name="tv_payByQDCode">扫码支付</string>
     <string name="tv_payChargeDesc">费率须知，需扣0.38%的手续费</string>
-    <string name="btn_payByQDCodeFinish">支付完成</string>
+    <string name="btn_payByQDCode">点我继续付款</string>
     <string name="title_payMoneyByQDCodeActivity">扫码支付</string>
+
+    <!--积分商城界面-->
+    <string name="tv_integralActivityMyTotalIntegral">我的积分：</string>
+    <string name="tv_integralActivityIntegralExchangeRecord">兑换记录</string>
+    <string name="tv_integralActivityExchangeQuickly">立即换购</string>
+    <string name="title_integralExchangeRecordActivity">兑换记录</string>
+    <!--积分商品详情界面-->
+    <string name="tv_goodsDetailIntegralJustToExChange">立即兑换</string>
+    <string name="tv_goodsDetailIntegralBuyType">兑换方式</string>
+
+    <!--提交积分商品订单界面-->
+    <string name="tv_confirmOrderIntegralExChange_C">积分抵扣：</string>
+
+    <!--我的积分界面-->
+    <string name="tv_myIntegralActivityMyIntegral">我的积分</string>
+    <string name="tv_myIntegralActivityUseIntegral">使用积分</string>
+
+    <!--我的飞币界面-->
+    <string name="title_myFlyCoinActivity">飞币流水</string>
+    <string name="tv_myFlyCoinActivityMyFlyCoin">我的飞币</string>
+    <string name="tv_myFlyCoinActivityUseFlyCoin">使用飞币</string>
+
+    <!--我的店铺二维码界面-->
+    <string name="title_myShopActivity">我的店铺</string>
+    <string name="tv_myShopShare">分享</string>
+    <string name="title_ShopTrumpetListActivity">公告列表</string>
+
+    <!--收银台绑定银行卡页面-->
+    <string name="checkStandBankBinding_title">绑定银行卡</string>
+    <string name="CheckStandBankBindingActivity_tv_selectBankCard">选择银行</string>
+    <string name="CheckStandBankBindingActivity_tv_selectProvince">选择省份</string>
+    <string name="CheckStandBankBindingActivity_tv_bankCardNum">银行卡号</string>
+    <string name="CheckStandBankBindingActivity_hint_bankCardNum">请输入银行卡号</string>
+    <string name="CheckStandBankBindingActivity_tv_userName">持卡人</string>
+    <string name="CheckStandBankBindingActivity_hint_userName">请输入持卡人签名</string>
+    <string name="CheckStandBankBindingActivity_tv_userCardNum">身份证号</string>
+    <string name="CheckStandBankBindingActivity_hint_userCardNum">输入持卡人身份证号</string>
+    <string name="CheckStandBankBindingActivity_btn_queryBindingCard">确认绑定</string>
+    <!--收益台秒到开通申请页面-->
+    <string name="CheckStandApplyMDActivity_title">开通申请</string>
+    <string name="CheckStandApplyMDActivity_tv_realName">真实姓名</string>
+    <string name="CheckStandApplyMDActivity_hint_realName">输入本人真实姓名</string>
+    <string name="CheckStandApplyMDActivity_tv_userCardNum">身份证号</string>
+    <string name="CheckStandApplyMDActivity_hint_userCardNum">输入本人身份证号</string>
+    <string name="CheckStandApplyMDActivity_tv_userCardTop">身份证正面</string>
+    <string name="CheckStandApplyMDActivity_tv_userCardBottom">身份证反面</string>
+    <string name="CheckStandApplyMDActivity_tv_businessLicense">营业执照</string>
+    <string name="CheckStandApplyMDActivity_btn_queryApply">确认申请</string>
+    <!--收银台页面-->
+    <string name="CheckStandWithdrawalActivity_title">收银台</string>
+    <string name="CheckStandWithdrawalActivity_tv_arriveTomorrow">隔天到</string>
+    <string name="CheckStandWithdrawalActivity_tv_arriveImmediately">秒到</string>
+    <string name="CheckStandWithdrawalActivity_tv_totalMoneyCanWithdraw">可提现金额(元)</string>
+    <string name="CheckStandWithdrawalActivity_tv_WithdrawImmediately">立即提现</string>
+    <string name="CheckStandWithdrawalActivity_tv_SaoMDesc">扫描图中二维码付款</string>
+    <!--支付流水-->
+    <string name="CheckStandMoneyRecord_title">支付流水</string>
+    <string name="CheckStandMoneyRecord_tv_charge_C">手续费:</string>
+    <string name="CheckStandMoneyRecord_tv_enter">转入</string>
+    <string name="CheckStandMoneyRecord_tv_Withdrawal">提现</string>
+
 
 </resources>

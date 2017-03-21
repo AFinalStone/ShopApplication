@@ -7,5 +7,5 @@
     android:button="@null"
     android:gravity="center"
     android:textColor="@drawable/selector_text_color_03"
-    android:background="@drawable/radiogroup_button"
+    android:background="@drawable/selector_radio_button_goods_class"
     xmlns:android="http://schemas.android.com/apk/res/android" />

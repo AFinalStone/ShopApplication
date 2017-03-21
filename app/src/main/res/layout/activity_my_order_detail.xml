@@ -33,7 +33,7 @@
                     android:singleLine="true"
                     android:text="订单号:201511270054"
                     android:textColor="@color/colorBlack_FF323232"
-                    android:textSize="@dimen/textFontSize_12" />
+                    android:textSize="@dimen/textFontSize_10" />
 
                 <TextView
                     android:id="@+id/tv_orderStartTime"
@@ -45,7 +45,7 @@
                     android:singleLine="true"
                     android:text="下单时间：2015-11-27 15:45"
                     android:textColor="@color/colorBlack_FF323232"
-                    android:textSize="@dimen/textFontSize_12" />
+                    android:textSize="@dimen/textFontSize_10" />
             </LinearLayout>
 
             <View
@@ -126,7 +126,7 @@
 
             </LinearLayout>
 
-            <com.shuimunianhua.xianglixiangqin.view.ScrollListView
+            <com.shi.xianglixiangqin.view.ScrollListView
                 android:id="@+id/listView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
@@ -290,12 +290,68 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
+                    android:text="@string/tv_myOrderDetailPrivilegeIntegralPay_C"
+                    android:textColor="@color/colorBlack_FF7E7E7E"
+                    android:textSize="@dimen/textFontSize_12" />
+
+                <TextView
+                    android:id="@+id/tv_IntegralPay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textColor="@color/redTitleBarBackground"
+                    android:textSize="@dimen/textFontSize5" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/dividingLineColor" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
                     android:text="@string/tv_myOrderDetailPrivilegeFlyCoinPay_C"
                     android:textColor="@color/colorBlack_FF7E7E7E"
                     android:textSize="@dimen/textFontSize_12" />
 
                 <TextView
                     android:id="@+id/tv_flyCoinPay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="￥0.00"
+                    android:textColor="@color/redTitleBarBackground"
+                    android:textSize="@dimen/textFontSize5" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/dividingLineColor" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/tv_myOrderDetailDiscountPrices_C"
+                    android:textColor="@color/colorBlack_FF7E7E7E"
+                    android:textSize="@dimen/textFontSize_12" />
+
+                <TextView
+                    android:id="@+id/tv_discountPrices"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="￥0.00"
@@ -352,8 +408,8 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
             android:layout_weight="1"
-            android:gravity="left"
             android:ellipsize="marquee"
+            android:gravity="left"
             android:singleLine="true"
             android:text="到期时间：2016年4月26"
             android:textColor="@color/lightBlack"
@@ -368,9 +424,9 @@
             android:paddingLeft="5dp"
             android:paddingRight="5dp"
             android:text="取消订单"
-            android:visibility="visible"
             android:textColor="@color/colorBlack_FF323232"
-            android:textSize="@dimen/textFontSize_14" />
+            android:textSize="@dimen/textFontSize_14"
+            android:visibility="gone" />
 
         <TextView
             android:id="@+id/tv_orderOperationAction"
@@ -378,10 +434,10 @@
             android:layout_height="30dp"
             android:layout_marginLeft="5dp"
             android:layout_marginRight="5dp"
+            android:background="@drawable/button_selector_01"
             android:gravity="center"
             android:paddingLeft="10dp"
             android:paddingRight="10dp"
-            android:background="@drawable/button_selector_01"
             android:text="去支付"
             android:textColor="@drawable/selector_text_color_01"
             android:textSize="@dimen/textFontSize_14" />

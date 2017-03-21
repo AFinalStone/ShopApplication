@@ -40,16 +40,17 @@
     <TextView
         android:id="@+id/shoping_goods_title"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
         android:layout_alignTop="@id/shoping_goods_image"
         android:layout_toRightOf="@id/shoping_goods_image"
         android:layout_toLeftOf="@id/btn_setToSpecialPricesGoods"
         android:layout_marginRight="5dp"
         android:ellipsize="end"
-        android:maxLines="2"
+        android:gravity="center|left"
+        android:maxLines="3"
         android:text="@string/goodsName"
-        android:textColor="#000000"
-        android:textSize="@dimen/textFontSize4" />
+        android:textColor="@color/colorBlack_FF323232"
+        android:textSize="@dimen/textFontSize_12" />
 
     <TextView
         android:id="@+id/shoping_goods_price"

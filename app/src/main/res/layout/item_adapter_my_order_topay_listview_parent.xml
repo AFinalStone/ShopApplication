@@ -19,7 +19,7 @@
             android:singleLine="true"
             android:text="订单号:201511270054"
             android:textColor="@color/colorBlack_FF646464"
-            android:textSize="@dimen/textFontSize_12" />
+            android:textSize="@dimen/textFontSize_10" />
 
         <TextView
             android:id="@+id/tv_orderStartTime"
@@ -31,7 +31,7 @@
             android:singleLine="true"
             android:text="下单时间:2015-11-27 15:45"
             android:textColor="@color/colorBlack_FF646464"
-            android:textSize="@dimen/textFontSize_12" />
+            android:textSize="@dimen/textFontSize_10" />
     </LinearLayout>
 
     <View
@@ -52,11 +52,9 @@
         <ImageView
             android:id="@+id/iv_select"
             android:layout_width="40dp"
-            android:layout_height="40dp"
+            android:layout_height="30dp"
             android:paddingRight="10dp"
             android:paddingLeft="10dp"
-            android:paddingTop="10dp"
-            android:paddingBottom="10dp"
             android:scaleType="centerInside"
             android:src="@drawable/icon_select_off_02" />
 
@@ -113,8 +111,9 @@
 
         <TextView
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="30dp"
             android:text="@string/tv_myOrderTotalPrices_C"
+            android:gravity="center_vertical"
             android:textColor="@color/colorBlack_FF323232"
             android:layout_marginLeft="15dp"
             android:textSize="@dimen/textFontSize_14" />
@@ -122,9 +121,10 @@
         <TextView
             android:id="@+id/tv_orderPrices"
             android:layout_width="0dp"
-            android:layout_height="15dp"
+            android:layout_height="30dp"
             android:layout_marginLeft="5dp"
             android:layout_weight="1"
+            android:gravity="center_vertical"
             android:text="￥525.00"
             android:textColor="@color/colorRed_FFE83821"
             android:textSize="@dimen/textFontSize_14" />
@@ -132,8 +132,8 @@
         <TextView
             android:id="@+id/tv_orderState"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:gravity="center_horizontal"
+            android:layout_height="30dp"
+            android:gravity="center_vertical"
             android:text="订单支付状态"
             android:layout_marginRight="10dp"
             android:textColor="@color/colorRed_FFE83821"
@@ -149,7 +149,7 @@
         android:background="@color/dividingLineColor" />
 
     <LinearLayout
-        android:id="@+id/linearLayout_accountOrderState"
+        android:id="@+id/linearLayout_orderBottom"
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:layout_below="@id/view_border03"
@@ -170,7 +170,7 @@
 
         <TextView
             android:id="@+id/tv_orderCancel"
-            android:layout_width="55dp"
+            android:layout_width="60dp"
             android:layout_height="30dp"
             android:text="取消订单"
             android:layout_marginLeft="5dp"
@@ -197,7 +197,7 @@
         android:id="@+id/view_border04"
         android:layout_width="match_parent"
         android:layout_height="10dp"
-        android:layout_below="@id/linearLayout_accountOrderState"
+        android:layout_below="@id/linearLayout_orderBottom"
         android:background="@color/dividingLineColor" />
 
 </RelativeLayout>

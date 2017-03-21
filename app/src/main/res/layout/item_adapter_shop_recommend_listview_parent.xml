@@ -1,105 +1,105 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_width="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
     app:cardElevation="5dp"
     app:contentPadding="5dp"
-    android:layout_height="wrap_content"
     tools:context=".activity.ShopRecommendActivity">
-<RelativeLayout
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content">
 
-    <LinearLayout
-        android:id="@+id/linearLayout_shopName"
-        android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:gravity="center_vertical"
-        android:orientation="horizontal">
-
-        <TextView
-            android:id="@+id/tv_shopName"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="15dp"
-            android:layout_weight="1"
-            android:text="杭州乡里乡亲有限公司"
-            android:textColor="@color/colorBlack_FF323232"
-            android:textSize="@dimen/textFontSize_16" />
-
-        <Button
-            android:id="@+id/btn_IntoShop"
-            android:layout_width="80dp"
-            android:layout_height="30dp"
-            android:layout_marginRight="15dp"
-            android:background="@drawable/button_shape_inred_01"
-            android:gravity="center"
-            android:text="@string/btn_shopRecommendIntoShop"
-            android:textColor="@color/colorWhite_FFFFFFFF"
-            android:textSize="@dimen/textFontSize_12" />
-    </LinearLayout>
-
-    <View
-        android:id="@+id/view_border02"
-        android:layout_width="match_parent"
-        android:layout_height="5dp"
-        android:layerType="software"
-        android:layout_below="@id/linearLayout_shopName"
-        android:background="@drawable/line_dash_black" />
-
-
-    <TextView
-        android:id="@+id/tv_shopDesc"
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/view_border02"
-        android:layout_marginLeft="15dp"
-        android:layout_marginRight="15dp"
-        android:layout_marginTop="8dp"
-        android:textColor="@color/colorBlack_FF999999"
-        android:text="简介：DELL全系列，价格犀利，杭州乡里乡亲有限公司成立于2006年，经过多年的努力目前拥有一批精干的团队以及一大批连心的客户，更成为长城电脑，DELL电脑等品"
-        android:textSize="@dimen/textFontSize_12" />
-
-    <LinearLayout
-        android:id="@+id/linearLayout_specialGoods"
-        android:layout_width="match_parent"
-        android:layout_height="28dp"
-        android:layout_marginTop="10dp"
-        android:layout_below="@id/tv_shopDesc"
-        android:gravity="center_vertical"
-        android:orientation="horizontal">
-
-        <View
-            android:id="@+id/view_border03"
-            android:layout_width="5dp"
-            android:layout_height="15dp"
-            android:layout_marginLeft="15dp"
-            android:background="@color/colorRed_FFE83821" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:text="@string/tv_newGoodsRecommend"
-            android:textColor="@color/colorBlack_FF323232"
-            android:textSize="@dimen/textFontSize_16" />
-
-    </LinearLayout>
-
-
-    <HorizontalScrollView
-        android:layout_width="match_parent"
-        android:layout_below="@id/linearLayout_specialGoods"
-        android:scrollbars="none"
-        android:layout_height="wrap_content">
+        android:paddingBottom="5dp">
 
         <LinearLayout
-            android:id="@+id/linearLayout_specialPricesGoods"
+            android:id="@+id/linearLayout_shopName"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_shopName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_weight="1"
+                android:text="公司名称"
+                android:textColor="@color/colorBlack_FF323232"
+                android:textSize="@dimen/textFontSize_14" />
+
+            <Button
+                android:id="@+id/btn_IntoShop"
+                android:layout_width="80dp"
+                android:layout_height="25dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/button_shape_inred_01"
+                android:gravity="center"
+                android:text="@string/btn_shopRecommendIntoShop"
+                android:textColor="@color/colorWhite_FFFFFFFF"
+                android:textSize="@dimen/textFontSize_9" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/view_border02"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:layout_below="@id/linearLayout_shopName"
+            android:background="@drawable/line_dash_black"
+            android:layerType="software" />
+
+        <TextView
+            android:id="@+id/tv_shopDesc"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal" />
+            android:layout_below="@id/view_border02"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="7dp"
+            android:text="简介：DELL全系列，价格犀利，杭州乡里乡亲有限公司成立于2006年，经过多年的努力目前拥有一批精干的团队以及一大批连心的客户，更成为长城电脑，DELL电脑等品"
+            android:textColor="@color/colorBlack_FF999999"
+            android:textSize="@dimen/textFontSize_11" />
 
-    </HorizontalScrollView>
-</RelativeLayout>
-    </android.support.v7.widget.CardView>
+        <LinearLayout
+            android:id="@+id/linearLayout_specialGoods"
+            android:layout_width="match_parent"
+            android:layout_height="28dp"
+            android:layout_below="@id/tv_shopDesc"
+            android:layout_marginTop="5dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="5dp"
+                android:layout_height="15dp"
+                android:layout_marginLeft="15dp"
+                android:background="@color/colorRed_FFE83821" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="@string/tv_newGoodsRecommend"
+                android:textColor="@color/colorBlack_FF323232"
+                android:textSize="@dimen/textFontSize_14" />
+
+        </LinearLayout>
+
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/linearLayout_specialGoods"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:id="@+id/linearLayout_specialPricesGoods"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" />
+
+        </HorizontalScrollView>
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/XiangLiXiangQin-pifaxitong.iml" filepath="$PROJECT_DIR$/XiangLiXiangQin-pifaxitong.iml" />
+      <module fileurl="file://$PROJECT_DIR$/XiangLiXiangQin.iml" filepath="$PROJECT_DIR$/XiangLiXiangQin.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/rongIMKit/rongIMKit.iml" filepath="$PROJECT_DIR$/rongIMKit/rongIMKit.iml" />
     </modules>

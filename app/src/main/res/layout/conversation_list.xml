@@ -7,8 +7,6 @@
 
     <include
         android:id="@+id/ly_title"
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/titleBarHeight"
         layout="@layout/layout_title" />
 
     <FrameLayout

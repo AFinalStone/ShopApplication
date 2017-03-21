@@ -17,7 +17,7 @@ import android.widget.RadioGroup;
 import android.widget.RadioGroup.OnCheckedChangeListener;
 import android.widget.RelativeLayout;
 
-import com.shuimunianhua.xianglixiangqin.R;
+import com.shi.xianglixiangqin.R;
 
 
 /**

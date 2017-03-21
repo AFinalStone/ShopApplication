@@ -31,8 +31,8 @@
             android:focusable="false"
             android:gravity="center"
             android:text="加价"
-            android:textColor="@android:color/white"
-            android:textSize="@dimen/textFontSize4" />
+            android:textColor="@color/colorWhite_FFFFFFFF"
+            android:textSize="@dimen/textFontSize_12" />
 
         <ImageView
             android:id="@+id/shoping_goods_image"
@@ -46,15 +46,17 @@
         <TextView
             android:id="@+id/shoping_goods_title"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="50dp"
             android:layout_alignTop="@id/shoping_goods_image"
             android:layout_toLeftOf="@id/tv_addPrice"
             android:layout_toRightOf="@id/shoping_goods_image"
+            android:layout_marginRight="5dp"
             android:ellipsize="end"
+            android:gravity="center|left"
             android:maxLines="3"
             android:text="@string/goodsName"
-            android:textColor="#000000"
-            android:textSize="@dimen/textFontSize4" />
+            android:textColor="@color/colorBlack_FF323232"
+            android:textSize="@dimen/textFontSize_12" />
 
         <TextView
             android:id="@+id/shoping_goods_price"
@@ -65,7 +67,7 @@
             android:gravity="center_horizontal"
             android:text="商品价格"
             android:textColor="@color/lightRed"
-            android:textSize="@dimen/textFontSize4" />
+            android:textSize="@dimen/textFontSize_14" />
 
         <TextView
             android:id="@+id/tv_agentAddMoney"
@@ -76,7 +78,7 @@
             android:gravity="center_horizontal"
             android:text="代理加价"
             android:textColor="@color/lightGreyFont"
-            android:textSize="@dimen/textFontSize5" />
+            android:textSize="@dimen/textFontSize_12" />
 
     </RelativeLayout>
 

@@ -4,15 +4,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.shuimunianhua.xianglixiangqin.activity.ShopRecommendActivity">
+    tools:context="com.shi.xianglixiangqin.activity.ShopRecommendActivity">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="44dp"
-        android:gravity="center"
-        android:text="@string/title_shopRecommend"
-        android:textColor="@color/colorBlack_FF323232"
-        android:textSize="@dimen/textFontSize_18" />
+
+    <include layout="@layout/layout_title"/>
 
     <android.support.v4.widget.SwipeRefreshLayout
         android:id="@+id/swipeRefreshLayout"

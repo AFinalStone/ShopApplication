@@ -16,7 +16,7 @@ import android.os.Build;
 import android.util.AttributeSet;
 import android.widget.ImageView;
 
-import com.shuimunianhua.xianglixiangqin.R;
+import com.shi.xianglixiangqin.R;
 
 /**
  * 可以实现圆角和圆角矩形的ImageView 

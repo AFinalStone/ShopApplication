@@ -131,7 +131,7 @@
                         android:layout_alignParentRight="true"
                         android:layout_marginRight="10dp"
                         android:background="@drawable/search_right"
-                        android:text="@string/search"
+                        android:text="@string/MyShop_search"
                         android:textColor="@android:color/white" />
                 </LinearLayout>
 
@@ -166,7 +166,7 @@
                         android:layout_height="30dp"
                         android:background="@color/dividingLineColor" />
 
-                    <com.shuimunianhua.xianglixiangqin.view.FocusTextView
+                    <com.shi.xianglixiangqin.view.FocusTextView
                         android:id="@+id/tv_informMsg"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -303,7 +303,7 @@
                     </LinearLayout>
                 </RelativeLayout>
 
-                <com.shuimunianhua.xianglixiangqin.view.ScrollListView
+                <com.shi.xianglixiangqin.view.ScrollListView
                     android:id="@+id/listView_goodsByGroupBuy"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content" />
@@ -374,7 +374,7 @@
                 </HorizontalScrollView>
 
                 <!-- 特价商品 -->
-                <com.shuimunianhua.xianglixiangqin.view.ScrollListView
+                <com.shi.xianglixiangqin.view.ScrollListView
                     android:id="@+id/listview_specialsPricesGoods"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -433,7 +433,7 @@
                 </HorizontalScrollView>
                 <!-- 普通商品 -->
 
-                <com.shuimunianhua.xianglixiangqin.view.ScrollListView
+                <com.shi.xianglixiangqin.view.ScrollListView
                     android:id="@+id/listview_generalGoods"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content" />

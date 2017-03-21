@@ -79,7 +79,7 @@
                     </LinearLayout>
                 </RelativeLayout>
 
-                <com.shuimunianhua.xianglixiangqin.view.ScrollListView
+                <com.shi.xianglixiangqin.view.ScrollListView
                     android:id="@+id/listView_goodsByGroupBuy"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content" />
@@ -205,7 +205,7 @@
                         android:layout_height="wrap_content"
                         android:orientation="horizontal" >
 
-                        <com.shuimunianhua.xianglixiangqin.view.ScrollGridView
+                        <com.shi.xianglixiangqin.view.ScrollGridView
                             android:id="@+id/gridView_jpRecomment"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -235,7 +235,7 @@
                     android:layout_marginTop="5dp"
                     android:background="@color/white" />
 
-                <com.shuimunianhua.xianglixiangqin.view.ScrollViewPager
+                <com.shi.xianglixiangqin.view.ScrollViewPager
                     android:id="@+id/viewPager"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"

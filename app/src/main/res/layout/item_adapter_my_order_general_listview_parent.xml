@@ -1,6 +1,7 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:orientation="vertical"
     android:background="@color/colorWhite_FFFFFFFF">
 
     <LinearLayout
@@ -19,7 +20,7 @@
             android:singleLine="true"
             android:text="订单号:201511270054"
             android:textColor="@color/colorBlack_FF646464"
-            android:textSize="@dimen/textFontSize_12" />
+            android:textSize="@dimen/textFontSize_10" />
 
         <TextView
             android:id="@+id/tv_orderStartTime"
@@ -31,21 +32,19 @@
             android:singleLine="true"
             android:text="下单时间:2015-11-27 15:45"
             android:textColor="@color/colorBlack_FF646464"
-            android:textSize="@dimen/textFontSize_12" />
+            android:textSize="@dimen/textFontSize_10" />
     </LinearLayout>
 
     <View
         android:id="@+id/view_border01"
         android:layout_width="match_parent"
         android:layout_height="1dp"
-        android:layout_below="@id/linearLayout_orderNumberAndStartTime"
         android:background="@color/dividingLineColor" />
 
     <LinearLayout
         android:id="@+id/linearLayout_shopNameAndDelayDay"
         android:layout_width="match_parent"
         android:layout_height="30dp"
-        android:layout_below="@id/view_border01"
         android:gravity="center_vertical"
         android:orientation="horizontal">
 
@@ -84,28 +83,26 @@
         android:id="@+id/view_border02"
         android:layout_width="match_parent"
         android:layout_height="1dp"
-        android:layout_below="@id/linearLayout_shopNameAndDelayDay"
         android:background="@color/dividingLineColor" />
 
     <LinearLayout
         android:id="@+id/linearLayout_goodsList"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/view_border02"
         android:orientation="vertical" />
 
     <LinearLayout
         android:id="@+id/linearLayout_orderPricesAndState"
         android:layout_width="match_parent"
         android:layout_height="30dp"
-        android:layout_below="@id/linearLayout_goodsList"
         android:gravity="center_vertical"
         android:orientation="horizontal">
 
         <TextView
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="30dp"
             android:text="@string/tv_myOrderTotalPrices_C"
+            android:gravity="center_vertical"
             android:textColor="@color/colorBlack_FF323232"
             android:layout_marginLeft="15dp"
             android:textSize="@dimen/textFontSize_14" />
@@ -113,7 +110,8 @@
         <TextView
             android:id="@+id/tv_orderPrices"
             android:layout_width="0dp"
-            android:layout_height="15dp"
+            android:layout_height="30dp"
+            android:gravity="center_vertical"
             android:layout_marginLeft="5dp"
             android:layout_weight="1"
             android:text="￥525.00"
@@ -135,16 +133,14 @@
         android:id="@+id/view_border03"
         android:layout_width="match_parent"
         android:layout_height="1dp"
-
-        android:layout_below="@id/linearLayout_orderPricesAndState"
         android:background="@color/dividingLineColor" />
 
     <LinearLayout
-        android:id="@+id/linearLayout_accountOrderState"
+        android:id="@+id/linearLayout_orderBottom"
         android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:layout_below="@id/view_border03"
+        android:layout_height="wrap_content"
         android:gravity="center_vertical"
+        android:visibility="visible"
         android:orientation="horizontal">
 
         <TextView
@@ -152,16 +148,20 @@
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="30dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
             android:layout_marginLeft="10dp"
-            android:gravity="left|center_vertical"
+            android:gravity="left|center"
             android:singleLine="true"
-            android:text="到期时间：2016年4月26"
+            android:text=""
             android:textColor="@color/colorBlack_FF646464"
             android:textSize="@dimen/textFontSize_14" />
         <TextView
             android:id="@+id/tv_orderCancel"
             android:layout_width="55dp"
             android:layout_height="30dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
             android:text="取消订单"
             android:layout_marginLeft="5dp"
             android:focusable="false"
@@ -174,6 +174,8 @@
             android:layout_height="30dp"
             android:layout_marginLeft="5dp"
             android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
             android:gravity="center"
             android:background="@drawable/button_selector_01"
             android:focusable="false"
@@ -186,7 +188,6 @@
         android:id="@+id/view_border04"
         android:layout_width="match_parent"
         android:layout_height="10dp"
-        android:layout_below="@id/linearLayout_accountOrderState"
         android:background="@color/dividingLineColor" />
 
-</RelativeLayout>
+</LinearLayout>

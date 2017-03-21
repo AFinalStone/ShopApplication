@@ -3,46 +3,43 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical" >
+    android:orientation="vertical">
 
     <include layout="@layout/layout_title" />
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
+        android:layout_height="wrap_content">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical" >
+            android:orientation="vertical">
 
             <ScrollView
                 android:id="@+id/scrollView"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
-                android:scrollbars="none"
-                android:background="@color/lightGrey" >
+                android:background="@color/colorWhite_FFFFFFFF"
+                android:scrollbars="none">
 
                 <RelativeLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content" >
+                    android:layout_height="wrap_content">
 
-                    <ImageView
-                        android:id="@+id/iv_goodsImages"
+                    <android.support.v4.view.ViewPager
+                        android:id="@+id/viewPager_goodsImages"
+                        android:layout_centerHorizontal="true"
                         android:layout_width="match_parent"
                         android:layout_height="240dp"
-                        android:paddingTop="10dp"
-                        android:layout_centerHorizontal="true"
-                        android:background="@color/white"
-                        android:scaleType="fitCenter"
-                        android:src="@drawable/ic_empty" />
+                        android:background="@color/colorWhite_FFFFFFFF" />
 
                     <View
                         android:id="@+id/view_border01"
                         android:layout_width="match_parent"
                         android:layout_height="1dp"
-                        android:layout_below="@id/iv_goodsImages"
+                        android:layout_below="@id/viewPager_goodsImages"
                         android:background="@color/dividingLineColor" />
 
                     <TextView
@@ -104,14 +101,13 @@
                         android:background="@color/dividingLineColor" />
 
                     <!-- 整点秒杀商品 -->
-
                     <LinearLayout
                         android:id="@+id/linearLayout_sportMesKill"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_below="@id/view_border02"
                         android:orientation="horizontal"
-                        android:visibility="invisible" >
+                        android:visibility="invisible">
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -125,78 +121,35 @@
 
                         <TextView
                             android:id="@+id/tv_timeToBegin"
-                            android:layout_width="wrap_content"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="5dp"
-                            android:background="@drawable/button_shape_inwhite_outgray_02"
                             android:gravity="center_vertical"
                             android:padding="5dp"
-                            android:text="00:00 开始"
+                            android:text="2017-02-05  09:00:00"
                             android:textColor="@color/black"
-                            android:textSize="@dimen/textFontSize4" />
+                            android:textSize="@dimen/textFontSize_11" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="50dp"
-                            android:layout_marginLeft="20dp"
+                            android:layout_marginLeft="15dp"
                             android:gravity="center_vertical"
-                            android:text="倒计时"
+                            android:text="活动状态："
                             android:textColor="@color/black"
-                            android:textSize="@dimen/textFontSize4" />
+                            android:textSize="@dimen/textFontSize_11" />
 
                         <TextView
-                            android:id="@+id/tv_hour"
+                            android:id="@+id/tv_sportStateDesc"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginLeft="10dp"
-                            android:background="@drawable/button_shape_inwhite_outgray_02"
                             android:gravity="center_vertical"
                             android:padding="5dp"
-                            android:text="00"
-                            android:textColor="@color/black"
-                            android:textSize="@dimen/textFontSize4" />
+                            android:text="活动尚未开始"
+                            android:textColor="@color/colorRed_FFE83821"
+                            android:textSize="@dimen/textFontSize_11" />
 
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginLeft="5dp"
-                            android:gravity="center_vertical"
-                            android:text=":"
-                            android:textColor="@color/black"
-                            android:textSize="@dimen/textFontSize1" />
-
-                        <TextView
-                            android:id="@+id/tv_minute"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginLeft="5dp"
-                            android:background="@drawable/button_shape_inwhite_outgray_02"
-                            android:gravity="center_vertical"
-                            android:padding="5dp"
-                            android:text="00"
-                            android:textColor="@color/black"
-                            android:textSize="@dimen/textFontSize4" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginLeft="5dp"
-                            android:gravity="center_vertical"
-                            android:text=":"
-                            android:textColor="@color/black"
-                            android:textSize="@dimen/textFontSize1" />
-
-                        <TextView
-                            android:id="@+id/tv_second"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginLeft="5dp"
-                            android:background="@drawable/button_shape_inwhite_outgray_02"
-                            android:gravity="center_vertical"
-                            android:padding="5dp"
-                            android:text="00"
-                            android:textColor="@color/black"
-                            android:textSize="@dimen/textFontSize4" />
                     </LinearLayout>
                     <!-- 团购商品 -->
 
@@ -206,7 +159,7 @@
                         android:layout_height="wrap_content"
                         android:layout_below="@id/view_border02"
                         android:orientation="horizontal"
-                        android:visibility="invisible" >
+                        android:visibility="invisible">
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -226,7 +179,7 @@
                             android:gravity="center_vertical"
                             android:text="0件已参团(满0成团)"
                             android:textColor="@color/black"
-                            android:textSize="@dimen/textFontSize4" />
+                            android:textSize="@dimen/textFontSize_11" />
 
                         <ImageView
                             android:layout_width="20dp"
@@ -245,7 +198,7 @@
                             android:singleLine="true"
                             android:text="0月0日00:00结束"
                             android:textColor="@color/black"
-                            android:textSize="@dimen/textFontSize4" />
+                            android:textSize="@dimen/textFontSize_11" />
                     </LinearLayout>
 
                     <!-- 限时抢购商品 -->
@@ -256,7 +209,7 @@
                         android:layout_height="wrap_content"
                         android:layout_below="@id/view_border02"
                         android:orientation="horizontal"
-                        android:visibility="invisible" >
+                        android:visibility="invisible">
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -278,19 +231,19 @@
 
                         <TextView
                             android:id="@+id/tv_numHaveRob"
-                            android:layout_width="wrap_content"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
                             android:layout_height="50dp"
                             android:layout_marginLeft="10dp"
                             android:gravity="center_vertical"
                             android:text="已抢数量：0"
                             android:textColor="@color/black"
-                            android:textSize="@dimen/textFontSize4" />
+                            android:textSize="@dimen/textFontSize_11" />
 
                         <ImageView
                             android:layout_width="20dp"
                             android:layout_height="20dp"
                             android:layout_gravity="center_vertical"
-                            android:layout_marginLeft="15dp"
                             android:scaleType="centerInside"
                             android:src="@drawable/iv_time_remain" />
 
@@ -299,10 +252,11 @@
                             android:layout_width="wrap_content"
                             android:layout_height="50dp"
                             android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
                             android:gravity="center_vertical"
-                            android:text="结束"
+                            android:text="截止时间："
                             android:textColor="@color/black"
-                            android:textSize="@dimen/textFontSize4" />
+                            android:textSize="@dimen/textFontSize_11" />
                     </LinearLayout>
 
                     <View
@@ -312,12 +266,12 @@
                         android:layout_below="@id/linearLayout_sportMesKill"
                         android:background="@color/dividingLineColor" />
 
-                    <RelativeLayout
+<!--                    <RelativeLayout
                         android:id="@+id/relativeLayout_selectPackageType"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_below="@id/view_border03"
-                        android:padding="10dp" >
+                        android:padding="10dp">
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -339,16 +293,23 @@
                         android:layout_width="match_parent"
                         android:layout_height="5dp"
                         android:layout_below="@id/relativeLayout_selectPackageType"
-                        android:background="@color/darkGrey" />
+                        android:background="@color/darkGrey" />-->
+
+                    <WebView
+                        android:id="@+id/webview_goodsDetail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/view_border03"
+                        android:layout_marginTop="35dp"
+                        android:gravity="center"
+                        tools:ignore="WebViewLayout" />
 
                     <RadioGroup
                         android:id="@+id/rg_goodsGroup"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_below="@id/view_border04"
-                        android:orientation="horizontal"
-                        android:paddingBottom="10dp"
-                        android:paddingTop="10dp" >
+                        android:layout_height="35dp"
+                        android:layout_below="@id/view_border03"
+                        android:orientation="horizontal">
 
                         <RadioButton
                             android:id="@+id/rb_goodsDesc"
@@ -381,21 +342,7 @@
                             android:background="@color/dividingLineColor" />
                     </RadioGroup>
 
-                    <View
-                        android:id="@+id/view_border05"
-                        android:layout_width="match_parent"
-                        android:layout_height="1dp"
-                        android:layout_below="@id/rg_goodsGroup"
-                        android:background="@color/dividingLineColor" />
 
-                    <WebView
-                        android:id="@+id/webview_goodsDetail"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_below="@id/view_border05"
-                        android:layout_marginTop="2dp"
-                        android:gravity="center"
-                        tools:ignore="WebViewLayout" />
                 </RelativeLayout>
             </ScrollView>
 
@@ -406,35 +353,49 @@
                 android:background="@color/white"
                 android:gravity="center_horizontal"
                 android:orientation="horizontal"
-                android:padding="10dp" >
+                android:padding="10dp">
 
                 <Button
+                    android:id="@+id/btn_justToBuy"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_selector_01"
+                    android:gravity="center"
+                    android:padding="0dp"
+                    android:text="购买活动商品"
+                    android:textColor="@drawable/selector_text_color_01"
+                    android:textSize="@dimen/textFontSize4"
+                    android:visibility="invisible" />
+
+<!--
+                           <Button
                     android:id="@+id/btn_mesKill"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_weight="1"
-                    android:background="@drawable/button_selector_02"
+                    android:background="@drawable/button_selector_01"
                     android:gravity="center"
                     android:padding="0dp"
                     android:text="@string/clickMesKill"
                     android:textColor="@drawable/selector_text_color_01"
                     android:textSize="@dimen/textFontSize4"
-                    android:visibility="gone" />
-
-                <Button
+                    android:visibility="visible" />
+           <Button
                     android:id="@+id/btn_justToJoinGroup"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_weight="1"
-                    android:background="@drawable/button_selector_02"
+                    android:background="@drawable/button_selector_01"
                     android:gravity="center"
                     android:padding="0dp"
                     android:text="@string/justToJoinGroup"
                     android:textColor="@drawable/selector_text_color_01"
                     android:textSize="@dimen/textFontSize4"
-                    android:visibility="gone" />
+                    android:visibility="visible" />
 
                 <Button
                     android:id="@+id/btn_justToRob"
@@ -442,13 +403,13 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_weight="1"
-                    android:background="@drawable/button_selector_02"
+                    android:background="@drawable/button_selector_01"
                     android:gravity="center"
                     android:padding="0dp"
                     android:text="@string/justToRob"
                     android:textColor="@drawable/selector_text_color_01"
                     android:textSize="@dimen/textFontSize4"
-                    android:visibility="gone" />
+                    android:visibility="visible" />-->
             </LinearLayout>
         </LinearLayout>
 

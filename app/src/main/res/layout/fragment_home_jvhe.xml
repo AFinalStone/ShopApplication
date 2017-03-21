@@ -5,13 +5,14 @@
     android:id="@+id/swipeRefreshLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorWhite_FFFFFFFF"
     app:layout_behavior="@string/appbar_scrolling_view_behavior">
     <!--协调布局-->
     <android.support.design.widget.CoordinatorLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:background="@color/transparent"
-        android:fitsSystemWindows="false">
+        android:fitsSystemWindows="false"
+        app:background="@color/transparent">
 
         <!--应用程序栏-->
         <android.support.design.widget.AppBarLayout
@@ -19,8 +20,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/transparent"
-            app:background="@color/transparent"
-            android:theme="@style/AppTheme.AppBarOverlay">
+            android:theme="@style/AppTheme.AppBarOverlay"
+            app:background="@color/transparent">
 
             <android.support.design.widget.CollapsingToolbarLayout
                 android:id="@+id/collapsingToolbarLayout"
@@ -28,15 +29,15 @@
                 android:layout_height="wrap_content"
                 android:fitsSystemWindows="true"
                 app:contentScrim="?attr/colorAccent"
-                app:statusBarScrim="@android:color/transparent"
-                app:layout_scrollFlags="scroll|exitUntilCollapsed">
+                app:layout_scrollFlags="scroll|exitUntilCollapsed"
+                app:statusBarScrim="@android:color/transparent">
 
                 <!--搜索栏-->
                 <LinearLayout
                     android:id="@+id/linearLayout_search"
                     android:layout_width="match_parent"
-                    android:layout_height="45dp"
-                    android:layout_marginTop="45dp"
+                    android:layout_height="?attr/actionBarSize"
+                    android:layout_marginTop="?attr/actionBarSize"
                     android:gravity="center"
                     android:orientation="horizontal"
                     android:visibility="visible">
@@ -46,7 +47,7 @@
                         android:layout_height="35dp"
                         android:layout_marginLeft="10dp"
                         android:layout_weight="1"
-                        android:background="@drawable/button_shape_inwhite_outgray_02"
+                        android:background="@drawable/button_shape_inwhite_outgray_circle_02"
                         android:gravity="center"
                         android:orientation="horizontal">
 
@@ -74,20 +75,21 @@
                         android:id="@+id/tv_search"
                         android:layout_width="60dp"
                         android:layout_height="35dp"
-                        android:gravity="center"
                         android:layout_marginRight="5dp"
                         android:background="@drawable/button_shape_inred_outwhite_01"
-                        android:text="@string/search"
-                        android:textSize="@dimen/textFontSize_16"
-                        android:textColor="@color/colorRed_FFE83821" />
+                        android:gravity="center"
+                        android:text="@string/FragmentHome_search"
+                        android:textColor="@color/colorRed_FFE83821"
+                        android:textSize="@dimen/textFontSize_16" />
 
                 </LinearLayout>
 
                 <android.support.v7.widget.Toolbar
                     android:id="@+id/toolbar"
                     android:layout_width="match_parent"
-                    android:layout_height="45dp"
+                    android:layout_height="wrap_content"
                     android:background="@color/colorRed_FFE83821"
+                    android:minHeight="?attr/actionBarSize"
                     app:layout_collapseMode="pin"
                     app:layout_scrollFlags="scroll|enterAlways"
                     app:popupTheme="@style/AppTheme.PopupOverlay">
@@ -95,11 +97,11 @@
                     <TextView
                         android:id="@+id/tv_title"
                         android:layout_width="match_parent"
-                        android:layout_height="45dp"
+                        android:layout_height="match_parent"
                         android:gravity="center"
                         android:text="首页"
-                        android:textSize="@dimen/textFontSize_20"
-                        android:textColor="@color/colorWhite_FFFFFFFF" />
+                        android:textColor="@color/colorWhite_FFFFFFFF"
+                        android:textSize="@dimen/textFontSize_20" />
 
                 </android.support.v7.widget.Toolbar>
 
@@ -115,359 +117,168 @@
             app:background="@color/transparent"
             app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
-                <LinearLayout
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.daimajia.slider.library.SliderLayout
+                    android:id="@+id/sliderLayout_rollView"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical">
+                    custom:auto_cycle="true"
+                    custom:indicator_visibility="visible"
+                    custom:pager_animation="Default"
+                    custom:pager_animation_span="4000" />
 
-                    <com.daimajia.slider.library.SliderLayout
-                        android:id="@+id/sliderLayout_rollView"
-                        android:layout_width="match_parent"
-                        android:layout_height="180dp"
-                        custom:auto_cycle="true"
-                        custom:indicator_visibility="visible"
-                        custom:pager_animation="Default"
-                        custom:pager_animation_span="1100" />
-
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="1px"
-                        android:layout_marginTop="5dp"
-                        android:background="@color/dividingLineColor" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/dividingLineColor" />
 
 
-                    <LinearLayout
-                        android:id="@+id/relativeLayout_informMsg"
-                        android:layout_width="match_parent"
+                <LinearLayout
+                    android:id="@+id/relativeLayout_informMsg"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="35dp"
                         android:layout_height="35dp"
-                        android:gravity="center_vertical"
-                        android:orientation="horizontal">
-
-                        <ImageView
-                            android:layout_width="35dp"
-                            android:layout_height="35dp"
-                            android:scaleType="centerInside"
-                            android:src="@drawable/icon_trumpet" />
-
-                        <View
-                            android:layout_width="1px"
-                            android:layout_height="30dp"
-                            android:background="@color/dividingLineColor" />
-
-                        <com.shuimunianhua.xianglixiangqin.view.FocusTextView
-                            android:id="@+id/tv_informMsg"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginLeft="10dp"
-                            android:ellipsize="marquee"
-                            android:singleLine="true"
-                            android:text="通知"
-                            android:textColor="@color/colorBlack_FF999999"
-                            android:textSize="@dimen/textFontSize_16" />
-                    </LinearLayout>
+                        android:scaleType="centerInside"
+                        android:src="@drawable/icon_trumpet" />
 
                     <View
-                        android:layout_width="match_parent"
-                        android:layout_height="1px"
+                        android:layout_width="1px"
+                        android:layout_height="30dp"
                         android:background="@color/dividingLineColor" />
 
-                    <com.shuimunianhua.xianglixiangqin.view.ScrollGridView
-                        android:id="@+id/gridView_functionModel"
-                        android:layout_width="match_parent"
+                    <com.shi.xianglixiangqin.view.FocusTextView
+                        android:id="@+id/tv_informMsg"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:background="@color/white"
-                        android:gravity="center"
-                        android:horizontalSpacing="20dp"
-                        android:numColumns="3"
-                        android:paddingBottom="10dp"
-                        android:paddingLeft="10dp"
-                        android:paddingRight="10dp"
-                        android:paddingTop="10dp"
-                        android:stretchMode="columnWidth"
-                        android:verticalSpacing="10dp" />
-
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="1px"
-                        android:background="@color/dividingLineColor" />
-
-                    <RelativeLayout
-                        android:id="@+id/relativeLayout_buyCrazy"
-                        android:layout_width="match_parent"
-                        android:layout_height="30dp"
-                        android:layout_marginTop="5dp"
-                        android:background="@color/white"
-                        android:visibility="gone">
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_alignParentLeft="true"
-                            android:layout_centerVertical="true"
-                            android:layout_marginLeft="10dp"
-                            android:text="@string/buyCrazy"
-                            android:textSize="@dimen/textFontSize3" />
-
-                        <ImageView
-                            android:id="@+id/iv_nextForecast"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_alignParentRight="true"
-                            android:layout_centerVertical="true"
-                            android:layout_marginRight="10dp"
-                            android:src="@drawable/iv_next_forecast"
-                            android:visibility="invisible" />
-
-                        <TextView
-                            android:id="@+id/tv_nextForecast"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_centerVertical="true"
-                            android:layout_marginRight="10dp"
-                            android:layout_toLeftOf="@id/iv_nextForecast"
-                            android:text="@string/nextForecast"
-                            android:textColor="@color/lightRed"
-                            android:textSize="@dimen/textFontSize5"
-                            android:visibility="invisible" />
-                    </RelativeLayout>
-
-                    <HorizontalScrollView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:scrollbars="none">
-
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:orientation="horizontal">
-
-                            <GridView
-                                android:id="@+id/gridView_buyCrazy"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="5dp"
-                                android:background="@color/dividingLineColor"
-                                android:gravity="center"
-                                android:horizontalSpacing="1dp"
-                                android:numColumns="auto_fit"
-                                android:paddingBottom="1dp"
-                                android:paddingTop="1dp"
-                                android:stretchMode="columnWidth"
-                                android:verticalSpacing="1dp" />
-                        </LinearLayout>
-                    </HorizontalScrollView>
-
-                    <RelativeLayout
-                        android:id="@+id/relativeLayout_goodsByGroupBuy"
-                        android:layout_width="match_parent"
-                        android:layout_height="30dp"
-                        android:layout_marginBottom="1dp"
-                        android:layout_marginTop="5dp"
-                        android:background="@color/colorWhite_FFFFFFFF"
-                        android:visibility="gone">
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_alignParentLeft="true"
-                            android:layout_centerVertical="true"
-                            android:layout_marginLeft="10dp"
-                            android:text="@string/goodsByGroupBuy"
-                            android:textSize="@dimen/textFontSize3" />
-
-                        <LinearLayout
-                            android:id="@+id/linearLayout_goodsByGroupBuy"
-                            android:layout_width="wrap_content"
-                            android:layout_height="match_parent"
-                            android:layout_alignParentRight="true"
-                            android:layout_centerVertical="true"
-                            android:background="@color/redTitleBarBackground"
-                            android:orientation="horizontal"
-                            android:paddingRight="10dp">
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="match_parent"
-                                android:layout_marginLeft="5dp"
-                                android:layout_marginRight="5dp"
-                                android:gravity="center"
-                                android:text="@string/centerOfGroupBuy"
-                                android:textColor="@color/white"
-                                android:textSize="@dimen/textFontSize5" />
-
-                            <ImageView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_gravity="center"
-                                android:src="@drawable/iv_centerof_groupbuy" />
-
-                        </LinearLayout>
-                    </RelativeLayout>
-
-                    <com.shuimunianhua.xianglixiangqin.view.ScrollListView
-                        android:id="@+id/listView_goodsByGroupBuy"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content" />
-
-
-                    <RelativeLayout
-                        android:id="@+id/relativeLayout_salesByTimeLimited"
-                        android:layout_width="match_parent"
-                        android:layout_height="30dp"
-                        android:layout_marginTop="5dp"
-                        android:background="@color/white"
-                        android:visibility="gone">
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_alignParentLeft="true"
-                            android:layout_centerVertical="true"
-                            android:layout_marginLeft="10dp"
-                            android:text="@string/salesByTimeLimited"
-                            android:textSize="@dimen/textFontSize3" />
-
-                        <LinearLayout
-                            android:id="@+id/linearLayout_moreSalesByTimeLimited"
-                            android:layout_width="wrap_content"
-                            android:layout_height="match_parent"
-                            android:layout_alignParentRight="true"
-                            android:layout_centerVertical="true"
-                            android:gravity="center_vertical"
-                            android:orientation="horizontal"
-                            android:paddingRight="10dp">
-
-                            <TextView
-                                android:id="@+id/tv_moreSalesByTimeLimited"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="@string/moreSalesByTimeLimited"
-                                android:textColor="@color/lightRed"
-                                android:textSize="@dimen/textFontSize5" />
-
-                            <ImageView
-                                android:id="@+id/iv_moreSalesByTimeLimited"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginLeft="5dp"
-                                android:src="@drawable/iv_next_forecast" />
-                        </LinearLayout>
-                    </RelativeLayout>
-
-                    <HorizontalScrollView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:scrollbars="none">
-
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:orientation="horizontal">
-
-                            <GridView
-                                android:id="@+id/gridView_saleByTimeLimited"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:background="@color/dividingLineColor"
-                                android:gravity="center"
-                                android:numColumns="auto_fit"
-                                android:stretchMode="columnWidth" />
-                        </LinearLayout>
-                    </HorizontalScrollView>
-
-                    <!-- 特价商品 -->
-                    <LinearLayout
-                        android:id="@+id/linearLayout_specialsPricesGoods"
-                        android:layout_width="match_parent"
-                        android:layout_height="30dp"
-                        android:layout_marginTop="5dp"
-                        android:gravity="center_vertical"
-                        android:background="@drawable/shop_goods_menu"
-                        android:orientation="horizontal"
-                        android:visibility="gone">
-
-                        <ImageView
-                            android:layout_width="20dp"
-                            android:layout_height="20dp"
-                            android:layout_marginLeft="15dp"
-                            android:scaleType="centerInside"
-                            android:src="@drawable/tip_special_goods_model"/>
-
-                        <TextView
-                            android:layout_width="0dp"
-                            android:layout_weight="1"
-                            android:layout_height="wrap_content"
-                            android:paddingLeft="10dp"
-                            android:text="@string/tip_specialsProduct"
-                            android:textSize="@dimen/textFontSize_16" />
-
-                    </LinearLayout>
-
-                    <!-- 特价商品 -->
-                    <com.shuimunianhua.xianglixiangqin.view.ScrollListView
-                        android:id="@+id/listview_specialsPricesGoods"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:divider="@null"
-                        android:numColumns="auto_fit"
-                        android:stretchMode="spacingWidthUniform" />
-
-                    <!-- 新品推荐 -->
-                    <RelativeLayout
-                        android:id="@+id/relativeLayout_moreNewGoodsData"
-                        android:layout_width="match_parent"
-                        android:layout_height="30dp"
-                        android:layout_marginTop="5dp"
-                        android:background="@drawable/shop_goods_menu"
-                        android:visibility="gone">
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_alignParentLeft="true"
-                            android:layout_centerVertical="true"
-                            android:layout_marginLeft="20dp"
-                            android:text="@string/newProducts"
-                            android:textSize="@dimen/textFontSize3" />
-
-                        <TextView
-                            android:id="@+id/tv_moreNewGoodsData"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_alignParentRight="true"
-                            android:layout_centerVertical="true"
-                            android:layout_marginRight="10dp"
-                            android:text="@string/moreNewGoodsData"
-                            android:textColor="@color/lightRed"
-                            android:textSize="@dimen/textFontSize5" />
-                    </RelativeLayout>
-
-                    <HorizontalScrollView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:scrollbars="none">
-
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:orientation="horizontal">
-
-                            <GridView
-                                android:id="@+id/gridView_newProductsRecommendation"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:gravity="center"
-                                android:numColumns="auto_fit"
-                                android:stretchMode="spacingWidthUniform" />
-                        </LinearLayout>
-                    </HorizontalScrollView>
-                    <!-- 普通商品 -->
-
-                    <com.shuimunianhua.xianglixiangqin.view.ScrollListView
-                        android:id="@+id/listview_generalGoods"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content" />
+                        android:layout_marginLeft="10dp"
+                        android:ellipsize="marquee"
+                        android:singleLine="true"
+                        android:text="通知"
+                        android:textColor="@color/colorBlack_FF999999"
+                        android:textSize="@dimen/textFontSize_16" />
                 </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/dividingLineColor" />
+
+                <com.shi.xianglixiangqin.view.ScrollGridView
+                    android:id="@+id/gridView_functionModel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:horizontalSpacing="20dp"
+                    android:numColumns="3"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="10dp"
+                    android:stretchMode="columnWidth"
+                    android:verticalSpacing="10dp" />
+
+                <!--活动模块-->
+                <include
+                    android:id="@+id/layout_sportModel"
+                    layout="@layout/layout_fragment_home_sport_model_buy" />
+
+                <RelativeLayout
+                    android:id="@+id/relativeLayout_moreNewGoodsData"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="@drawable/shop_goods_menu"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20dp"
+                        android:text="@string/newProducts"
+                        android:textSize="@dimen/textFontSize3" />
+
+                    <TextView
+                        android:id="@+id/tv_moreNewGoodsData"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:paddingLeft="20dp"
+                        android:text="@string/moreNewGoodsData"
+                        android:textColor="@color/lightRed"
+                        android:textSize="@dimen/textFontSize5"
+                        android:visibility="invisible" />
+                </RelativeLayout>
+
+                <com.shi.xianglixiangqin.view.ScrollGridView
+                    android:id="@+id/gridView_newGoodsPush"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:background="@color/dividingLineColor"
+                    android:gravity="center"
+                    android:horizontalSpacing="1dp"
+                    android:numColumns="2"
+                    android:paddingBottom="1dp"
+                    android:paddingTop="1dp"
+                    android:stretchMode="columnWidth"
+                    android:verticalSpacing="1dp" />
+
+                <!-- 特价商品栏目 -->
+                <LinearLayout
+                    android:id="@+id/linearLayout_specialsPricesGoods"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="@drawable/shop_goods_menu"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="15dp"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/tip_special_goods_model" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingLeft="10dp"
+                        android:text="@string/tip_specialsProduct"
+                        android:textSize="@dimen/textFontSize_16" />
+
+                </LinearLayout>
+
+                <!-- 特价商品 -->
+                <com.shi.xianglixiangqin.view.ScrollListView
+                    android:id="@+id/listView_specialsPricesGoods"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:divider="@null"
+                    android:numColumns="auto_fit"
+                    android:stretchMode="spacingWidthUniform" />
+
+                <!-- 普通商品 -->
+                <com.shi.xianglixiangqin.view.ScrollListView
+                    android:id="@+id/listView_generalGoods"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
 
         </android.support.v4.widget.NestedScrollView>
 
@@ -476,13 +287,12 @@
             android:id="@+id/ibn_backToTop"
             android:layout_width="35dp"
             android:layout_height="35dp"
-            android:visibility="invisible"
             android:layout_gravity="bottom|right"
-            android:layout_marginRight="10dp"
             android:layout_marginBottom="30dp"
+            android:layout_marginRight="10dp"
             android:background="@null"
             android:scaleType="centerInside"
             android:src="@drawable/icon_back_to_top"
-            />
+            android:visibility="invisible" />
     </android.support.design.widget.CoordinatorLayout>
 </android.support.v4.widget.SwipeRefreshLayout>

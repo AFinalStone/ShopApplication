@@ -4,7 +4,7 @@
     android:layout_height="wrap_content"
     android:background="@color/white" >
 
-    <com.shuimunianhua.xianglixiangqin.view.ScrollGridView
+    <com.shi.xianglixiangqin.view.ScrollGridView
         android:id="@+id/scrollGridView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"

@@ -35,7 +35,7 @@
             android:layout_height="30dp"
             android:background="@drawable/search_right"
             android:gravity="center"
-            android:text="@string/search"
+            android:text="@string/WXShopManage_search"
             android:textColor="@android:color/white"
             android:textSize="@dimen/textFontSize4" />
 

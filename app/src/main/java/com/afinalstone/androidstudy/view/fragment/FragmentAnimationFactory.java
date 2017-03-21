@@ -3,7 +3,7 @@ package com.afinalstone.androidstudy.view.fragment;
 
 import android.app.FragmentTransaction;
 
-import com.shuimunianhua.xianglixiangqin.R;
+import com.shi.xianglixiangqin.R;
 
 /**
  * Fragment切换动画工厂

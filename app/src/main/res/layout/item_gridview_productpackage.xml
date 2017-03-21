@@ -11,7 +11,7 @@
         android:background="@drawable/checkbox_selector_dispath_method"
         android:button="@null"
         android:gravity="center"
-        android:textColor="@color/lightBlack"
-        android:textSize="@dimen/textFontSize3" />
+        android:textColor="@color/colorBlack_FF3D4045"
+        android:textSize="@dimen/textFontSize_12" />
 
-</LinearLayout> <!-- 店铺LOG广告位 -->
+</LinearLayout>

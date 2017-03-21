@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content" >
-<!-- com.shi.androidstudy.view.SwipeRefresh -->
+
     <com.afinalstone.androidstudy.swiperefreshview.SwipeRefreshGridView
         android:id="@+id/swipeRefreshGridView"
         android:layout_width="match_parent"

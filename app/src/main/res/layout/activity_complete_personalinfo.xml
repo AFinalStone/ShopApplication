@@ -39,8 +39,9 @@
             app:shape_mode="circle" />
 
         <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="10dp"
+            android:layout_height="16dp"
+            android:scaleType="fitCenter"
             android:layout_marginLeft="20dp"
             android:src="@drawable/arrow_right" />
     </LinearLayout>
@@ -84,8 +85,9 @@
             android:textSize="@dimen/textFontSize4" />
 
         <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="10dp"
+            android:layout_height="16dp"
+            android:scaleType="fitCenter"
             android:src="@drawable/arrow_right" />
     </LinearLayout>
 
@@ -136,8 +138,9 @@
             android:textSize="@dimen/textFontSize4" />
 
         <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="10dp"
+            android:layout_height="16dp"
+            android:scaleType="fitCenter"
             android:src="@drawable/arrow_right" />
     </LinearLayout>
 

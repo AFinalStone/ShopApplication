@@ -40,8 +40,9 @@
             android:textSize="@dimen/textFontSize_14" />
 
         <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="10dp"
+            android:layout_height="16dp"
+            android:scaleType="fitCenter"
             android:src="@drawable/arrow_right" />
     </LinearLayout>
 
@@ -117,7 +118,7 @@
     <Button
         android:id="@+id/btn_submit"
         android:layout_width="match_parent"
-        android:layout_height="30dp"
+        android:layout_height="40dp"
         android:layout_below="@id/view_border02"
         android:layout_centerHorizontal="true"
         android:layout_marginLeft="15dp"
@@ -126,6 +127,6 @@
         android:background="@drawable/button_shape_inred_01"
         android:text="@string/confirmSubmitWXShopGoods"
         android:textColor="@color/white"
-        android:textSize="@dimen/textFontSize3" />
+        android:textSize="@dimen/textFontSize_16" />
 
 </RelativeLayout>

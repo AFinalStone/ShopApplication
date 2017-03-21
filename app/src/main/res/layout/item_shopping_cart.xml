@@ -52,7 +52,7 @@
             android:layout_height="30dp"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="5dp"
-            android:src="@drawable/iv_close_view" />
+            android:src="@drawable/icon_close_01" />
 
         <TextView
             android:id="@+id/priceTextView"

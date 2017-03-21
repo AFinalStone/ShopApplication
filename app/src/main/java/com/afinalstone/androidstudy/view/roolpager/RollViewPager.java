@@ -13,8 +13,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 
-import com.shuimunianhua.xianglixiangqin.R;
-import com.shuimunianhua.xianglixiangqin.util.ImagerLoaderUtil;
+import com.shi.xianglixiangqin.R;
+import com.shi.xianglixiangqin.util.ImagerLoaderUtil;
 
 /**
  * 轮播图ViewPager

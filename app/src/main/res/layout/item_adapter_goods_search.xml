@@ -35,7 +35,7 @@
         android:maxLines="2"
         android:text="@string/goodsName"
         android:textColor="@color/lightBlack"
-        android:textSize="@dimen/textFontSize5" />
+        android:textSize="@dimen/textFontSize_12" />
 
     <TextView
         android:id="@+id/tv_saleCount"
@@ -79,7 +79,7 @@
         android:layout_alignBottom="@id/shoping_goods_image"
         android:layout_marginRight="70dp"
         android:gravity="center_horizontal"
-        android:text="@string/noStoneCount"
+        android:text="@string/SearchGoods_tvNoStoneCount"
         android:textColor="@color/lightRed"
         android:textSize="@dimen/textFontSize4" />
 
