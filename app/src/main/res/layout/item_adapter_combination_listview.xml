@@ -1,0 +1,104 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/dividingLineColor" />
+
+    <ImageView
+        android:id="@+id/iv_select"
+        android:layout_width="40dp"
+        android:layout_height="105dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/icon_select_off_02" />
+
+    <ImageView
+        android:id="@+id/iv_goodsImage"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:padding="5dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@id/iv_select"
+        android:scaleType="centerInside"
+        android:src="@drawable/image_robot" />
+
+    <TextView
+        android:id="@+id/tv_goodsName"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@id/iv_goodsImage"
+        android:gravity="left|center"
+        android:maxLines="2"
+        android:text="韩版智能可爱小型机器人，居家生活必备小玩物，小孩子的新朋友"
+        android:textColor="@color/colorBlack_FF323232"
+        android:textSize="@dimen/textFontSize_12" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout_selectPackage"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/tv_goodsName"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="10dp"
+        android:layout_toRightOf="@id/iv_goodsImage"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_selectPackagePrices"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:gravity="left|center"
+                android:singleLine="true"
+                android:text="价格：3800.00"
+                android:textColor="@color/colorBlack_FF999999"
+                android:textSize="@dimen/textFontSize_12" />
+
+            <TextView
+                android:id="@+id/tv_selectPackageDesc"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:gravity="left|center"
+                android:singleLine="true"
+                android:text="套餐：标配/银色"
+                android:textColor="@color/colorBlack_FF999999"
+                android:textSize="@dimen/textFontSize_10" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="优惠："
+            android:textColor="@color/colorBlack_FF323232"
+            android:textSize="@dimen/textFontSize_10" />
+
+        <TextView
+            android:id="@+id/tv_goodsPrivilegePrice"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="¥19.60"
+            android:textColor="@color/colorBlack_FF323232"
+            android:textSize="@dimen/textFontSize_10" />
+    </LinearLayout>
+
+
+</RelativeLayout>

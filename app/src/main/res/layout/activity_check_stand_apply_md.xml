@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/darkGrayBackground"
+    android:orientation="vertical"
+    android:paddingBottom="20dp"
+    tools:context=".activity.CheckStandBankBindingActivity">
+
+    <include layout="@layout/layout_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_shape_inwhite_outgray_01"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:text="@string/CheckStandApplyMDActivity_tv_realName"
+            android:textSize="@dimen/textFontSize_12" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginRight="10dp"
+            android:background="@null"
+            android:hint="@string/CheckStandApplyMDActivity_hint_realName"
+            android:minWidth="120dp"
+            android:textColorHint="@color/colorBlack_FFCCCCCC"
+            android:textSize="@dimen/textFontSize_12" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_shape_inwhite_outgray_01"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:text="@string/CheckStandApplyMDActivity_tv_userCardNum"
+            android:textSize="@dimen/textFontSize_12" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginRight="10dp"
+            android:background="@null"
+            android:hint="@string/CheckStandApplyMDActivity_hint_userCardNum"
+            android:minWidth="120dp"
+            android:textColorHint="@color/colorBlack_FFCCCCCC"
+            android:textSize="@dimen/textFontSize_12" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout_userCardTop"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_shape_inwhite_outgray_01"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:text="@string/CheckStandApplyMDActivity_tv_userCardTop"
+            android:textSize="@dimen/textFontSize_12" />
+
+        <ImageView
+            android:id="@+id/imageView_userCardTop"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/iv_personal_my_header" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:padding="20dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/arrow_right" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout_userCardBottom"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_shape_inwhite_outgray_01"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:text="@string/CheckStandApplyMDActivity_tv_userCardBottom"
+            android:textSize="@dimen/textFontSize_12" />
+
+        <ImageView
+            android:id="@+id/imageView_userCardBottom"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/iv_personal_my_header" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:padding="20dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/arrow_right" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout_businessLicense"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_shape_inwhite_outgray_01"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:text="@string/CheckStandApplyMDActivity_tv_businessLicense"
+            android:textSize="@dimen/textFontSize_12" />
+
+        <ImageView
+            android:id="@+id/imageView_businessLicense"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/iv_personal_my_header" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:padding="20dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/arrow_right" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_queryApply"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/selector_button_commen_01"
+        android:text="@string/CheckStandApplyMDActivity_btn_queryApply"
+        android:textColor="@color/colorWhite_FFFFFFFF"
+        android:textSize="@dimen/textFontSize_15" />
+
+</LinearLayout>

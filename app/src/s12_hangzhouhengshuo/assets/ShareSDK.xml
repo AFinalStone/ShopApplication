@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DevInfor>
+
+    <ShareSDK 
+        AppKey = "f27c89abce74"/>
+    
+    <!--杭州恒硕 公司账号-->
+    <Wechat
+        Id="4"
+        SortId="4"
+        AppId="wx7743365c97439b12"
+        AppSecret="445387967337837d3b2d208dfbdff052"
+        BypassApproval="false"
+        Enable="true" />
+
+    <WechatMoments
+        Id="5"
+        SortId="5"
+        AppId="wx7743365c97439b12"
+        AppSecret="445387967337837d3b2d208dfbdff052"
+        BypassApproval="false"
+        Enable="true" />
+
+	<WechatFavorite
+        Id="6"
+        SortId="6"
+        AppId="wx7743365c97439b12"
+        AppSecret="445387967337837d3b2d208dfbdff052"
+        Enable="true" />
+    
+</DevInfor>

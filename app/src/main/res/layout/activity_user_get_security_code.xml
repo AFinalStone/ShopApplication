@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/background_login"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout_title"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+
+        <ImageView
+            android:id="@+id/iv_titleLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:paddingBottom="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="50dp"
+            android:paddingTop="10dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/layout_title_left_icon"
+            android:visibility="visible" />
+
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:text="@string/tv_getSecurityTitle"
+            android:textColor="@color/whiteFont"
+            android:textSize="@dimen/textFontSize1" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_shape_intrans_circle_01"
+        android:orientation="vertical"
+        android:paddingBottom="20dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@mipmap/icon_get_security_code_phone_number" />
+
+            <EditText
+                android:id="@+id/et_phoneNumber"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="@string/phoneNumberHint"
+                android:textColor="@color/colorWhite_FFFFFFFF"
+                android:textColorHint="@color/colorWhite_4DFFFFFF"
+                android:textSize="@dimen/textFontSize4" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:background="@drawable/shape_line_dash_white"
+            android:layerType="software" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@mipmap/icon_get_security_code_message_code" />
+
+            <EditText
+                android:id="@+id/et_securityCode"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="@string/securityCodeHint"
+                android:textColor="@color/colorWhite_FFFFFFFF"
+                android:textColorHint="@color/colorWhite_4DFFFFFF"
+                android:textSize="@dimen/textFontSize4" />
+
+            <Button
+                android:id="@+id/btn_getSecurityCode"
+                android:layout_width="90dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/selector_button_get_security_code"
+                android:gravity="center"
+                android:text="@string/getSecurityCode"
+                android:textColor="@drawable/selector_button_get_security_code"
+                android:textSize="@dimen/textFontSize5ex" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:background="@drawable/shape_line_dash_white"
+            android:layerType="software" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_nextStep"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/button_shape_intrans_outwhite_01"
+        android:text="@string/newStep"
+        android:textColor="@drawable/selector_button_commen_01"
+        android:textSize="@dimen/textFontSize3" />
+
+</LinearLayout>

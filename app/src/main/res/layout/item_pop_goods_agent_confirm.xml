@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBlack_66000000"
+    android:gravity="center">
+
+
+    <RelativeLayout
+        android:layout_width="232dp"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_image"
+            android:layout_width="232dp"
+            android:layout_height="77dp"
+            android:scaleType="fitXY"
+            android:src="@mipmap/icon_goods_agent_confirm_header_01" />
+
+        <ImageView
+            android:id="@+id/iv_close"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/icon_close_03" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout_agentDesc"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_below="@id/iv_image"
+            android:background="@color/colorWhite_FFFFFFFF"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_agentDesc"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:background="@color/colorWhite_FFFFFFFF"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text="    0-100元  加一倍\n    100-500  加100\n   500-1000 加200\n1000-2000  加300\n  2000以上  加500\n(可在个人中心 “代理商品” 中修改)"
+                android:textColor="@color/colorRed_FFFC3C3B"
+                android:textSize="@dimen/textFontSize5"
+/>
+
+            <CheckBox
+                android:id="@+id/cb_agentToMyShop"
+                android:layout_width="wrap_content"
+                android:layout_height="65dp"
+                android:text="代理商品到批发商城"
+                android:visibility="gone" />
+
+            <CheckBox
+                android:id="@+id/cb_agentToMyWXShop"
+                android:layout_width="wrap_content"
+                android:layout_height="65dp"
+                android:text="代理商品到零售微店"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_confirmAgent"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:layout_below="@id/linearLayout_agentDesc"
+            android:layout_gravity="center"
+            android:background="@drawable/button_shape_agent_confirm_in_red"
+            android:gravity="center"
+            android:text="@string/btn_goodsDetailGeneralActivityQueryAgent"
+            android:textColor="@color/colorWhite_FFFFFFFF"
+            android:textSize="@dimen/textFontSize3" />
+    </RelativeLayout>
+
+</LinearLayout>
+
+

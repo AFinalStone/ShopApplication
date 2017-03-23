@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DevInfor>
+
+    <!--海角网络 公司账号-->
+    <Wechat
+        Id="4"
+        SortId="4"
+        AppId="wx3ad33ba808f9cfc7"
+        AppSecret="8a5b501c78532a802c97f52db2553fe0"
+        BypassApproval="false"
+        Enable="true" />
+
+    <WechatMoments
+        Id="5"
+        SortId="5"
+        AppId="wx3ad33ba808f9cfc7"
+        AppSecret="8a5b501c78532a802c97f52db2553fe0"
+        BypassApproval="false"
+        Enable="true" />
+
+	<WechatFavorite
+        Id="6"
+        SortId="6"
+        AppId="wx3ad33ba808f9cfc7"
+        AppSecret="8a5b501c78532a802c97f52db2553fe0"
+        Enable="true" />
+    
+</DevInfor>

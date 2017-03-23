@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DevInfor>
+
+    <ShareSDK 
+        AppKey = "f27c89abce74"/>
+
+    <!--金维尼 公司账号-->
+    <Wechat
+        Id="4"
+        SortId="4"
+        AppId="wx6bdbf393ff2c78da"
+        AppSecret="fac1b7d0712e5364879039f132af90c"
+        BypassApproval="false"
+        Enable="true" />
+
+    <WechatMoments
+        Id="5"
+        SortId="5"
+        AppId="wx6bdbf393ff2c78da"
+        AppSecret="fac1b7d0712e5364879039f132af90c"
+        BypassApproval="false"
+        Enable="true" />
+
+	<WechatFavorite
+        Id="6"
+        SortId="6"
+        AppId="wx6bdbf393ff2c78da"
+        AppSecret="fac1b7d0712e5364879039f132af90c"
+        Enable="true" />
+    
+</DevInfor>

@@ -1,0 +1,477 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="String_HomeIndex">{
+    "ActList": [
+        {
+            "Count": 2,
+            "ID": 0,
+            "List": [
+                {
+                    "AgentID": -1,
+                    "BeginTime": "2016-04-19 20:35:40",
+                    "ClassID": 115,
+                    "DjLsh": 5464,
+                    "EndTime": "2016-04-19 20:40:53",
+                    "FlyCoin": 0,
+                    "GoodsName": "戴尔（dell）WM123无线鼠标（秒杀）",
+                    "Images": [
+                        "http://m.dainif.com/UpFile/201510/10290149003a.jpg"
+                    ],
+                    "IsGrouped": false,
+                    "IsRunning": true,
+                    "JoinNum": 0,
+                    "MaxQuantity": 0,
+                    "MinQuantity": 0,
+                    "OriginalPrice": 70.000,
+                    "PlatformActionID": 6,
+                    "PresentTime": "2016-04-19 20:37:59",
+                    "Price": 35.000,
+                    "PurchaseNum": 0,
+                    "Quantity": 2,
+                    "ShopID": 36,
+                    "UserID": 16,
+                    "UserQuantity": 1
+                },
+                {
+                    "AgentID": -1,
+                    "BeginTime": "2016-04-19 20:29:00",
+                    "ClassID": 127,
+                    "DjLsh": 1657,
+                    "EndTime": "2016-04-20 12:00:00",
+                    "FlyCoin": 0,
+                    "GoodsName": "TP-LINK TL-WR842N 300M无线路由器",
+                    "Images": [
+                        "http://m.dainif.com/UpFile/201604/04190639498a.jpg"
+                    ],
+                    "IsGrouped": false,
+                    "IsRunning": true,
+                    "JoinNum": 0,
+                    "MaxQuantity": 0,
+                    "MinQuantity": 0,
+                    "OriginalPrice": 78.000,
+                    "PlatformActionID": 4,
+                    "PresentTime": "2016-04-19 20:37:59",
+                    "Price": 65.000,
+                    "PurchaseNum": 0,
+                    "Quantity": 1,
+                    "ShopID": 43,
+                    "UserID": 23,
+                    "UserQuantity": 1
+                }
+            ],
+            "PageCount": 0,
+            "PageIndex": 0,
+            "PageSize": 0,
+            "RecordCount": 0,
+            "Title": "整点秒杀"
+        },
+        {
+            "Count": 3,
+            "ID": 0,
+            "List": [
+                {
+                    "AgentID": -1,
+                    "BeginTime": "2016-04-19 20:00:00",
+                    "ClassID": 97,
+                    "DjLsh": 5462,
+                    "EndTime": "2016-04-25 18:58:07",
+                    "FlyCoin": 0,
+                    "GoodsName": "华硕（ASUS）X455LJ4005笔记本电脑 I3-4005/4G/500G/GT920-2G/无驱/银色",
+                    "Images": [
+                        "http://m.dainif.com/UpFile/201604/041906555001.jpg"
+                    ],
+                    "IsGrouped": false,
+                    "IsRunning": true,
+                    "JoinNum": 3,
+                    "MaxQuantity": 100,
+                    "MinQuantity": 20,
+                    "OriginalPrice": 2560.000,
+                    "PlatformActionID": 10,
+                    "PresentTime": "2016-04-19 20:37:59",
+                    "Price": 2460.000,
+                    "PurchaseNum": 0,
+                    "Quantity": 0,
+                    "ShopID": 36,
+                    "UserID": 16,
+                    "UserQuantity": 10
+                },
+                {
+                    "AgentID": -1,
+                    "BeginTime": "2016-04-20 00:48:41",
+                    "ClassID": 97,
+                    "DjLsh": 4855,
+                    "EndTime": "2016-04-25 16:48:57",
+                    "FlyCoin": 0,
+                    "GoodsName": "Dell/戴尔笔记本电脑 V5459R-1528 （I5-6200U/4G/500G/14.0寸/No ODD/Windows 10/930M(2G)/1Y Prosupport with CC）",
+                    "Images": [
+                        "http://m.dainif.com/UpFile/201511/112002084651.png"
+                    ],
+                    "IsGrouped": false,
+                    "IsRunning": false,
+                    "JoinNum": 0,
+                    "MaxQuantity": 100,
+                    "MinQuantity": 50,
+                    "OriginalPrice": 3990.000,
+                    "PlatformActionID": 9,
+                    "PresentTime": "2016-04-19 20:37:59",
+                    "Price": 3890.000,
+                    "PurchaseNum": 0,
+                    "Quantity": 0,
+                    "ShopID": 36,
+                    "UserID": 16,
+                    "UserQuantity": 10
+                },
+                {
+                    "AgentID": -1,
+                    "BeginTime": "2016-04-20 16:46:06",
+                    "ClassID": 97,
+                    "DjLsh": 1610,
+                    "EndTime": "2016-04-25 16:46:21",
+                    "FlyCoin": 0,
+                    "GoodsName": "DELL/戴尔笔记本电脑 V3546R-1107 （2957U/4G/500G/15.6寸/DVDRW/Windows 7/1NBD+1CC）",
+                    "Images": [
+                        "http://m.dainif.com/UpFile/201511/111203374092.jpg"
+                    ],
+                    "IsGrouped": false,
+                    "IsRunning": false,
+                    "JoinNum": 1,
+                    "MaxQuantity": 100,
+                    "MinQuantity": 50,
+                    "OriginalPrice": 2100.000,
+                    "PlatformActionID": 8,
+                    "PresentTime": "2016-04-19 20:37:59",
+                    "Price": 1860.000,
+                    "PurchaseNum": 0,
+                    "Quantity": 0,
+                    "ShopID": 36,
+                    "UserID": 16,
+                    "UserQuantity": 50
+                }
+            ],
+            "PageCount": 0,
+            "PageIndex": 0,
+            "PageSize": 0,
+            "RecordCount": 0,
+            "Title": "精品团购"
+        },
+        {
+            "Count": 3,
+            "ID": 0,
+            "List": [
+                {
+                    "AgentID": -1,
+                    "BeginTime": "2016-04-20 00:15:08",
+                    "ClassID": 97,
+                    "DjLsh": 5428,
+                    "EndTime": "2016-04-22 17:15:14",
+                    "FlyCoin": 0,
+                    "GoodsName": "DELL/戴尔Ins11-3162-R1208W 11.6英寸笔记本电脑（奔腾N3700 4G 128G SSD Win10)白",
+                    "Images": [
+                        "http://m.dainif.com/UpFile/201603/032810295231.png"
+                    ],
+                    "IsGrouped": false,
+                    "IsRunning": true,
+                    "JoinNum": 0,
+                    "MaxQuantity": 0,
+                    "MinQuantity": 0,
+                    "OriginalPrice": 2035.000,
+                    "PlatformActionID": 13,
+                    "PresentTime": "2016-04-19 20:37:59",
+                    "Price": 1980.000,
+                    "PurchaseNum": 0,
+                    "Quantity": 20,
+                    "ShopID": 36,
+                    "UserID": 16,
+                    "UserQuantity": 5
+                },
+                {
+                    "AgentID": -1,
+                    "BeginTime": "2016-04-20 00:17:46",
+                    "ClassID": 99,
+                    "DjLsh": 5339,
+                    "EndTime": "2016-04-22 17:17:52",
+                    "FlyCoin": 0,
+                    "GoodsName": "Dell/戴尔一体电脑 V3052-R1108B （N3050/4G/500G/19.5"/No ODD/Windows 10/3 Ys on site+3Y Keep HD）",
+                    "Images": [
+                        "http://m.dainif.com/UpFile/201601/0122034647b4.png"
+                    ],
+                    "IsGrouped": false,
+                    "IsRunning": true,
+                    "JoinNum": 0,
+                    "MaxQuantity": 0,
+                    "MinQuantity": 0,
+                    "OriginalPrice": 2270.000,
+                    "PlatformActionID": 14,
+                    "PresentTime": "2016-04-19 20:37:59",
+                    "Price": 2220.000,
+                    "PurchaseNum": 0,
+                    "Quantity": 50,
+                    "ShopID": 36,
+                    "UserID": 16,
+                    "UserQuantity": 10
+                },
+                {
+                    "AgentID": -1,
+                    "BeginTime": "2016-04-19 19:58:48",
+                    "ClassID": 121,
+                    "DjLsh": 1904,
+                    "EndTime": "2016-04-22 16:18:53",
+                    "FlyCoin": 0,
+                    "GoodsName": "惠普hp1112彩色喷墨打印机 家用学生照片 彩色打印机替hp1010",
+                    "Images": [
+                        "http://m.dainif.com/UpFile/201509/093003102361.jpg"
+                    ],
+                    "IsGrouped": false,
+                    "IsRunning": true,
+                    "JoinNum": 0,
+                    "MaxQuantity": 0,
+                    "MinQuantity": 0,
+                    "OriginalPrice": 170.000,
+                    "PlatformActionID": 15,
+                    "PresentTime": "2016-04-19 20:37:59",
+                    "Price": 150.000,
+                    "PurchaseNum": 0,
+                    "Quantity": 50,
+                    "ShopID": 9,
+                    "UserID": 41,
+                    "UserQuantity": 10
+                }
+            ],
+            "PageCount": 0,
+            "PageIndex": 0,
+            "PageSize": 0,
+            "RecordCount": 0,
+            "Title": "限时抢购"
+        }
+    ],
+    "AdvList": [
+        {
+            "DjLsh": 10,
+            "ImgUrl": "http://wcf.dainif.com/UploadFiles/Adv/20160419/514430487960.jpg",
+            "LinkUrl": "http://m.dainif.com//WeiXinAPI/Agent/Default.aspx?ShopID=19",
+            "Title": "首个带你飞的微信店铺"
+        },
+        {
+            "DjLsh": 11,
+            "ImgUrl": "http://wcf.dainif.com/UploadFiles/Adv/20160419/514444340775.jpg",
+            "LinkUrl": "http://m.dainif.com//WeiXinAPI/Agent/Default.aspx?ShopID=19",
+            "Title": "首个带你飞的微信店铺"
+        },
+        {
+            "DjLsh": 5,
+            "ImgUrl": "http://wcf.dainif.com/UploadFiles/Adv/20160419/514430820803.jpg",
+            "LinkUrl": "http://m.dainif.com//WeiXinAPI/Agent/Default.aspx?ShopID=19",
+            "Title": "首个带你飞的微信店铺"
+        }
+    ],
+    "HotShopList": [
+        {
+            "DjLsh": 46,
+            "LogoUrl": "http://m.dainif.com/UploadFiles/Shop/20160112/505942028513.jpg",
+            "PhoneNum": "057156772637",
+            "ShopName": "杭州兆耘",
+            "UserID": 21
+        },
+        {
+            "DjLsh": 36,
+            "LogoUrl": "http://m.dainif.com/UploadFiles/Shop/20151111/500610871044.jpg",
+            "PhoneNum": "057156505180",
+            "ShopName": "杭州乡里乡亲科技有限公司",
+            "UserID": 16
+        },
+        {
+            "DjLsh": 43,
+            "LogoUrl": "http://m.dainif.com/UploadFiles/Shop/20151111/500562704395.jpg",
+            "PhoneNum": "057128960119",
+            "ShopName": "杭州新港",
+            "UserID": 23
+        },
+        {
+            "DjLsh": 42,
+            "LogoUrl": "http://m.dainif.com/UploadFiles/Shop/20151111/500579337587.jpg",
+            "PhoneNum": "0571-56360136",
+            "ShopName": "杭州酷乐",
+            "UserID": 26
+        },
+        {
+            "DjLsh": 88,
+            "LogoUrl": "http://m.dainif.com/UploadFiles/Shop/20151111/500589637877.jpg",
+            "PhoneNum": "0571-56882336",
+            "ShopName": "杭州德购",
+            "UserID": 101
+        },
+        {
+            "DjLsh": 115,
+            "LogoUrl": "http://m.dainif.com/UploadFiles/Shop/20151111/500584377737.jpg",
+            "PhoneNum": "",
+            "ShopName": "杭州耀凯",
+            "UserID": 130
+        },
+        {
+            "DjLsh": 76,
+            "LogoUrl": "http://m.dainif.com/UploadFiles/Shop/20151111/500598773892.jpg",
+            "PhoneNum": "0571-89988672",
+            "ShopName": "杭州云录",
+            "UserID": 85
+        },
+        {
+            "DjLsh": 72,
+            "LogoUrl": "http://m.dainif.com/UploadFiles/Shop/20151111/500565845342.jpg",
+            "PhoneNum": "0571-85024986",
+            "ShopName": "杭州美迪",
+            "UserID": 78
+        }
+    ],
+    "NewGoodsList": {
+        "Count": 6,
+        "ID": 0,
+        "List": [
+            {
+                "AgentAddMoney": 0,
+                "AvgStars": 5.0,
+                "DelayPayDays": 0,
+                "DjLsh": 5464,
+                "GoodsAgentID": 0,
+                "GoodsDesc": "",
+                "GoodsName": "戴尔（dell）WM123无线鼠标（秒杀）",
+                "GoodsSpec": "",
+                "GoodsSubName": "",
+                "ImgUrl": "http://m.dainif.com/UpFile/201510/10290149003a.jpg",
+                "IsAgented": 0,
+                "MaxCorePrice": 0,
+                "MaxPrice": 35.000,
+                "MinCorePrice": 0,
+                "MinPrice": 35.000,
+                "Package": "",
+                "RealName": "杭州乡里乡亲",
+                "SaledCount": 0,
+                "ShopID": 36,
+                "UserID": 16,
+                "UserName": "hzxlxq"
+            },
+            {
+                "AgentAddMoney": 0,
+                "AvgStars": 5.0,
+                "DelayPayDays": 0,
+                "DjLsh": 5463,
+                "GoodsAgentID": 0,
+                "GoodsDesc": "",
+                "GoodsName": "Dell戴尔 台式机主机3020M 四核I5-4590T 微型小客厅htpc 酷睿i5配4G 500硬盘",
+                "GoodsSpec": "",
+                "GoodsSubName": "",
+                "ImgUrl": "http://m.dainif.com/UpFile/201604/041907131995.jpg",
+                "IsAgented": 0,
+                "MaxCorePrice": 0,
+                "MaxPrice": 2697.000,
+                "MinCorePrice": 0,
+                "MinPrice": 2590.000,
+                "Package": "",
+                "RealName": "杭州乡里乡亲",
+                "SaledCount": 0,
+                "ShopID": 36,
+                "UserID": 16,
+                "UserName": "hzxlxq"
+            },
+            {
+                "AgentAddMoney": 0,
+                "AvgStars": 5.0,
+                "DelayPayDays": 0,
+                "DjLsh": 5462,
+                "GoodsAgentID": 0,
+                "GoodsDesc": "",
+                "GoodsName": "华硕（ASUS）X455LJ4005笔记本电脑 I3-4005/4G/500G/GT920-2G/无驱/银色",
+                "GoodsSpec": "",
+                "GoodsSubName": "",
+                "ImgUrl": "http://m.dainif.com/UpFile/201604/041906555001.jpg",
+                "IsAgented": 0,
+                "MaxCorePrice": 0,
+                "MaxPrice": 2660.000,
+                "MinCorePrice": 0,
+                "MinPrice": 2560.000,
+                "Package": "",
+                "RealName": "杭州乡里乡亲",
+                "SaledCount": 3,
+                "ShopID": 36,
+                "UserID": 16,
+                "UserName": "hzxlxq"
+            },
+            {
+                "AgentAddMoney": 0,
+                "AvgStars": 5.0,
+                "DelayPayDays": 0,
+                "DjLsh": 5461,
+                "GoodsAgentID": 0,
+                "GoodsDesc": "",
+                "GoodsName": "阿希莫3S无线充电蓝牙音响",
+                "GoodsSpec": "",
+                "GoodsSubName": "1189",
+                "ImgUrl": "http://m.dainif.com/UpFile/201604/041904473363.jpg",
+                "IsAgented": 0,
+                "MaxCorePrice": 0,
+                "MaxPrice": 239.000,
+                "MinCorePrice": 0,
+                "MinPrice": 230.000,
+                "Package": "",
+                "RealName": "杭州兆耘",
+                "SaledCount": 0,
+                "ShopID": 46,
+                "UserID": 21,
+                "UserName": "hzzy"
+            },
+            {
+                "AgentAddMoney": 0,
+                "AvgStars": 5.0,
+                "DelayPayDays": 0,
+                "DjLsh": 5460,
+                "GoodsAgentID": 0,
+                "GoodsDesc": "",
+                "GoodsName": "Dell/戴尔台式电脑 7020MT （I5-4590/4G/500G/DVDRW）",
+                "GoodsSpec": "",
+                "GoodsSubName": "",
+                "ImgUrl": "http://m.dainif.com/UpFile/201510/10071205347e.jpg",
+                "IsAgented": 0,
+                "MaxCorePrice": 0,
+                "MaxPrice": 3210.000,
+                "MinCorePrice": 0,
+                "MinPrice": 3050.000,
+                "Package": "",
+                "RealName": "杭州乡里乡亲",
+                "SaledCount": 0,
+                "ShopID": 36,
+                "UserID": 16,
+                "UserName": "hzxlxq"
+            },
+            {
+                "AgentAddMoney": 0,
+                "AvgStars": 5.0,
+                "DelayPayDays": 0,
+                "DjLsh": 5458,
+                "GoodsAgentID": 0,
+                "GoodsDesc": "",
+                "GoodsName": "Dell/戴尔台式电脑 3020MT （I5-4590/4G/1T/DVDRW）",
+                "GoodsSpec": "",
+                "GoodsSubName": "",
+                "ImgUrl": "http://m.dainif.com/UpFile/201510/100711353582.jpg",
+                "IsAgented": 0,
+                "MaxCorePrice": 0,
+                "MaxPrice": 3115.000,
+                "MinCorePrice": 0,
+                "MinPrice": 2960.000,
+                "Package": "",
+                "RealName": "杭州乡里乡亲",
+                "SaledCount": 0,
+                "ShopID": 36,
+                "UserID": 16,
+                "UserName": "hzxlxq"
+            }
+        ],
+        "PageCount": 1,
+        "PageIndex": 1,
+        "PageSize": 6,
+        "RecordCount": 6,
+        "Title": ""
+    }
+}</string>
+
+</resources>

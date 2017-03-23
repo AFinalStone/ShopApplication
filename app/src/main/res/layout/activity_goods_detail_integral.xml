@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--应用程序栏-->
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/collapsingToolbarLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:contentScrim="@color/redTitleBarBackground"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:background="@color/colorWhite_FFFFFFFF"
+                android:orientation="vertical">
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/viewPager_goodsImages"
+                    android:layout_width="match_parent"
+                    android:layout_height="240dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@color/colorWhite_FFFFFFFF" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp">
+
+                    <View
+                        android:id="@+id/view_border01"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/dividingLineColor" />
+
+                    <TextView
+                        android:id="@+id/tv_goodsName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_below="@id/view_border01"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_toLeftOf="@id/view_border02"
+                        android:maxLines="2"
+                        android:text="商品名称"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textFontSize4" />
+
+                    <TextView
+                        android:id="@+id/tv_goodsPrice_C"
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+                        android:layout_below="@id/tv_goodsName"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center"
+                        android:text="兑换积分:"
+                        android:textColor="@color/colorRed_FFCC0000"
+                        android:textSize="@dimen/textFontSize_12" />
+
+                    <TextView
+                        android:id="@+id/tv_goodsPrice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+                        android:layout_below="@id/tv_goodsName"
+                        android:layout_toRightOf="@id/tv_goodsPrice_C"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="5dp"
+                        android:text="0积分"
+                        android:gravity="center"
+                        android:textColor="@color/colorRed_FFCC0000"
+                        android:textSize="@dimen/textFontSize_16" />
+
+<!--                    <TextView
+                        android:id="@+id/tv_integralCanUsed"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/tv_goodsPrice"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toRightOf="@id/tv_goodsPrice"
+                        android:background="@color/orange"
+                        android:paddingBottom="1dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:paddingTop="1dp"
+                        android:text="需要0积分进行兑换"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/textFontSize5"
+                        android:visibility="visible" />-->
+
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/view_border03"
+                    android:layout_width="match_parent"
+                    android:layout_height="8dp"
+                    android:layout_below="@id/iv_shareGoods"
+                    android:background="@color/darkGrey" />
+
+<!--                <RelativeLayout
+                    android:id="@+id/relativeLayout_selectPackageType"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_below="@id/view_border03"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="15dp"
+                        android:gravity="center_vertical"
+                        android:text="@string/selectPackageType"
+                        android:textSize="@dimen/textFontSize3" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="5dp"
+                        android:src="@drawable/arrow_right" />
+                </RelativeLayout>-->
+
+ <!--               <View
+                    android:id="@+id/view_border04"
+                    android:layout_width="match_parent"
+                    android:layout_height="8dp"
+                    android:layout_below="@id/iv_shareGoods"
+                    android:background="@color/darkGrey" />-->
+
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout_title"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/titleBarHeight"
+                android:layout_marginBottom="327dp"
+                android:background="@color/redTitleBarBackground"
+                app:layout_collapseMode="pin">
+
+                <ImageView
+                    android:id="@+id/iv_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="50dp"
+                    android:paddingTop="10dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/layout_title_left_icon" />
+
+                <TextView
+                    android:id="@+id/tv_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerInParent="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:text="商品详情"
+                    android:textColor="@color/whiteFont"
+                    android:textSize="@dimen/textFontSize1" />
+            </RelativeLayout>
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+        <View
+            android:id="@+id/view_border05"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/dividingLineColor" />
+
+        <RadioGroup
+            android:id="@+id/rg_goodsGroup"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rb_goodsDesc"
+                style="@style/GoodsActivityRadioButtonStyle"
+                android:text="@string/goodDesc" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/dividingLineColor" />
+
+            <RadioButton
+                android:id="@+id/rb_goodsParameter"
+                style="@style/GoodsActivityRadioButtonStyle"
+                android:text="@string/goodsSpec" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/dividingLineColor" />
+
+            <RadioButton
+                android:id="@+id/rb_goodsPackage"
+                style="@style/GoodsActivityRadioButtonStyle"
+                android:text="@string/goodsPackage" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/dividingLineColor" />
+        </RadioGroup>
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/nestedScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <WebView
+            android:id="@+id/webView_goodsDetail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/view_border05"
+            android:layout_marginTop="2dp"
+            android:gravity="center"
+            tools:ignore="WebViewLayout" />
+
+    </android.support.v4.widget.NestedScrollView>
+
+    <LinearLayout
+        android:id="@+id/linearLayout_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite_FFFFFFFF"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        app:layout_anchor="@id/nestedScrollView"
+        app:layout_anchorGravity="bottom|right">
+
+        <Button
+            android:id="@+id/btn_justToExChange"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/button_selector_02"
+            android:gravity="center"
+            android:padding="0dp"
+            android:text="@string/tv_goodsDetailIntegralJustToExChange"
+            android:textColor="@drawable/selector_text_color_01"
+            android:textSize="@dimen/textFontSize4" />
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>

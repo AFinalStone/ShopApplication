@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/iv_goodsImage"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_margin="10dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/image_robot" />
+
+    <TextView
+        android:id="@+id/tv_goodsName"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_toLeftOf="@id/tv_goodsPrice"
+        android:layout_toRightOf="@id/iv_goodsImage"
+        android:gravity="left|center"
+        android:maxLines="2"
+        android:text="韩版智能可爱小型机器人，居家生活必备小玩物，小孩子的新朋友"
+        android:textColor="@color/colorBlack_FF323232"
+        android:textSize="@dimen/textFontSize_12" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout_selectPackage"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@id/tv_goodsName"
+        android:layout_marginRight="10dp"
+        android:layout_toRightOf="@id/iv_goodsImage"
+        android:background="@drawable/button_shape_inwhite_outgray_01"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_selectPackageDesc"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:paddingLeft="10dp"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/goodsCombinationSelect_selectGoodsProperty"
+            android:textColor="@color/colorBlack_FF999999"
+            android:textSize="@dimen/textFontSize_12" />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:padding="8dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/icon_combination_package_select" />
+    </LinearLayout>
+</RelativeLayout>

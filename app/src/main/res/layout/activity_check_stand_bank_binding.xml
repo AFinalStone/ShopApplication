@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/darkGrayBackground"
+    android:orientation="vertical"
+    android:paddingBottom="20dp"
+    tools:context=".activity.CheckStandBankBindingActivity">
+
+    <include layout="@layout/layout_title" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout_selectBankCard"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button_shape_inwhite_outgray_01"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_selectBankCard"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:text="@string/CheckStandBankBindingActivity_tv_selectBankCard"
+            android:textSize="@dimen/textFontSize_12" />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:padding="15dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/arrow_right" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout_selectProvince"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/button_shape_inwhite_outgray_01"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_selectProvince"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:text="@string/CheckStandBankBindingActivity_tv_selectProvince"
+            android:textSize="@dimen/textFontSize_12" />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:padding="15dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/arrow_right" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button_shape_inwhite_outgray_01"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:text="@string/CheckStandBankBindingActivity_tv_bankCardNum"
+            android:textSize="@dimen/textFontSize_12" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:background="@null"
+            android:layout_marginRight="10dp"
+            android:minWidth="120dp"
+            android:hint="@string/CheckStandBankBindingActivity_hint_bankCardNum"
+            android:textColorHint="@color/colorBlack_FFCCCCCC"
+            android:textSize="@dimen/textFontSize_12" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/button_shape_inwhite_outgray_01"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:text="@string/CheckStandBankBindingActivity_tv_userName"
+            android:textSize="@dimen/textFontSize_12" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:background="@null"
+            android:layout_marginRight="10dp"
+            android:minWidth="120dp"
+            android:hint="@string/CheckStandBankBindingActivity_hint_userName"
+            android:textColorHint="@color/colorBlack_FFCCCCCC"
+            android:textSize="@dimen/textFontSize_12" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/button_shape_inwhite_outgray_01"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:text="@string/CheckStandBankBindingActivity_tv_userCardNum"
+            android:textSize="@dimen/textFontSize_12" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:background="@null"
+            android:layout_marginRight="10dp"
+            android:minWidth="120dp"
+            android:hint="@string/CheckStandBankBindingActivity_hint_userCardNum"
+            android:textColorHint="@color/colorBlack_FFCCCCCC"
+            android:textSize="@dimen/textFontSize_12" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_queryBinding"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="60dp"
+        android:textColor="@color/colorWhite_FFFFFFFF"
+        android:textSize="@dimen/textFontSize_15"
+        android:text="@string/CheckStandBankBindingActivity_btn_queryBindingCard"
+        android:background="@drawable/selector_button_commen_01"/>
+
+</LinearLayout>

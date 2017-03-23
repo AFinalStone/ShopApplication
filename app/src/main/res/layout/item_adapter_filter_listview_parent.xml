@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite_FFFFFFFF"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_filterType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="13dp"
+        android:text="品牌"
+        android:textColor="@color/colorBlack_FF333333"
+        android:textSize="@dimen/textFontSize_15" />
+
+
+    <com.shi.xianglixiangqin.view.ScrollGridView
+        android:id="@+id/gridView_filterNames"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:verticalSpacing="0dp"
+        android:horizontalSpacing="0dp"
+        android:layout_marginLeft="10dp"
+        android:scrollbars="none"
+        android:layout_marginRight="10dp"
+        android:numColumns="3" />
+
+</LinearLayout>

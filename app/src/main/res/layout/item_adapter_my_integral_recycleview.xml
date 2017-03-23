@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorWhite_FFFFFFFF"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="28dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_shopName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:gravity="left"
+            android:singleLine="true"
+            android:text="商品名称"
+            android:textColor="@color/colorBlack_FF323232"
+            android:textSize="@dimen/textFontSize_14" />
+
+        <TextView
+            android:id="@+id/tv_integralChangeNum"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:singleLine="true"
+            android:text="+253"
+            android:textColor="@color/colorBlack_FF323232"
+            android:textSize="@dimen/textFontSize_14" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_recordTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:gravity="left"
+            android:singleLine="true"
+            android:text="2015-12-26 08:13:57"
+            android:textColor="@color/colorBlack_FF999999"
+            android:textSize="@dimen/textFontSize_12" />
+
+        <TextView
+            android:id="@+id/tv_remainIntegral"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:singleLine="true"
+            android:text="余：100"
+            android:textColor="@color/colorBlack_FF999999"
+            android:textSize="@dimen/textFontSize_12" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item android:drawable="@drawable/button_shape_inred_outwhite_01" android:state_checkable="true">
+        <shape xmlns:android="http://schemas.android.com/apk/res/android"
+            android:shape="rectangle" >
+
+            <!-- 填充的颜色 -->
+            <solid android:color="@color/colorRed_FFE83821" />
+            <!-- 按钮的左侧的弧形 为5dp -->
+            <corners android:topRightRadius="10dp" android:bottomRightRadius="10dp" />
+
+        </shape>
+    </item>
+
+    <item  android:drawable="@drawable/button_shape_inred_outwhite_01">
+        <shape xmlns:android="http://schemas.android.com/apk/res/android"
+            android:shape="rectangle" >
+
+            <!-- 填充的颜色 -->
+            <solid android:color="@color/colorWhite_FFFFFFFF" />
+            <!-- 按钮的左侧的弧形 为5dp -->
+            <corners android:topRightRadius="10dp" android:bottomRightRadius="10dp" />
+
+        </shape>
+    </item>
+    
+</selector>
+ 

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/pop_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="5dp"
+        android:background="@drawable/shape_background_share_my_shop"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorWhite_4DFFFFFF"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="店铺分享\n请选择分享的类型"
+            android:textColor="@color/colorBlack_FF646464"
+            android:textSize="@dimen/textFontSize_12"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_shareMyShopUrl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:background="@color/colorWhite_4DFFFFFF"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="分享链接"
+            android:textColor="@color/colorBlue_FF49D5B2"
+            android:textSize="@dimen/textFontSize_16"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_shareMyShopImage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:background="@color/colorWhite_4DFFFFFF"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="分享图片"
+            android:textColor="@color/colorBlue_FF49D5B2"
+            android:textSize="@dimen/textFontSize_16"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:background="@color/colorWhite_4DFFFFFF"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="取消"
+            android:textColor="@color/colorRed_FFE83821"
+            android:textSize="@dimen/textFontSize_16"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</RelativeLayout>

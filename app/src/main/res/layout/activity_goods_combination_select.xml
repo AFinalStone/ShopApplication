@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/darkGrayBackground">
+
+    <include
+        android:id="@+id/layout_title"
+        layout="@layout/layout_title" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_sub"
+            android:layout_width="20dp"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:text="-"
+            android:background="@drawable/button_shape_inwhite_outgray_01_leftcircle"
+            android:textColor="@color/colorBlack_FF646464"
+            android:textSize="@dimen/textFontSize_15" />
+
+        <TextView
+            android:id="@+id/tv_totalNumber"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="1"
+            android:textColor="@color/colorBlack_FF646464"
+            android:textSize="@dimen/textFontSize_12" />
+
+        <TextView
+            android:id="@+id/tv_add"
+            android:layout_width="20dp"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:text="+"
+            android:background="@drawable/button_shape_inwhite_outgray_01_rightcircle"
+            android:textColor="@color/colorBlack_FF646464"
+            android:textSize="@dimen/textFontSize_15" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_totalOrdersPrices"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="合计：¥ 0.00"
+                android:textColor="@color/colorRed_FFE83821"
+                android:textSize="@dimen/textFontSize_14" />
+
+
+            <TextView
+                android:id="@+id/tv_totalPrivilegePrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:gravity="left"
+                android:singleLine="true"
+                android:text="优惠：¥ 0.00"
+                android:textColor="@color/colorBlack_FF323232"
+                android:textSize="@dimen/textFontSize_14" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="100dp"
+            android:layout_height="35dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/button_shape_inred_02"
+            android:gravity="center"
+            android:text="@string/goodsCombinationSelect_buyNow"
+            android:textColor="@color/whiteFont"
+            android:textSize="@dimen/textFontSize_16" />
+    </LinearLayout>
+
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/linearLayout_bottom"
+        android:layout_below="@id/layout_title"
+        android:background="@color/colorWhite_FFFFFFFF"
+        android:scrollbars="none" />
+
+</RelativeLayout>

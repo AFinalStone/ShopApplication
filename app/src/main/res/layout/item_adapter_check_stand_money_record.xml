@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite_FFFFFFFF"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <TextView
+            android:id="@+id/tv_recordType"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:gravity="center|left"
+            android:text="@string/CheckStandMoneyRecord_tv_enter"
+            android:textColor="@color/colorBlack_FF323232"
+            android:textSize="@dimen/textFontSize_14" />
+
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="2017-02-10 15:23:59"
+            android:textColor="@color/colorBlack_FF999999"
+            android:textSize="@dimen/textFontSize_12" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <TextView
+            android:id="@+id/tv_charge"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:gravity="center|left"
+            android:text="@string/CheckStandMoneyRecord_tv_charge_C"
+            android:textColor="@color/colorBlack_FF999999"
+            android:textSize="@dimen/textFontSize_12" />
+
+        <TextView
+            android:id="@+id/tv_recordNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:textColor="@color/colorBlack_FF323232"
+            android:textSize="@dimen/textFontSize_16"
+            android:textStyle="bold"
+            android:text="+5920" />
+
+    </LinearLayout>
+</LinearLayout>

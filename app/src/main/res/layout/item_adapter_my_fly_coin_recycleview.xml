@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorWhite_FFFFFFFF"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="55dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_recordDay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="12"
+            android:textColor="@color/colorBlack_FF333333"
+            android:textSize="@dimen/textFontSize_18"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_recordMonth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="12月"
+            android:textColor="@color/colorBlack_FF333333"
+            android:textSize="@dimen/textFontSize_12" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/background_my_fly_coin_record"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_orderNum"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:ellipsize="end"
+                android:gravity="left|center"
+                android:maxLines="1"
+                android:text="订单号:"
+                android:textColor="@color/colorBlack_FF999999"
+                android:textSize="@dimen/textFontSize_10" />
+
+            <TextView
+                android:id="@+id/tv_goodsName"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:ellipsize="end"
+                android:gravity="left|center"
+                android:maxLines="2"
+                android:text="商品名称商品名称商品名称商品名称商品名称商品名称商品名称商品名称商品名称商品名称"
+                android:textColor="@color/colorBlack_FF323232"
+                android:textSize="@dimen/textFontSize_12" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_remainFlyCoin"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="剩余：850"
+                android:textColor="@color/colorBlack_FF999999"
+                android:textSize="@dimen/textFontSize_10" />
+
+            <TextView
+                android:id="@+id/tv_flyCoinChangeNum"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="+350"
+                android:textColor="@color/colorRed_FFDE1D2b"
+                android:textSize="@dimen/textFontSize_12"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

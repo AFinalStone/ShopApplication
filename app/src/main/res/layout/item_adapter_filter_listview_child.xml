@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite_FFFFFFFF">
+
+
+    <CheckBox
+        android:id="@+id/cb_filterItemName"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_margin="10dp"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:button="@null"
+        android:background="@drawable/filter_selector_check_filter_item_name"
+        android:text="品牌"
+        android:textColor="@drawable/filter_selector_check_filter_item_name"
+        android:textSize="@dimen/textFontSize_12" />
+
+</LinearLayout>

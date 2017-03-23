@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorWhite_FFFFFFFF">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_generalGoods"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/ic_empty"
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:id="@+id/tv_generalGoodsName"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:layout_below="@id/iv_generalGoods"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="8dp"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text="APPle iPhone 5s (A1530) 16GB 金色 移动联通  4G 手机"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textFontSize_11" />
+
+        <TextView
+            android:id="@+id/tv_generalGoodsPrices"
+            android:layout_width="60dp"
+            android:layout_height="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/tv_generalGoodsName"
+            android:layout_marginLeft="5dp"
+            android:text="￥1590"
+            android:gravity="center"
+            android:textColor="@color/lightRed"
+            android:textSize="@dimen/textFontSize_14" />
+
+        <TextView
+            android:id="@+id/tv_saleCount"
+            android:layout_width="60dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/tv_generalGoodsName"
+            android:layout_marginRight="5dp"
+            android:gravity="center"
+            android:text="已售0件"
+            android:textColor="@color/lightBlack"
+            android:textSize="@dimen/textFontSize_10" />
+    </RelativeLayout>
+</LinearLayout>
