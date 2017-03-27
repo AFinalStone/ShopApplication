@@ -280,6 +280,7 @@
     <!-- 店铺主页 -->
     <string name="agencyByBtn">一键代理</string>
     <string name="searchImportKeywords">请输入商品关键字</string>
+    <string name="mainHomeFragmentJvHe_tv_searchKeywords">请输入关键字进行搜索</string>
     <string name="getQuery">立即抢购</string>
     <string name="moreNewGoodsData">更多>></string>
     <string name="seeDataDetail">查看详情</string>

@@ -161,10 +161,12 @@ public class FilterFirstActivity extends MyBaseActivity implements OnClickListen
                 LogUtil.LogShitou(hashMap.toString());
             }
         }
-        Gson gson = new Gson();
-        Intent intent = getIntent();
-        intent.putExtra(InformationCodeUtil.IntentFilterActivitySelectFilter, gson.toJson(selectValue));
-        setResult(RESULT_OK, intent);
+        if(selectValue.size() > 0){
+            Gson gson = new Gson();
+            Intent intent = getIntent();
+            intent.putExtra(InformationCodeUtil.IntentFilterActivitySelectFilter, gson.toJson(selectValue));
+            setResult(RESULT_OK, intent);
+        }
         finish();
     }
 

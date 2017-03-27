@@ -302,10 +302,15 @@ public class MainPersonalCenterFragment extends MyBaseFragment<MainActivity> imp
 						.findViewById(R.id.imageview);
 				holder.tv_functionType = (TextView) convertView
 						.findViewById(R.id.tv_name);
-				holder.view = convertView.findViewById(R.id.view);
+				holder.view_border = convertView.findViewById(R.id.view_border);
 				convertView.setTag(holder);
 			} else {
 				holder = (ViewHolder) convertView.getTag();
+			}
+			if(position == listData.size()-1){
+				holder.view_border.setVisibility(View.GONE);
+			}else{
+				holder.view_border.setVisibility(View.VISIBLE);
 			}
 			FunctionTypeModel currentFunctionTypeModel = listData.get(position);
 			holder.iv_functionType.setImageResource(currentFunctionTypeModel
@@ -319,7 +324,7 @@ public class MainPersonalCenterFragment extends MyBaseFragment<MainActivity> imp
 			ImageView iv_functionType;
 			/** 功能名称 **/
 			TextView tv_functionType;
-			View view;
+			View view_border;
 		}
 
 	}

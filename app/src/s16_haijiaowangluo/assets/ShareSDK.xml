@@ -6,7 +6,7 @@
         Id="4"
         SortId="4"
         AppId="wx3ad33ba808f9cfc7"
-        AppSecret="8a5b501c78532a802c97f52db2553fe0"
+        AppSecret="9dc4f0a641708dde20ce04d98f3dac15"
         BypassApproval="false"
         Enable="true" />
 
@@ -14,7 +14,7 @@
         Id="5"
         SortId="5"
         AppId="wx3ad33ba808f9cfc7"
-        AppSecret="8a5b501c78532a802c97f52db2553fe0"
+        AppSecret="9dc4f0a641708dde20ce04d98f3dac15"
         BypassApproval="false"
         Enable="true" />
 
@@ -22,7 +22,7 @@
         Id="6"
         SortId="6"
         AppId="wx3ad33ba808f9cfc7"
-        AppSecret="8a5b501c78532a802c97f52db2553fe0"
+        AppSecret="9dc4f0a641708dde20ce04d98f3dac15"
         Enable="true" />
     
 </DevInfor>

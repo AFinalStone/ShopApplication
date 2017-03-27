@@ -247,6 +247,11 @@ public class SearchGoodsMyAgentActivity extends MyBaseActivity implements OnConn
 			myAgentGoodsAdapter.notifyDataSetChanged();
 			currentFilterFilterWereJson = data.getStringExtra(InformationCodeUtil.IntentFilterActivitySelectFilter);
 			swipeRefreshMenuListView.openRefreshState();
+		}else{
+			listData.clear();
+			myAgentGoodsAdapter.notifyDataSetChanged();
+			currentFilterFilterWereJson = "";
+			swipeRefreshMenuListView.openRefreshState();
 		}
 	}
 

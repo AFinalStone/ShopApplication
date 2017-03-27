@@ -63,7 +63,7 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_vertical"
                             android:background="@null"
-                            android:hint="@string/searchImportKeywords"
+                            android:hint="@string/mainHomeFragmentJvHe_tv_searchKeywords"
                             android:inputType="none"
                             android:paddingLeft="5dp"
                             android:textColor="@color/colorBlack_FF323232"

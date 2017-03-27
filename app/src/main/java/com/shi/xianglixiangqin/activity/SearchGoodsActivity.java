@@ -270,6 +270,11 @@ public class SearchGoodsActivity extends MyBaseActivity implements
             shopClassSearchAdapter.notifyDataSetChanged();
             currentFilterFilterWereJson = data.getStringExtra(InformationCodeUtil.IntentFilterActivitySelectFilter);
             swipeRefreshListView.openRefreshState();
+        }else{
+            listData.clear();
+            shopClassSearchAdapter.notifyDataSetChanged();
+            currentFilterFilterWereJson = "";
+            swipeRefreshListView.openRefreshState();
         }
     }
 
