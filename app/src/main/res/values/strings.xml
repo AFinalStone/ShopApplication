@@ -170,6 +170,9 @@
     <string name="selectAll">选择全部</string>
     <string name="addAllPrice">批量加价</string>
     <string name="cancelAgent">取消代理</string>
+    <string name="SearchGoodsMyAgent_title">我的代理商品</string>
+    <string name="SearchGoodsMyAgent_tv_sorting">筛选</string>
+    <string name="SearchGoodsMyAgent_tv_class">分类</string>
     <string name="SearchGoodsMyAgent_search">搜索</string>
     <!-- 微信店铺管理界面 -->
     <string name="wxShopManageTitle">特价商品设置</string>

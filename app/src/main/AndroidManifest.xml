@@ -206,7 +206,7 @@
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan|stateHidden" />
 
-        <!-- 店铺商品分类详情搜索界面 -->
+        <!-- 店铺商品搜索界面 -->
         <activity
             android:name=".activity.SearchGoodsActivity"
             android:screenOrientation="portrait"
@@ -307,10 +307,6 @@
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan|stateHidden" />
         <!-- 个人代理商品分类界面 -->
-        <activity
-            android:name=".activity.SearchGoodsMyAgentClassTypeActivity"
-            android:screenOrientation="portrait"
-            android:windowSoftInputMode="adjustPan|stateHidden" />
         <activity
             android:name=".activity.SearchGoodsMyAgentClassTypeActivityEx"
             android:screenOrientation="portrait"

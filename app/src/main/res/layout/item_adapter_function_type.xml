@@ -19,7 +19,7 @@
         android:layout_below="@id/iv_functionType"
         android:layout_centerHorizontal="true"
         android:text="功能类型"
-        android:textColor="@color/lightBlack"
+        android:textColor="@color/colorBlack_FF666666"
         android:textSize="@dimen/textFontSize4" />
 
 

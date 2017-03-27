@@ -40,6 +40,7 @@
         android:layout_marginRight="8dp"
         android:layout_marginTop="10dp"
         android:maxLines="2"
+        android:textColor="@color/colorBlack_FF666666"
         android:text="戴尔(DELL)XPS 13-9350-R1708"
         android:textSize="@dimen/textFontSize5ex" />
 

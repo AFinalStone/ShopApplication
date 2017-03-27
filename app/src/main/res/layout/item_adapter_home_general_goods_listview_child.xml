@@ -30,7 +30,7 @@
             android:ellipsize="end"
             android:maxLines="2"
             android:text="APPle iPhone 5s (A1530) 16GB 金色 移动联通  4G 手机"
-            android:textColor="@color/black"
+            android:textColor="@color/colorBlack_FF666666"
             android:textSize="@dimen/textFontSize_11" />
 
         <TextView
@@ -54,7 +54,7 @@
             android:layout_marginRight="5dp"
             android:gravity="center"
             android:text="已售0件"
-            android:textColor="@color/lightBlack"
+            android:textColor="@color/colorBlack_FF666666"
             android:textSize="@dimen/textFontSize_10" />
     </RelativeLayout>
 </LinearLayout>

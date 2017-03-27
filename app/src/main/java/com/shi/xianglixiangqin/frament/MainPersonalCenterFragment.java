@@ -307,11 +307,6 @@ public class MainPersonalCenterFragment extends MyBaseFragment<MainActivity> imp
 			} else {
 				holder = (ViewHolder) convertView.getTag();
 			}
-			if (position == 0) {
-				holder.view.setVisibility(View.VISIBLE);
-			} else {
-				holder.view.setVisibility(View.GONE);
-			}
 			FunctionTypeModel currentFunctionTypeModel = listData.get(position);
 			holder.iv_functionType.setImageResource(currentFunctionTypeModel
 					.getImageUrl());
@@ -324,7 +319,6 @@ public class MainPersonalCenterFragment extends MyBaseFragment<MainActivity> imp
 			ImageView iv_functionType;
 			/** 功能名称 **/
 			TextView tv_functionType;
-			/** 分割线 **/
 			View view;
 		}
 

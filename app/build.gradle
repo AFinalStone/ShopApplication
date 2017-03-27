@@ -74,18 +74,18 @@ android {
 //            buildConfigField("int", "LOGIN_MODEL_NUMBER", "1")
 //            manifestPlaceholders = [APP_PACKAGE: "com.quannengpifawang.xianglixiangqin"]
 //        }
-
-        /*应用宝审核通过 微信分享通过 极光已添加*/
-        s1_xianglixiangqin{
-            applicationId "com.xianglixiangqin.xianglixiangqin"
-            resValue "string", "app_name", "乡里乡亲"
-            resValue "string", "jpush_appkey_value", "6123fbdc6b1e4c5e4d9fa6a6"
-            resValue "string", "jpush_appsecret_value", "240af87026eb7905031eb54c"
-            buildConfigField("String", "LOGIN_SHOPCODE", '"36"')
-            buildConfigField("int", "LOGIN_MODEL_NUMBER", "1")
-            manifestPlaceholders = [ APP_PACKAGE: "com.xianglixiangqin.xianglixiangqin"
-                                    , UMENG_APPKEY: "582ab5601061d25c1b000964"]
-        }
+//
+//        /*应用宝审核通过 微信分享通过 极光已添加*/
+//        s1_xianglixiangqin{
+//            applicationId "com.xianglixiangqin.xianglixiangqin"
+//            resValue "string", "app_name", "乡里乡亲"
+//            resValue "string", "jpush_appkey_value", "6123fbdc6b1e4c5e4d9fa6a6"
+//            resValue "string", "jpush_appsecret_value", "240af87026eb7905031eb54c"
+//            buildConfigField("String", "LOGIN_SHOPCODE", '"36"')
+//            buildConfigField("int", "LOGIN_MODEL_NUMBER", "1")
+//            manifestPlaceholders = [ APP_PACKAGE: "com.xianglixiangqin.xianglixiangqin"
+//                                    , UMENG_APPKEY: "582ab5601061d25c1b000964"]
+//        }
 //        /*应用宝审核通过 微信分享通过 极光已添加*/
 //        s2_shuimunianhua{
 //            applicationId "com.shuimunianhua.xianglixiangqin"
@@ -226,16 +226,16 @@ android {
 //            buildConfigField("int", "LOGIN_MODEL_NUMBER", "5")
 //            manifestPlaceholders = [APP_PACKAGE: "com.xianghongshuma.xianglixiangqin"]
 //        }
-//        /*应用宝审核通过 极光已添加*/
-//        s16_haijiaowangluo{
-//            applicationId "com.haijiaowangluo.xianglixiangqin"
-//            manifestPlaceholders = [APP_PACKAGE: "com.haijiaowangluo.xianglixiangqin"]
-//            resValue "string", "app_name", "海角网络"
-//            resValue "string", "jpush_appkey_value", "36a37ae93b8f5aa3e819498d"
-//            resValue "string", "jpush_appsecret_value", "ef02c59158f41d2431d677f2"
-//            buildConfigField("String", "LOGIN_SHOPCODE", '"1712"')
-//            buildConfigField("int", "LOGIN_MODEL_NUMBER", "6")
-//        }
+        /*应用宝审核通过 极光已添加*/
+        s16_haijiaowangluo{
+            applicationId "com.haijiaowangluo.xianglixiangqin"
+            manifestPlaceholders = [APP_PACKAGE: "com.haijiaowangluo.xianglixiangqin"]
+            resValue "string", "app_name", "海角网络"
+            resValue "string", "jpush_appkey_value", "36a37ae93b8f5aa3e819498d"
+            resValue "string", "jpush_appsecret_value", "ef02c59158f41d2431d677f2"
+            buildConfigField("String", "LOGIN_SHOPCODE", '"1712"')
+            buildConfigField("int", "LOGIN_MODEL_NUMBER", "6")
+        }
 //        s17_guangjindianzi{
 //            applicationId "com.guangjindianzi.xianglixiangqin"
 //            manifestPlaceholders = [APP_PACKAGE: "com.guangjindianzi.xianglixiangqin"]
@@ -270,7 +270,7 @@ android {
             // 开启ZipAlign优化
             zipAlignEnabled true
             // 移除无用的resource文件
-            shrinkResources true
+            shrinkResources false
             // 使用release签名
             signingConfig signingConfigs.config
             // 混淆文件位置

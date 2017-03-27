@@ -2,8 +2,8 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:background="@color/colorGray_FFEEEEEE">
+    android:background="@color/colorGray_FFEEEEEE"
+    android:orientation="vertical">
 
     <include
         android:id="@+id/ly_title"
@@ -14,40 +14,47 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@id/ly_title"
-        android:orientation="horizontal" >
+        android:orientation="horizontal">
 
-        <RadioGroup
-            android:id="@+id/radioGroup"
+        <ScrollView
             android:layout_width="110dp"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
-        </RadioGroup>
+            android:scrollbars="none"
+            android:layout_height="match_parent">
+
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" />
+        </ScrollView>
+
         <android.support.v4.widget.SwipeRefreshLayout
             android:id="@+id/swipeRefreshLayout"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-           <android.support.v7.widget.RecyclerView
-            android:id="@+id/recycleView"
-            android:background="@color/colorWhite_FFFFFFFF"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycleView"
+                android:layout_width="match_parent"
+                android:scrollbars="none"
+                android:layout_height="match_parent"
+                android:background="@color/colorWhite_FFFFFFFF" />
 
         </android.support.v4.widget.SwipeRefreshLayout>
-<!--        <GridView
-            android:id="@+id/gridView"
-            android:paddingTop="20dp"
-            android:paddingBottom="20dp"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:cacheColorHint="#00000000"
-            android:divider="@null"
-            android:focusable="false"
-            android:numColumns="3"
-            android:verticalSpacing="20dp"
-            android:background="@color/colorWhite_FFFFFFFF"
-            android:focusableInTouchMode="false"
-            android:listSelector="@color/colorWhite_FFFFFFFF" />-->
+        <!--        <GridView
+                    android:id="@+id/gridView"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:cacheColorHint="#00000000"
+                    android:divider="@null"
+                    android:focusable="false"
+                    android:numColumns="3"
+                    android:verticalSpacing="20dp"
+                    android:background="@color/colorWhite_FFFFFFFF"
+                    android:focusableInTouchMode="false"
+                    android:listSelector="@color/colorWhite_FFFFFFFF" />-->
 
     </LinearLayout>
 

@@ -46,13 +46,13 @@ import java.util.List;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import butterknife.OnClick;
 
 /***
  * @action 我的代理
  * @author SHI 2016-2-1 11:37:04
  */
-public class SearchGoodsMyAgentActivity extends MyBaseActivity implements
-		OnClickListener, OnConnectServerStateListener<Integer>,
+public class SearchGoodsMyAgentActivity extends MyBaseActivity implements OnConnectServerStateListener<Integer>,
 		OnSwipeRefreshViewListener {
 	/** 后退控件 **/
 	@BindView(R.id.iv_titleLeft)
@@ -88,6 +88,7 @@ public class SearchGoodsMyAgentActivity extends MyBaseActivity implements
 	/** 搜索需要用到的字段当前需要筛选的商品的ClassID **/
 	private int currentFilterClassID = 0;
 	private String currentFilterFilterIDS = "";
+	private String currentFilterFilterWereJson = "";
 	private String currentFilterKeyWord = "";
 	private String GoodsAgentIDS = "";
 	private int currentPageIndex = 1;
@@ -98,11 +99,7 @@ public class SearchGoodsMyAgentActivity extends MyBaseActivity implements
 		setContentView(R.layout.activity_search_my_agent_goods);
 		ButterKnife.bind(this);
 		iv_titleLeft.setVisibility(View.VISIBLE);
-		iv_titleLeft.setOnClickListener(this);
-		tv_title.setText("我的代理商品");
-		btn_searchContext.setOnClickListener(this);
-		btn_sorting.setOnClickListener(this);
-		btn_addAllPrice.setOnClickListener(this);
+		tv_title.setText(R.string.SearchGoodsMyAgent_title);
 		cb_selectAll.setOnCheckedChangeListener(new CheckBox.OnCheckedChangeListener() {
 					@Override
 					public void onCheckedChanged(CompoundButton buttonView,
@@ -139,8 +136,7 @@ public class SearchGoodsMyAgentActivity extends MyBaseActivity implements
 				menu.addMenuItem(openItem);
 			}
 		};
-		swipeRefreshMenuListView.getListView().setMenuCreator(
-				creator);
+		swipeRefreshMenuListView.getListView().setMenuCreator(creator);
 		swipeRefreshMenuListView.getListView()
 				.setOnMenuItemClickListener(new OnMenuItemClickListener() {
 					@Override
@@ -164,14 +160,11 @@ public class SearchGoodsMyAgentActivity extends MyBaseActivity implements
 	@Override
 	protected void onNewIntent(Intent intent) {
 		currentFilterClassID = intent.getIntExtra(InformationCodeUtil.IntentSearchGoodsFilterClassID, 0);
-		currentFilterFilterIDS = "";
-		currentFilterKeyWord = "";
 		// 当前界面是筛选界面
 		if (currentFilterClassID > 0) {
-			btn_sorting.setText("筛选");
+			btn_sorting.setText(R.string.SearchGoodsMyAgent_tv_sorting);
 			tv_titleRight.setVisibility(View.VISIBLE);
-			tv_titleRight.setText("分类");
-			tv_titleRight.setOnClickListener(this);
+			tv_titleRight.setText(R.string.SearchGoodsMyAgent_tv_class);
 		}
 		listData.clear();
 		myAgentGoodsAdapter.notifyDataSetChanged();
@@ -196,9 +189,10 @@ public class SearchGoodsMyAgentActivity extends MyBaseActivity implements
 		soapObject.addProperty("openKey", MyApplication.getmCustomModel(mContext).getOpenKey());
 		soapObject.addProperty("keyWord", currentFilterKeyWord);
 		soapObject.addProperty("classID", currentFilterClassID);
-		soapObject.addProperty("filterIDS", currentFilterFilterIDS);
+		soapObject.addProperty("filterIDS", "");
 		soapObject.addProperty("pageSize", 10);
 		soapObject.addProperty("pageIndex", currentPageIndex);
+		soapObject.addProperty("wherejson", currentFilterFilterWereJson);
 		ConnectCustomServiceAsyncTask connectCustomServiceAsyncTask = new ConnectCustomServiceAsyncTask(
 				mContext, this, soapObject,
 				InformationCodeUtil.methodNameGetAgentProducts, whetherRefresh);
@@ -243,21 +237,21 @@ public class SearchGoodsMyAgentActivity extends MyBaseActivity implements
 		connectGoodsServiceAsyncTask.execute();
 	}
 
+	/**
+	 * 筛选结束 根据筛选结果重新请求产品数据
+	 **/
 	public void onActivityResult(int requestCode, int resultCode, Intent data) {
-		switch (resultCode) {
-		case RESULT_FIRST_USER:
-			currentFilterFilterIDS = data.getStringExtra("SelectedSubPid");
-			currentFilterKeyWord = "";
-			et_searchContext.setText("");
-			LogUtil.LogShitou("SelectedSubPid", currentFilterFilterIDS);
+
+		if (RESULT_OK == resultCode) {
+			listData.clear();
+			myAgentGoodsAdapter.notifyDataSetChanged();
+			currentFilterFilterWereJson = data.getStringExtra(InformationCodeUtil.IntentFilterActivitySelectFilter);
 			swipeRefreshMenuListView.openRefreshState();
-			break;
-		default:
-			break;
 		}
 	}
 
-	@Override
+	@OnClick({R.id.iv_titleLeft, R.id.btn_addAllPrice, R.id.btn_sorting
+			, R.id.tv_titleRight, R.id.btn_searchContext})
 	public void onClick(View v) {
 		Intent intent;
 		switch (v.getId()) {
@@ -281,7 +275,9 @@ public class SearchGoodsMyAgentActivity extends MyBaseActivity implements
 			break;
 		// 分类或筛选按钮
 		case R.id.btn_sorting:
-			if ("筛选".equals(btn_sorting.getText())) {
+			if (getResources().getString(R.string.SearchGoodsMyAgent_tv_sorting)
+					.equals(btn_sorting.getText())) {
+				//进行筛选
 				intent = new Intent(this, FilterFirstActivity.class);
 				intent.putExtra(InformationCodeUtil.IntentFilterFirstActivityFilterClassID, currentFilterClassID);
 				startActivityForResult(intent, 0);
@@ -298,8 +294,7 @@ public class SearchGoodsMyAgentActivity extends MyBaseActivity implements
 		case R.id.btn_searchContext:
 			listData.clear();
 			myAgentGoodsAdapter.notifyDataSetChanged();
-			String searchContext = et_searchContext.getText().toString().trim();
-			currentFilterKeyWord = searchContext;
+            currentFilterKeyWord = et_searchContext.getText().toString().trim();
 			swipeRefreshMenuListView.openRefreshState();
 			break;
 		default:
@@ -562,12 +557,12 @@ public class SearchGoodsMyAgentActivity extends MyBaseActivity implements
 	public void connectServiceFailed(String returnStrError, String methodName, Integer state,
 			boolean whetherRefresh) {
 
-		if (methodName == InformationCodeUtil.methodNameGetAgentProducts) {
-			if (!whetherRefresh) {
-				currentPageIndex--;
-			}
-			ToastUtil.show(mContext, "网络异常，获取数据失败");
-			if(swipeRefreshMenuListView != null){
+        if (methodName == InformationCodeUtil.methodNameGetAgentProducts) {
+            if (!whetherRefresh) {
+                currentPageIndex--;
+            }
+            ToastUtil.show(mContext, returnStrError);
+            if(swipeRefreshMenuListView != null){
 				swipeRefreshMenuListView.getListView().removeHeaderView(listViewIsEmpty);
 				swipeRefreshMenuListView.closeRefreshState();
 			}
@@ -577,12 +572,12 @@ public class SearchGoodsMyAgentActivity extends MyBaseActivity implements
 		}
 
 		if (methodName == InformationCodeUtil.methodNameBatchUpdatePrice) {
-			ToastUtil.show(this, "网络异常,改价失败");
+			ToastUtil.show(this, returnStrError+",改价失败");
 			return;
 		}
 
 		if (methodName == InformationCodeUtil.methodNameCancelGoodAgent) {
-			ToastUtil.show(this, "网络异常,代理商品删除失败");
+			ToastUtil.show(this, returnStrError+",代理商品删除失败");
 			return;
 		}
 

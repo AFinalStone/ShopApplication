@@ -147,7 +147,7 @@ public class SportSaleBuyRecommendActivity extends MyBaseActivity implements OnC
 			listData.clear();
 			for (int i = 0; i < 8; i++) {
 				GoodsGeneralModel model = new GoodsGeneralModel();
-				model.setImgUrl("drawable://"+R.drawable.imageview_a02);
+//				model.setImgUrl("drawable://"+R.drawable.imageview_a02);
 				model.setGoodsName("Apple iPhone 5s(A1530) 16GB 金色 移动联通 4G 手机");
 				model.setMaxPrice(6500);
 				model.setMinPrice(2500);

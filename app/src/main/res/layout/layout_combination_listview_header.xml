@@ -8,20 +8,21 @@
         android:layout_width="80dp"
         android:layout_height="80dp"
         android:layout_margin="10dp"
-        android:scaleType="fitXY"
-        android:src="@drawable/image_robot" />
+        android:scaleType="fitXY" />
 
     <TextView
         android:id="@+id/tv_goodsName"
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:layout_marginTop="10dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
         android:layout_toLeftOf="@id/tv_goodsPrice"
         android:layout_toRightOf="@id/iv_goodsImage"
         android:gravity="left|center"
         android:maxLines="2"
         android:text="韩版智能可爱小型机器人，居家生活必备小玩物，小孩子的新朋友"
-        android:textColor="@color/colorBlack_FF323232"
+        android:textColor="@color/colorBlack_FF666666"
         android:textSize="@dimen/textFontSize_12" />
 
     <LinearLayout

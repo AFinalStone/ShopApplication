@@ -7,8 +7,9 @@
 
     <ImageView
         android:id="@+id/iv_goodsImage"
-        android:layout_width="70dp"
-        android:layout_height="70dp"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="5dp"
         android:scaleType="centerInside"
         android:src="@drawable/ic_empty" />
 
@@ -16,10 +17,12 @@
         android:id="@+id/tv_goodsName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="5dp"
         android:text="类型名称"
-        android:textColor="@color/colorBlack_FF323232"
-        android:textSize="@dimen/textFontSize_16"
+        android:gravity="center"
+        android:maxLines="1"
+        android:textColor="@color/colorBlack_FF666666"
+        android:textSize="@dimen/textFontSize_14"
         android:visibility="visible"/>
 
 </LinearLayout> 

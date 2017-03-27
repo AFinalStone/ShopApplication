@@ -124,6 +124,7 @@ public class FilterFirstActivity extends MyBaseActivity implements OnClickListen
                 mContext, this, soapObject, methodName);
         connectGoodsServiceAsyncTask.initProgressDialog(false);
         connectGoodsServiceAsyncTask.execute();
+        LogUtil.LogShitou(soapObject.toString());
     }
 
     @OnClick({R.id.iv_titleLeft, R.id.btn_confirmFilter, R.id.btn_clearFilter})

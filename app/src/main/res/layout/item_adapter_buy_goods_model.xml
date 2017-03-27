@@ -115,7 +115,6 @@
         android:layout_toRightOf="@id/linearLayout_timeLimited"
         android:layout_marginLeft="5dp"
         android:scaleType="centerInside"
-        android:src="@drawable/imageview_a02"
         android:visibility="visible"/>
 
     <TextView

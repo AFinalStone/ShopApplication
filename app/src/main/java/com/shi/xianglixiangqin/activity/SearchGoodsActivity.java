@@ -210,7 +210,7 @@ public class SearchGoodsActivity extends MyBaseActivity implements
 
         Intent intent = getIntent();
         currentFilterClassID = intent.getIntExtra(InformationCodeUtil.IntentSearchGoodsFilterClassID, -1);
-        currentShopID = getIntent().getIntExtra(InformationCodeUtil.IntentSearchGoodsCurrentShopID, -1);
+        currentShopID = MyApplication.getmCustomModel(mContext).getCurrentBrowsingShopID();
         if (currentFilterClassID > 0) {
             tv_sorting.setText(R.string.SearchGoods_tvSorting);
         }

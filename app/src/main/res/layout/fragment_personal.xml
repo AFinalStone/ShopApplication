@@ -23,85 +23,92 @@
         android:layout_height="250dp"
         android:layout_below="@id/ly_title" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_below="@id/ly_title"
-            android:orientation="vertical" >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/ly_title"
+        android:orientation="vertical">
 
-            <RelativeLayout
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="170dp">
+
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="170dp" >
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <com.afinalstone.androidstudy.view.ShapedImageView
+                    android:id="@+id/shapedImageView"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="30dp"
+                    android:contentDescription="@null"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/iv_personal_my_header"
+                    app:shape_mode="circle" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentBottom="true"
-                    android:layout_marginBottom="20dp"
-                    android:layout_marginTop="5dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="25dp"
                     android:gravity="center_vertical"
-                    android:orientation="horizontal" >
+                    android:orientation="vertical">
 
-                    <com.afinalstone.androidstudy.view.ShapedImageView
-                        android:id="@+id/shapedImageView"
-                        android:layout_width="60dp"
-                        android:layout_height="60dp"
-                        android:layout_marginLeft="30dp"
-                        android:contentDescription="@null"
-                        android:scaleType="centerCrop"
-                        android:src="@drawable/iv_personal_my_header"
-                        app:shape_mode="circle" />
+                    <TextView
+                        android:id="@+id/tv_phoneNum"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:text=""
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/textFontSize4" />
 
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="60dp"
-                        android:layout_marginLeft="25dp"
+                        android:layout_height="wrap_content"
                         android:gravity="center_vertical"
-                        android:orientation="vertical" >
+                        android:orientation="horizontal"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp">
+
+                        <ImageView
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/iv_personal_flycoin_number" />
 
                         <TextView
-                            android:id="@+id/tv_phoneNum"
+                            android:id="@+id/tv_flyCoinNumber"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:singleLine="true"
-                            android:text=""
-                            android:textColor="@android:color/white"
-                            android:textSize="@dimen/textFontSize4" />
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:gravity="center_vertical"
-                            android:orientation="horizontal"
-                            android:paddingBottom="5dp"
-                            android:paddingTop="5dp" >
-
-                            <ImageView
-                                android:layout_width="15dp"
-                                android:layout_height="15dp"
-                                android:scaleType="fitCenter"
-                                android:src="@drawable/iv_personal_flycoin_number" />
-
-                            <TextView
-                                android:id="@+id/tv_flyCoinNumber"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginLeft="5dp"
-                                android:ellipsize="end"
-                                android:singleLine="true"
-                                android:text="0"
-                                android:textColor="@color/white"
-                                android:textSize="@dimen/textFontSize5" />
-                        </LinearLayout>
+                            android:layout_marginLeft="5dp"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text="0"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/textFontSize5" />
                     </LinearLayout>
                 </LinearLayout>
-            </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
 
-            <ListView
-                android:id="@+id/listView"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@color/white" />
-        </LinearLayout>
+        <ListView
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorWhite_FFFFFFFF"
+            android:divider="@null"
+            android:scrollbars="none" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/dividingLineColor" />
+    </LinearLayout>
 
 </RelativeLayout>

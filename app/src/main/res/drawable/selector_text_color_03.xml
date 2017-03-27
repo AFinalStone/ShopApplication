@@ -3,8 +3,8 @@
     
     <item android:color="@color/colorRed_FFE83821" android:state_checked="true"/>
     <item android:color="@color/colorRed_FFE83821" android:state_pressed="true"/>
-    <item android:color="@color/colorBlack_FF323232" android:state_checked="false"/>
-    <item android:color="@color/colorBlack_FF323232" />
+    <item android:color="@color/colorBlack_FF666666" android:state_checked="false"/>
+    <item android:color="@color/colorBlack_FF666666" />
 
 </selector>
  

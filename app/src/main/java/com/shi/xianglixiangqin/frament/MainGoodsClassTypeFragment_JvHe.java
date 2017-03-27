@@ -169,7 +169,7 @@ public class MainGoodsClassTypeFragment_JvHe extends MyBaseFragment<MyBaseActivi
 				RadioButton radioButton = (RadioButton) View.inflate(mActivity,R.layout.item_goods_classtype_radiobutton,null);
 				radioButton.setId(i);
 				RadioGroup.LayoutParams layoutParams = new RadioGroup.LayoutParams(
-						RadioGroup.LayoutParams.MATCH_PARENT,DensityUtil.dip2px(mActivity,50));
+						RadioGroup.LayoutParams.MATCH_PARENT,DensityUtil.dip2px(mActivity,40));
 				radioButton.setText(listData_total.get(i).getClassName());
 				radioGroup.addView(radioButton,layoutParams);
 				if(i ==0)
@@ -220,6 +220,7 @@ public class MainGoodsClassTypeFragment_JvHe extends MyBaseFragment<MyBaseActivi
 
 			return new MyViewHolder(view);
 		}
+
 
 		@Override
 		public void onBindViewHolder(final MyViewHolder holder, final int position) {

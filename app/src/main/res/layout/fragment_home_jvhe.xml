@@ -164,8 +164,8 @@
                         android:ellipsize="marquee"
                         android:singleLine="true"
                         android:text="通知"
-                        android:textColor="@color/colorBlack_FF999999"
-                        android:textSize="@dimen/textFontSize_16" />
+                        android:textColor="@color/colorBlack_FF666666"
+                        android:textSize="@dimen/textFontSize_14" />
                 </LinearLayout>
 
                 <View

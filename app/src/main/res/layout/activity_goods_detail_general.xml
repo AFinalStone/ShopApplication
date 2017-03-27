@@ -61,6 +61,7 @@
                         android:layout_alignParentRight="true"
                         android:layout_below="@id/view_border01"
                         android:layout_margin="10dp"
+                        android:scaleType="fitCenter"
                         android:src="@drawable/goods_share" />
 
                     <View
@@ -85,7 +86,7 @@
                         android:layout_toLeftOf="@id/view_border02"
                         android:maxLines="2"
                         android:text="1111"
-                        android:textColor="@color/black"
+                        android:textColor="@color/colorBlack_FF666666"
                         android:textSize="@dimen/textFontSize4" />
 
                     <TextView

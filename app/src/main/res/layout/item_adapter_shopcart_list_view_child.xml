@@ -37,9 +37,10 @@
             android:layout_width="wrap_content"
             android:layout_height="40dp"
             android:maxLines="2"
+            android:gravity="center"
             android:text="商品名称"
-            android:textColor="@color/colorBlack_FF323232"
-            android:textSize="@dimen/textFontSize_14" />
+            android:textColor="@color/colorBlack_FF666666"
+            android:textSize="@dimen/textFontSize_12" />
 
         <TextView
             android:id="@+id/tv_goodsPackageColor"
@@ -48,7 +49,7 @@
             android:layout_marginTop="3dp"
             android:maxLines="1"
             android:text="套餐/颜色"
-            android:textColor="@color/colorBlack_FF646464"
+            android:textColor="@color/colorBlack_FF666666"
             android:textSize="@dimen/textFontSize_12" />
     </LinearLayout>
 

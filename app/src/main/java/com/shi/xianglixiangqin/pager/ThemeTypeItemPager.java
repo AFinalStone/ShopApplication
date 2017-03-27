@@ -35,7 +35,7 @@ public class ThemeTypeItemPager extends BasePager<ThemeTypeActivity> {
     	GoodsGeneralModel model = new GoodsGeneralModel();
     	model.setMinPrice(1590);
     	model.setGoodsName("戴尔(DELL) S2415H 23.8英寸超窄边框 宽屏IPS 显示器");
-    	model.setImgUrl("drawable://"+R.drawable.imageview_a02);
+//    	model.setImgUrl("drawable://"+R.drawable.imageview_a02);
     	model.setSaledCount(0);
     	listData_gridView.add(model);
     	listData_gridView.add(model);

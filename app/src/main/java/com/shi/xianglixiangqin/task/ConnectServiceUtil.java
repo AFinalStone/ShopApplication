@@ -33,8 +33,8 @@ public class ConnectServiceUtil {
 //	public static final String GOODS_SERVICE = "http://192.168.1.188:9000/Wcf/GoodsService.svc";
 
 //	//测试服务器3
-//	public static final String CUSTOM_SERVICE = "http://192.168.1.200:8001/Wcf/CustomService.svc";
-//	public static final String  GOODS_SERVICE = "http://192.168.1.200:8001/Wcf/GoodsService.svc";//
+//	public static final String  CUSTOM_SERVICE = "http://192.168.1.200:9003/Wcf/CustomService.svc";
+//	public static final String  GOODS_SERVICE = "http://192.168.1.200:9003/Wcf/GoodsService.svc";//
 
     //测试服务器3——邹旭电脑
 //	public static final String CUSTOM_SERVICE = "http://192.168.0.101:23744/CustomService.svc";

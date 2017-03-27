@@ -17,8 +17,6 @@ import com.shi.xianglixiangqin.util.InformationCodeUtil;
  */
 public class SearchGoodsClassTypeActivity extends MyBaseActivity {
 
-	private int currentShopID;
-
 	@Override
 	public void initView() {
 		setContentView(R.layout.activity_classification);
@@ -26,7 +24,6 @@ public class SearchGoodsClassTypeActivity extends MyBaseActivity {
 
 	@Override
 	public void initData() {
-		currentShopID = getIntent().getIntExtra(InformationCodeUtil.IntentSearchGoodsCurrentShopID,-1);
 
 		FragmentTransaction transaction = getSupportFragmentManager()
 				.beginTransaction();
@@ -36,9 +33,6 @@ public class SearchGoodsClassTypeActivity extends MyBaseActivity {
 			transaction.add(R.id.frameLayout, mainGoodsClassTypeFragment_DaiNiFei, "mainGoodsClassTypeFragment").commit();
 		}else{
 			MainGoodsClassTypeFragment_JvHe mainGoodsClassTypeFragment_JvHe = new MainGoodsClassTypeFragment_JvHe();
-			Bundle bundle = new Bundle();
-			bundle.putInt(InformationCodeUtil.BundleClassTypeParamsCurrentShopID,currentShopID);
-			mainGoodsClassTypeFragment_JvHe.setArguments(bundle);
 			transaction.add(R.id.frameLayout, mainGoodsClassTypeFragment_JvHe, "mainGoodsClassTypeFragment").commit();
 		}
 

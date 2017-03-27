@@ -103,7 +103,7 @@ public class MainHomeFragment_JvHe extends MyBaseFragment<MainActivity> implemen
     @BindView(R.id.swipeRefreshLayout)
     SwipeRefreshLayout swipeRefreshLayout;
 
-    //新控件
+    //Toolbar控件
     @BindView(R.id.appBar_layout)
     AppBarLayout appBar_layout;
     @BindView(R.id.toolbar)

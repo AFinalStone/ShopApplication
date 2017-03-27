@@ -25,8 +25,8 @@
             android:layout_marginLeft="20dp"
             android:layout_weight="1"
             android:ellipsize="end"
-            android:singleLine="true"
-            android:textColor="@color/black"
+            android:maxLines="1"
+            android:textColor="@color/colorBlack_FF666666"
             android:textSize="@dimen/textFontSize4ex" />
 
         <ImageView
@@ -39,15 +39,7 @@
     <View
         android:layout_width="match_parent"
         android:layout_height="1px"
-        android:layout_marginLeft="32dp"
-        android:layout_marginRight="16dp"
-        android:background="@color/colorBlack_FFDEDEDE" />
-
-    <View
-        android:id="@+id/view"
-        android:layout_width="match_parent"
-        android:layout_height="10dp"
-        android:background="@color/colorBlack_FFDEDEDE"
-        android:visibility="gone" />
-
+        android:layout_marginRight="26dp"
+        android:layout_marginLeft="36dp"
+        android:background="@color/dividingLineColor" />
 </LinearLayout>

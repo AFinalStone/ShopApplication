@@ -185,6 +185,9 @@ public class InformationCodeUtil {
 	
 	/**取 一级分类过滤 列表**/
 	public static final String methodNameGetClassFilterList = "GetClassFilterList";
+	/**
+	 *
+	 * **/
 	public static final String methodNameGetSPWhere = "GetSPWhere";
 
 	/**取 二级分类过滤 列表**/
