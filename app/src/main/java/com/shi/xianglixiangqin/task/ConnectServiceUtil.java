@@ -37,8 +37,8 @@ public class ConnectServiceUtil {
 //	public static final String  GOODS_SERVICE = "http://192.168.1.200:9003/Wcf/GoodsService.svc";//
 
     //测试服务器3——邹旭电脑
-//	public static final String CUSTOM_SERVICE = "http://192.168.0.101:23744/CustomService.svc";
-//	public static final String  GOODS_SERVICE = "http://192.168.0.101:23744/GoodsService.svc";
+//	public static final String CUSTOM_SERVICE = "http://192.168.1.200:8002/CustomService.svc";
+//	public static final String  GOODS_SERVICE = "http://192.168.1.200:8002/GoodsService.svc";
 
     /**
      * 含有3个线程的线程池

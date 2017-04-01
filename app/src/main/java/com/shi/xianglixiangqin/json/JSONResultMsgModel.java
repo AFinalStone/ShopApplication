@@ -2,7 +2,7 @@ package com.shi.xianglixiangqin.json;
 
 /***
  * @action 返回结果实体类
- * @author ZHU
+ * @author SHI
  * @date  2015-8-4 下午8:20:01
  */
 public class JSONResultMsgModel {

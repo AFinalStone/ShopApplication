@@ -15,7 +15,7 @@
             android:layout_width="232dp"
             android:layout_height="77dp"
             android:scaleType="fitXY"
-            android:src="@mipmap/icon_goods_agent_confirm_header_01" />
+            android:src="@mipmap/icon_goods_agent_confirm_header" />
 
         <ImageView
             android:id="@+id/iv_close"
@@ -34,7 +34,7 @@
             android:gravity="center"
             android:orientation="vertical">
 
-            <TextView
+ <!--           <TextView
                 android:id="@+id/tv_agentDesc"
                 android:layout_width="match_parent"
                 android:layout_height="130dp"
@@ -43,8 +43,7 @@
                 android:padding="2dp"
                 android:text="    0-100元  加一倍\n    100-500  加100\n   500-1000 加200\n1000-2000  加300\n  2000以上  加500\n(可在个人中心 “代理商品” 中修改)"
                 android:textColor="@color/colorRed_FFFC3C3B"
-                android:textSize="@dimen/textFontSize5"
-/>
+                android:textSize="@dimen/textFontSize5" />-->
 
             <CheckBox
                 android:id="@+id/cb_agentToMyShop"
@@ -58,7 +57,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="65dp"
                 android:text="代理商品到零售微店"
-                android:visibility="gone" />
+                android:visibility="visible" />
         </LinearLayout>
 
         <Button

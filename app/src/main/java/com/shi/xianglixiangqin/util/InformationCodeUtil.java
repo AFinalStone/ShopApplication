@@ -165,7 +165,8 @@ public class InformationCodeUtil {
 
 	/**添加商品到我的代理(单个商品)  (int customID, string openKey, int goodsID, int gowhere(0代理到批发、微店,1代理到批发,2代理到微店))**/
 	public static final String methodNameAddDelegate = "AddDelegate";
-	/**一键代理 某个店铺的所有商品或部分商品  (int customID, string openKey, int shopID, string goodsIDS)**/
+	/**一键代理 某个店铺的所有商品或部分商品
+	 * (int customID, string openKey, int shopID, string goodsIDS, int gowhere(0代理到批发、微店,1代理到批发,2代理到微店))**/
 	public static final String methodNameDelegateShopAllGoods = "DelegateShopAllGoods";
 
 

@@ -14,7 +14,8 @@
     <!-- 白色 -->
     <color name="white">#ffffffff</color>
     <!-- 浅黑色 -->
-    <color name="lightBlack">#3D4045</color>
+    <color name="lightBlack">#FF666666</color>
+
     <!-- 纯白色字体 -->
     <color name="pureWhiteFont">#ffffff</color>
     <!-- 黑色字体 -->

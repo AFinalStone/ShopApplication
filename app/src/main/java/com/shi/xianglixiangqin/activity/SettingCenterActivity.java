@@ -106,7 +106,7 @@ public class SettingCenterActivity extends MyBaseActivity implements OnClickList
             return;
         }
         if (TypeNameClearCache.equals(name)) {
-            showClearCachDialog();
+            showClearCacheDialog();
             return;
         }
     }
@@ -146,18 +146,18 @@ public class SettingCenterActivity extends MyBaseActivity implements OnClickList
     /**
      * 清除缓存
      */
-    private void showClearCachDialog() {
-        String strTotlaCache = "0";
+    private void showClearCacheDialog() {
+        String strTotalCache = "0";
         try {
-            strTotlaCache = DataCleanManagerUtil.getTotalCacheSize(mContext);
+            strTotalCache = DataCleanManagerUtil.getTotalCacheSize(mContext);
         } catch (Exception e) {
             e.printStackTrace();
         }
-        strTotlaCache = new StringBuffer()
+        strTotalCache = new StringBuffer()
                 .append("当前缓存 ")
-                .append(strTotlaCache).toString();
+                .append(strTotalCache).toString();
         final FragmentOkAndCancelDialog fragmentDialog = new FragmentOkAndCancelDialog();
-        fragmentDialog.initView(strTotlaCache, "确定清除缓存?", "取消", "清除",
+        fragmentDialog.initView(strTotalCache, "确定清除缓存?", "取消", "清除",
                 new FragmentOkAndCancelDialog.OnButtonClickListener() {
 
                     @Override
