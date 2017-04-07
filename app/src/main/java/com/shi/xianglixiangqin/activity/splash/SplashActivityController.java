@@ -14,7 +14,6 @@ import com.shi.xianglixiangqin.util.LogUtil;
 import com.shi.xianglixiangqin.util.PreferencesUtil;
 import com.shi.xianglixiangqin.util.SystemUtil;
 import com.zhy.http.okhttp.OkHttpUtils;
-import com.zhy.http.okhttp.callback.FileCallBack;
 import com.zhy.http.okhttp.callback.StringCallback;
 
 import java.io.File;
@@ -31,7 +30,7 @@ public abstract class SplashActivityController implements OnConnectServerStateLi
     /**
      * 当前应用版本号
      **/
-    float currentAppVersionCode;
+    int currentAppVersionCode;
 
     String url_apkWebHtml = "http://a.app.qq.com/o/simple.jsp?pkgname=" + BuildConfig.APPLICATION_ID;
     String flagBegin = "{\"appId\":";
@@ -67,19 +66,18 @@ public abstract class SplashActivityController implements OnConnectServerStateLi
                 .connTimeOut(3000)
                 .execute(new StringCallback() {
                     @Override
-                    public void onResponse(String result) {
-//                        LogUtil.LogShitou("onResponse", result);
-                        if (result != null) {
-                            IfUpdateApp(result);
-                        } else {
-                            cancelToDownApp();
-                        }
+                    public void onError(Call call, Exception e, int id) {
+                        e.printStackTrace();
+                        cancelToDownApp();
                     }
 
                     @Override
-                    public void onError(Call arg0, Exception arg1) {
-                        cancelToDownApp();
-                        LogUtil.LogShitou("onError", arg1.getMessage());
+                    public void onResponse(String response, int id) {
+                        if (response != null) {
+                            IfUpdateApp(response);
+                        } else {
+                            cancelToDownApp();
+                        }
                     }
                 });
     }
@@ -96,44 +94,31 @@ public abstract class SplashActivityController implements OnConnectServerStateLi
             LogUtil.LogShitou("ApkVersionDataBean", strInfo);
             Gson gson = new Gson();
             ApkVersionDataBean apkVersionDataBean = gson.fromJson(strInfo, ApkVersionDataBean.class);
+            //我们的app描述介绍中如果有立即更新字段，强制用户更新软件，
             if (apkVersionDataBean.getNewFeature().contains("立即更新")) {
                 flagMustUpdate = true;
             }
-            if (apkVersionDataBean.getVersionCode() > currentAppVersionCode) {
-                if(flagMustUpdate){
-                    mSplashActivity.showMustUpdateDialog(apkVersionDataBean);
-                }else{
-                    mSplashActivity.showUpdateDialog(apkVersionDataBean);
-                }
-            } else {
+            //不需要更新
+            if (apkVersionDataBean.getVersionCode() <= currentAppVersionCode) {
                 cancelToDownApp();
+                return;
             }
+            //强制更新
+            if (flagMustUpdate) {
+                PreferencesUtil.putBoolean(mSplashActivity, InformationCodeUtil.KeyShowUpdateDialog, true);
+                mSplashActivity.showMustUpdateDialog(apkVersionDataBean);
+                return;
+            }
+            //检查用户是否勾选了 “不再提示” 按钮
+            if (PreferencesUtil.getBoolean(mSplashActivity, InformationCodeUtil.KeyShowUpdateDialog, true)) {
+                mSplashActivity.showUpdateDialog(apkVersionDataBean);
+                return;
+            }
+            //用户要求不提示更新对话框
+            cancelToDownApp();
         } catch (Exception e) {
             cancelToDownApp();
         }
-
-//        Gson gson = new Gson();
-//        try {
-//            appVersionBean_New = gson.fromJson(appVersionDesc,
-//                    AppVersionModel.class);
-//            if (appVersionBean_New.getVersionCode() > currentAppVersionCode) {
-//                if (BuildConfig.AUTO_UPDATES) {
-//                    mSplashActivity.showUpdateDialog(appVersionBean_New.getVersionName()
-//                            , appVersionBean_New.getVersionSize(), appVersionBean_New.getVersionDesc()
-//                            , true, "马上更新", appVersionBean_New.getSign(), "稍后更新");
-//                } else {
-//                    mSplashActivity.showUpdateDialog(appVersionBean_New.getVersionName()
-//                            , appVersionBean_New.getVersionSize(), appVersionBean_New.getVersionDesc() + "\n\n赶快去应用宝下载更新吧!"
-//                            , false, "确定", appVersionBean_New.getSign(), "取消");
-//                }
-//            } else {
-//                cancelToDownApp();
-//            }
-//
-//        } catch (Exception e) {
-//            cancelToDownApp();
-//        }
-
 
     }
 
@@ -141,41 +126,40 @@ public abstract class SplashActivityController implements OnConnectServerStateLi
         //获取安装包下载地址
         final String addressOfApkDownload = apkBean.getApkUrl();
         //获取安装包名称    并获取下载SD卡位置
-        final String apkName = apkBean.getApkMd5();
+        final String apkName = SystemUtil.getCurrentAppPackageName(mSplashActivity) + ".apk";
+        final String apkFiles = SystemUtil.getDownloadFilePath().getAbsolutePath();
+        LogUtil.LogShitou("apkName", apkName);
+        LogUtil.LogShitou("apkFiles", apkFiles);
         //OkHttp
         OkHttpUtils.get()
                 .url(addressOfApkDownload)
                 .build()
-                .execute(new FileCallBack(SystemUtil.getDownloadFilePath(), apkName+"apk") {
+                .execute(new FileCallBack(apkFiles, apkName) {
+                    @Override
+                    public void onError(Call call, Exception e, int id) {
+                        e.printStackTrace();
+                        mSplashActivity.showMessage(e.getMessage());
+                        cancelToDownApp();
+                    }
 
                     @Override
-                    public void onResponse(File response) {
-//				LogUtil.LogShitou("下载结果", response.getAbsolutePath());
-                        mSplashActivity.showMessage(response.getAbsolutePath());
+                    public void onResponse(File response, int id) {
                         mSplashActivity.install(response);
                     }
 
                     @Override
-                    public void onError(Call call, Exception e) {
-                        String msg = e.getMessage();
-//				LogUtil.LogShitou("错误", "错误信息"+msg);
-                        mSplashActivity.showMessage("错误信息"+msg);
-                        e.printStackTrace();
-                    }
-
-                    @Override
-                    public void inProgress(long progress, long total) {
-//				LogUtil.LogShitou("下载进程", "progress="+progress+",total="+total);
-                        mSplashActivity.showDowningProgress((int)progress/100, (int)total/100);
+                    public void inProgress(float progress, long total, int id) {
+                        mSplashActivity.showDowningProgress((int) progress / 1024, (int) total / 1024);
                     }
                 });
+
 
     }
 
     void cancelToDownApp() {
 
         boolean flagIsFirstLogin = PreferencesUtil.getBoolean(mSplashActivity,
-                InformationCodeUtil.KeyFirstOpenApp, true);
+        InformationCodeUtil.KeyFirstOpenApp, true);
 
         if (flagIsFirstLogin) {
             toGuideView();
@@ -197,11 +181,11 @@ public abstract class SplashActivityController implements OnConnectServerStateLi
             e.printStackTrace();
         }
         long endTime = System.currentTimeMillis();
-        final long lengTime = endTime - startTime;
-        if (lengTime < sleepTime) {
+        final long lengthTime = endTime - startTime;
+        if (lengthTime < sleepTime) {
             new Thread() {
                 public void run() {
-                    SystemClock.sleep(sleepTime - lengTime);
+                    SystemClock.sleep(sleepTime - lengthTime);
                     mSplashActivity.toLoginView();
                 }
 
@@ -227,11 +211,11 @@ public abstract class SplashActivityController implements OnConnectServerStateLi
             e.printStackTrace();
         }
         long endTime = System.currentTimeMillis();
-        final long lengTime = endTime - startTime;
-        if (lengTime < sleepTime) {
+        final long lengthTime = endTime - startTime;
+        if (lengthTime < sleepTime) {
             new Thread() {
                 public void run() {
-                    SystemClock.sleep(sleepTime - lengTime);
+                    SystemClock.sleep(sleepTime - lengthTime);
                     mSplashActivity.toGuideView();
                 }
             }.start();
@@ -250,11 +234,11 @@ public abstract class SplashActivityController implements OnConnectServerStateLi
             e.printStackTrace();
         }
         long endTime = System.currentTimeMillis();
-        final long lengTime = endTime - startTime;
-        if (lengTime < sleepTime) {
+        final long lengthTime = endTime - startTime;
+        if (lengthTime < sleepTime) {
             new Thread() {
                 public void run() {
-                    SystemClock.sleep(sleepTime - lengTime);
+                    SystemClock.sleep(sleepTime - lengthTime);
                     mSplashActivity.toMainView();
                 }
 

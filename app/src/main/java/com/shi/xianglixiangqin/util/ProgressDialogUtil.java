@@ -3,7 +3,7 @@ package com.shi.xianglixiangqin.util;
 import android.app.Activity;
 import android.os.AsyncTask;
 
-import com.shi.xianglixiangqin.view.CustomProgressDialog;
+import com.shi.xianglixiangqin.view.CustomProgressBar;
 
 /***
  * @action 提示框工具类
@@ -12,14 +12,14 @@ import com.shi.xianglixiangqin.view.CustomProgressDialog;
  */
 public class ProgressDialogUtil {
 	/** 进度对话框 **/
-	private static CustomProgressDialog progressDialog;
+	private static CustomProgressBar progressDialog;
 
 	/** 显示进度对话框 **/
 	public synchronized static void startProgressDialog(Activity mContext) {
 		if( mContext.isFinishing()){
 			return;
 		}
-		progressDialog = CustomProgressDialog.createDialog(mContext);
+		progressDialog = CustomProgressBar.createDialog(mContext);
 		progressDialog.show();
 	}
 	
@@ -27,7 +27,7 @@ public class ProgressDialogUtil {
 		if(mContext.isFinishing()){
 			return;
 		}
-		progressDialog = CustomProgressDialog.createDialog(mContext,loadingMsg);
+		progressDialog = CustomProgressBar.createDialog(mContext,loadingMsg);
 		progressDialog.show();
 			
 	}
@@ -37,7 +37,7 @@ public class ProgressDialogUtil {
 		if(mContext.isFinishing()){
 			return;
 		}
-		progressDialog = CustomProgressDialog.createDialog(mContext,strLoadingmsg);
+		progressDialog = CustomProgressBar.createDialog(mContext,strLoadingmsg);
 		progressDialog.show();
 	}
 	
@@ -45,7 +45,7 @@ public class ProgressDialogUtil {
 		if(mContext.isFinishing()){
 			return;
 		}
-		progressDialog = CustomProgressDialog
+		progressDialog = CustomProgressBar
 				.createDialog(mContext,loadingMsg)
 				.setAsyncTask(asyncTask);
 		progressDialog.show();

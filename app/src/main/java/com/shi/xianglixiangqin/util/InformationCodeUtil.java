@@ -103,6 +103,7 @@ public class InformationCodeUtil {
 	//本地存储文件的Key值
 	/**是否第一次登录**/
 	public static final String KeyFirstOpenApp = "KeyFirstOpenApp";
+	public static final String KeyShowUpdateDialog = "KeyShowUpdateDialog";
 	/**购物车商品Json数据key**/
 	public static final String KeyShoppingCartData = "KeyShoppingCartData";
 	/**用户信息Json数据key**/
@@ -560,6 +561,7 @@ public class InformationCodeUtil {
 	 * (int pageindex, int userid, int shopid=0, int fbtype=-1(-1全部，0获得，-1使用))
 	 * **/
 	public static final String methodNameGetFBlogs = "GetFBlogs";
+
 
 
 }

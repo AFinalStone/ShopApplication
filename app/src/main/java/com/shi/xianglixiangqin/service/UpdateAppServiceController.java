@@ -63,30 +63,30 @@ public class UpdateAppServiceController{
 //		});
 		
 		//OkHttp
-		OkHttpUtils.get()
-		.url(addressOfApkDownload)
-		.build()
-		.execute(new FileCallBack(SystemUtil.getDownloadFilePath(), InformationCodeUtil.NameOfCurrentVersion) {
-			
-			@Override
-			public void onResponse(File response) {
-//				LogUtil.LogShitou("下载结果", response.getAbsolutePath());
-				mUpdateAppService.finishRefreshView(response.getAbsolutePath());
-			}
-			
-			@Override
-			public void onError(Call call, Exception e) {
-				String msg = e.getMessage();
-//				LogUtil.LogShitou("错误", "错误信息"+msg);
-				mUpdateAppService.stopSelf();
-			}
-			
-			@Override
-			public void inProgress(long progress, long total) {
-//				LogUtil.LogShitou("下载进程", "progress="+progress+",total="+total);
-				mUpdateAppService.showLoading(progress,total);	
-			}
-		});
+//		OkHttpUtils.get()
+//		.url(addressOfApkDownload)
+//		.build()
+//		.execute(new FileCallBack(SystemUtil.getDownloadFilePath(), InformationCodeUtil.NameOfCurrentVersion) {
+//
+//			@Override
+//			public void onResponse(File response) {
+////				LogUtil.LogShitou("下载结果", response.getAbsolutePath());
+//				mUpdateAppService.finishRefreshView(response.getAbsolutePath());
+//			}
+//
+//			@Override
+//			public void onError(Call call, Exception e) {
+//				String msg = e.getMessage();
+////				LogUtil.LogShitou("错误", "错误信息"+msg);
+//				mUpdateAppService.stopSelf();
+//			}
+//
+//			@Override
+//			public void inProgress(long progress, long total) {
+////				LogUtil.LogShitou("下载进程", "progress="+progress+",total="+total);
+//				mUpdateAppService.showLoading(progress,total);
+//			}
+//		});
 		
 		
 	}

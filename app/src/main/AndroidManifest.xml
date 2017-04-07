@@ -665,16 +665,8 @@
         <activity android:name=".activity.CheckStandBankBindingActivity" />
         <activity android:name=".activity.CheckStandApplyMDActivity" />
         <activity android:name=".activity.CheckStandWithdrawalActivity" />
-        <activity android:name=".activity.CheckStandMoneyRecordActivity"></activity>
-        <provider
-            android:name="com.shi.xianglixiangqin.activity.splash.UpdateFileProvider"
-            android:authorities="${applicationId}.updatefileprovider"
-            android:exported="false"
-            android:grantUriPermissions="true">
-            <meta-data
-                android:name="android.support.FILE_PROVIDER_PATHS"
-                android:resource="@xml/update_cache_path"/>
-        </provider>
+        <activity android:name=".activity.CheckStandMoneyRecordActivity"/>
+
     </application>
 
 </manifest>

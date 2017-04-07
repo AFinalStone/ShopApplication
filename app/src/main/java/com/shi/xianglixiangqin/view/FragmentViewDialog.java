@@ -11,7 +11,9 @@ import android.view.KeyEvent;
 import android.view.View;
 
 /**
- * 用途更广泛的Dialog，可以自定义布局View
+ * 用途更广泛的Dialog，可以自定义布局View,使用initview(View view)可以产生不带取消和确定按钮的对话框
+ * 使用initView( View view, String strCancel, String strOk,OnButtonClickListener onButtonClickListener)
+ * 可以产生带取消和确定按钮的对话框
  * @author SHI
  * 2016年4月6日 16:03:36
  *
@@ -108,8 +110,8 @@ public class FragmentViewDialog extends DialogFragment implements OnKeyListener
 		if(!IfClickButton){
 			if(onButtonClickListener != null)
 				onButtonClickListener.OnCancelClick();
-			}
 		}
 	}
+}
 
 

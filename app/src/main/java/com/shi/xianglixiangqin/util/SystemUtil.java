@@ -17,6 +17,7 @@ import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.Environment;
 import android.text.TextUtils;
+import android.util.Log;
 
 /***
  * 系统工具类  获取  包管理器信息，SDcard信息，网络状况信息
@@ -33,7 +34,6 @@ public class SystemUtil {
 		try {
 			packageInfo = packageManager.getPackageInfo(mContext.getPackageName(), PackageManager.GET_META_DATA);
 		} catch (NameNotFoundException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		if(packageInfo != null){
@@ -42,8 +42,8 @@ public class SystemUtil {
 			return 0;
 		}
 	}
-	
-	/**获取当前应用版包名**/
+
+	/**获取当前应用版本名称**/
 	public static String getCurrentAppVersionName(Context mContext){
 		// 获得包管理器，注意，整个android手机，共用一个包管理器
 		PackageManager packageManager = mContext.getPackageManager();
@@ -51,104 +51,62 @@ public class SystemUtil {
 		try {
 			packageInfo = packageManager.getPackageInfo(mContext.getPackageName(), 0);
 		} catch (NameNotFoundException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		if(packageInfo != null){
-			return packageInfo.versionName;	
+			return packageInfo.versionName;
+		}else{
+			return "";
+		}
+	}
+
+	/**获取当前应用版包名**/
+	public static String getCurrentAppPackageName(Context mContext){
+		// 获得包管理器，注意，整个android手机，共用一个包管理器
+		PackageManager packageManager = mContext.getPackageManager();
+		PackageInfo packageInfo = null;
+		try {
+			packageInfo = packageManager.getPackageInfo(mContext.getPackageName(), 0);
+		} catch (NameNotFoundException e) {
+			e.printStackTrace();
+		}
+		if(packageInfo != null){
+			return packageInfo.packageName;
 		}else{
 			return "";	
 		}
 	}
-	
+
 	/** SD卡是否存在 **/
-	public static File whetherExistSDcard() {
-		// 判断sd卡是否存在
-		if (Environment.getExternalStorageState().equals(
-				Environment.MEDIA_MOUNTED)) {
-			return Environment.getExternalStorageDirectory();// 获取跟目录
-		}
-		return null;
+	public static boolean IfExistExternalStorage() {
+		return Environment.getExternalStorageState().equals(Environment.MEDIA_MOUNTED);
+	}
+
+
+	/****
+	 * 返回SD卡默认Download文件夹路径
+	 * @return
+	 */
+	public static File getDownloadFilePath() {
+		return Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS);
 	}
 
 	/*****
-	 * 返回指定文件夹和文件名的文件路径
-	 * 
-	 * @param FolderName
-	 * @param fileName
-	 * @return
-	 */
-	public static String getFilePath(String FolderName, String fileName) {
-		String downDirectory = null;
-		File pathSDcard = whetherExistSDcard();
-		if (pathSDcard != null) {
-			//判断文件夹是否为空
-			if (TextUtils.isEmpty(FolderName)) {
-				FolderName = "";
-			}
-			//创建文件夹
-			if(createFolder(FolderName)){
-				downDirectory = pathSDcard.toString() + File.separator + FolderName
-						+ File.separator + fileName;
-			}
-		}
-		return downDirectory;
-	}
-	
-	/****
-	 * 返回系统默认Download文件夹下的File文件路径
-	 * @param fileName   文件名称
-	 * @return
-	 */
-	public static String getDownloadFilePath(String fileName) {
-		String downDirectory = null;
-		String FolderName = "Download";
-		File pathSDcard = whetherExistSDcard();
-		if (pathSDcard != null) {
-			//创建文件夹
-			if(createFolder(FolderName)){
-				downDirectory = pathSDcard.toString() + File.separator + FolderName
-						+ File.separator + fileName;
-			}
-		}
-		return downDirectory;
-	}
-	
-	/****
-	 * 返回系统默认Download文件夹路径
-	 * @return
-	 */
-	public static String getDownloadFilePath() {
-		String downDirectory = null;
-		String FolderName = "Download";
-		File pathSDcard = whetherExistSDcard();
-		if (pathSDcard != null) {
-			//创建文件夹
-			if(createFolder(FolderName)){
-				downDirectory = pathSDcard.toString() + File.separator + FolderName;
-			}
-		}
-		return downDirectory;
-	}
-
-	/*****
-	 * 创建文件夹
+	 * 在SD卡根目录创建文件夹,成功返回true，失败返回false
 	 * @param FolderName 文件夹名称
 	 * @return
 	 */
-	public static boolean createFolder(String FolderName) {
+	public static boolean createSDCardFolder(String FolderName) {
 		
-		File pathSDcard = whetherExistSDcard();
-		if (pathSDcard != null) {
-			File file = new File(pathSDcard.toString() + File.separator + FolderName);
-			
+		if(IfExistExternalStorage()){
+			File pathSDCard = Environment.getExternalStorageDirectory();
+			File file = new File(pathSDCard.toString() + File.separator + FolderName);
 			if (!file.exists()) {// 目录不存在
 				file.mkdirs();
 			}
 			return true;
-		} else {
-			return false;
 		}
+		return false;
 	}
 
 	/****
@@ -172,7 +130,7 @@ public class SystemUtil {
 		}
 		return true;
 	}
-	
+
 	/****
 	 * 判断是否有网络连接
 	 * @param mContext 设备上下文
@@ -245,7 +203,7 @@ public class SystemUtil {
     }
 
     /***
-     * 获取手机时间按照fromat格式返回
+     * 获取手机时间按照format格式返回
      * @param format
      * @return
      */

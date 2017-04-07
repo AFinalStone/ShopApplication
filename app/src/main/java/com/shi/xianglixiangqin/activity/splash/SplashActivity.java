@@ -2,6 +2,7 @@ package com.shi.xianglixiangqin.activity.splash;
 
 import android.app.ProgressDialog;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Build;
@@ -9,7 +10,9 @@ import android.support.v4.content.FileProvider;
 import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
+import android.widget.CheckBox;
 import android.widget.ImageView;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 
 import com.shi.xianglixiangqin.R;
@@ -19,6 +22,8 @@ import com.shi.xianglixiangqin.activity.MainActivity;
 import com.shi.xianglixiangqin.activity.MyBaseActivity;
 import com.shi.xianglixiangqin.bean.ApkVersionDataBean;
 import com.shi.xianglixiangqin.util.InformationCodeUtil;
+import com.shi.xianglixiangqin.util.LogUtil;
+import com.shi.xianglixiangqin.util.PreferencesUtil;
 import com.shi.xianglixiangqin.util.SnackBarUtil;
 import com.shi.xianglixiangqin.view.FragmentOkDialog;
 import com.shi.xianglixiangqin.view.FragmentViewDialog;
@@ -111,13 +116,7 @@ public class SplashActivity extends MyBaseActivity {
 
     public void install(File file) {
         Intent intent = new Intent(Intent.ACTION_VIEW);
-        if (Build.VERSION.SDK_INT < Build.VERSION_CODES.N) {
-            intent.setDataAndType(Uri.fromFile(file), "application/vnd.android.package-archive");
-        } else {
-            Uri uri = FileProvider.getUriForFile(mContext, getPackageName() + ".activity.splash.updatefileprovider", file);
-            intent.setDataAndType(uri, "application/vnd.android.package-archive");
-            intent.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
-        }
+        intent.setDataAndType(Uri.fromFile(file), "application/vnd.android.package-archive");
         intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         startActivity(intent);
         System.exit(0);
@@ -131,25 +130,31 @@ public class SplashActivity extends MyBaseActivity {
         TextView tv_newVersionName = (TextView) view.findViewById(R.id.tv_newVersionName);
         TextView tv_newVersionSize = (TextView) view.findViewById(R.id.tv_newVersionSize);
         TextView tv_newVersionDesc = (TextView) view.findViewById(R.id.tv_newVersionDesc);
-
+        final CheckBox checkbox = (CheckBox) view.findViewById(R.id.checkbox);
+        TextView tv_updateAfter = (TextView) view.findViewById(R.id.tv_updateAfter);
+        TextView tv_updateImmediately = (TextView) view.findViewById(R.id.tv_updateImmediately);
         tv_newVersionName.setText("最新版本：" + apkBean.getVersionName());
         tv_newVersionSize.setText("新版本大小：" + apkBean.getFileSize().desc);
-        tv_newVersionDesc.setText("更新内容：" + apkBean.getNewFeature());
-        String strCancel = "以后再说";
-        String strOk = "立即更新";
+        tv_newVersionDesc.setText("更新内容：\n" + apkBean.getNewFeature());
 
-        updateDialog.initView(view, strCancel, strOk, new FragmentViewDialog.OnButtonClickListener() {
+        tv_updateAfter.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void OnOkClick() {
-                controller.queryToDownApp(apkBean);
+            public void onClick(View v) {
+            if(checkbox.isChecked()){
+                PreferencesUtil.putBoolean(mContext,InformationCodeUtil.KeyShowUpdateDialog,false);
             }
-
-            @Override
-            public void OnCancelClick() {
-                controller.expiredVerificationLogin();
+            updateDialog.dismiss();
             }
         });
-
+        tv_updateImmediately.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                updateDialog.dismiss();
+                controller.queryToDownApp(apkBean);
+            }
+        });
+        updateDialog.initView(view);
+        updateDialog.setCancelable(false);
         updateDialog.show(getSupportFragmentManager(), "FragmentViewDialog");
     }
 
@@ -157,9 +162,9 @@ public class SplashActivity extends MyBaseActivity {
         final FragmentOkDialog updateDialog = new FragmentOkDialog();
 
         String strTitle = "应用更新";
-        String strMessage = "您需要更新应用才能继续使用\n\n最新版本：" + apkBean.getVersionName()
+        String strMessage = "您需要更新应用才能继续使用\n最新版本：" + apkBean.getVersionName()
                 + "\n新版本大小：" + apkBean.getFileSize().desc
-                + "\n\n更新内容：\n" + apkBean.getNewFeature();
+                + "\n更新内容：\n" + apkBean.getNewFeature();
         String strOk = "确定";
 
         updateDialog.initView(strTitle, strMessage, strOk, new FragmentOkDialog.OnButtonClickListener() {
@@ -173,7 +178,7 @@ public class SplashActivity extends MyBaseActivity {
                 System.exit(0);
             }
         });
-
+        updateDialog.setCancelable(false);
         updateDialog.show(getSupportFragmentManager(), "FragmentViewDialog");
     }
 

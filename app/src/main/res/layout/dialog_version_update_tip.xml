@@ -3,12 +3,12 @@
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
-    android:paddingLeft="20dp"
     android:paddingRight="20dp">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
         android:layout_marginTop="20dp"
         android:text="@string/tv_titleVersionUpdate"
         android:textColor="@color/colorBlack_FF323232"
@@ -18,7 +18,8 @@
         android:id="@+id/tv_newVersionName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
         android:text="最新版本：v2.6.01"
         android:textColor="@color/colorBlack_FF646464"
         android:textSize="@dimen/textFontSize_14" />
@@ -27,6 +28,7 @@
         android:id="@+id/tv_newVersionSize"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
         android:text="新版本大小：9.33M"
         android:textColor="@color/colorBlack_FF646464"
         android:textSize="@dimen/textFontSize_14" />
@@ -35,11 +37,42 @@
         android:id="@+id/tv_newVersionDesc"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
         android:text="更新内容：\n1.版本升级文字说明1\n2.版本升级文字说明2\n3.版本升级文字说明3"
         android:textColor="@color/colorBlack_FF646464"
         android:textSize="@dimen/textFontSize_14" />
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:paddingTop="10dp"
+        android:paddingBottom="20dp"
+        android:layout_height="wrap_content">
+
+        <CheckBox
+            android:id="@+id/checkbox"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:text="不在提醒"
+            android:textColor="?attr/colorAccent" />
+
+        <TextView
+            android:id="@+id/tv_updateAfter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="以后再说"
+            android:textColor="?attr/colorAccent" />
+
+        <TextView
+            android:id="@+id/tv_updateImmediately"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="立即更新"
+            android:textColor="?attr/colorAccent" />
+    </LinearLayout>
 </LinearLayout>
 
 
