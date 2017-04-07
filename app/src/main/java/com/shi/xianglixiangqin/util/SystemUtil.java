@@ -31,7 +31,7 @@ public class SystemUtil {
          PackageManager packageManager = mContext.getPackageManager();
 		 PackageInfo packageInfo = null;
 		try {
-			packageInfo = packageManager.getPackageInfo(mContext.getPackageName(), 0);
+			packageInfo = packageManager.getPackageInfo(mContext.getPackageName(), PackageManager.GET_META_DATA);
 		} catch (NameNotFoundException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

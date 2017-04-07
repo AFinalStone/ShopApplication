@@ -3,7 +3,8 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
-    android:paddingBottom="25dp">
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp">
 
     <TextView
         android:id="@+id/tv_title"
@@ -11,18 +12,15 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="20dp"
-        android:gravity="center"
-        android:padding="5dp"
         android:text="标题"
-        android:textSize="@dimen/textFontSize2" />
+        android:textSize="@dimen/textFontSize_20" />
 
     <TextView
         android:id="@+id/tv_message"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:gravity="center"
-        android:padding="5dp"
+        android:layout_marginTop="20dp"
         android:text="内容"
         android:textSize="@dimen/textFontSize4" />
 

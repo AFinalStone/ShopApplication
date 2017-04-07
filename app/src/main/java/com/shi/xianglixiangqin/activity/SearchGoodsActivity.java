@@ -439,7 +439,6 @@ public class SearchGoodsActivity extends MyBaseActivity implements
     @Override
     public void connectServiceSuccessful(String returnString,
                                          String methodName, List<ShoppingCartParentGoodsModel> state, boolean whetherRefresh) {
-        // LogUtils.LogShitou("returnSoapObject", returnSoapObject.toString());
         if (methodName == InformationCodeUtil.methodNameGetGoodsList) {
             try {
                 refreshListData(returnString, methodName, whetherRefresh);
@@ -476,6 +475,7 @@ public class SearchGoodsActivity extends MyBaseActivity implements
 
     private void refreshListData(String returnString,
                                  String methodName, boolean whetherRefresh) {
+        LogUtil.LogShitou("returnString", returnString);
         Gson gson = new Gson();
         List<GoodsGeneralModel> list = null;
         try {

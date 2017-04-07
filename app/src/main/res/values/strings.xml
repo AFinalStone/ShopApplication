@@ -338,7 +338,7 @@
     <string name="tv_myOrderDetailPrivilegeFlyCoinPay_C">飞币抵扣：</string>
     <string name="tv_myOrderDetailPrivilegeIntegralPay_C">积分抵扣：</string>
     <string name="tv_myOrderDetailDiscountPrices_C">优惠金额：</string>
-    <string name="tv_titleVersionUpdate">版本升级</string>
+
 
     <!--商家推荐界面-->
     <string name="shopRecommendActivity_title">优质商家推荐</string>
@@ -445,6 +445,9 @@
     <string name="CheckStandMoneyRecord_tv_charge_C">手续费:</string>
     <string name="CheckStandMoneyRecord_tv_enter">转入</string>
     <string name="CheckStandMoneyRecord_tv_Withdrawal">提现</string>
+
+    <!--闪屏页面-->
+    <string name="tv_titleVersionUpdate">应用更新</string>
 
 
 </resources>

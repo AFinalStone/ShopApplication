@@ -10,8 +10,7 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import com.shi.xianglixiangqin.activity.MainActivity;
-import com.shi.xianglixiangqin.activity.MyOrderActivity;
-import com.shi.xianglixiangqin.activity.SplashActivity;
+import com.shi.xianglixiangqin.activity.splash.SplashActivity;
 import com.shi.xianglixiangqin.util.ExampleUtil;
 
 import java.util.Iterator;

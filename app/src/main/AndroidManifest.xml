@@ -64,7 +64,7 @@
 
         <!-- 引导界面 -->
         <activity
-            android:name=".activity.SplashActivity"
+            android:name=".activity.splash.SplashActivity"
             android:label="@string/app_name"
             android:screenOrientation="portrait"
             android:theme="@style/SplashTheme"
@@ -666,6 +666,15 @@
         <activity android:name=".activity.CheckStandApplyMDActivity" />
         <activity android:name=".activity.CheckStandWithdrawalActivity" />
         <activity android:name=".activity.CheckStandMoneyRecordActivity"></activity>
+        <provider
+            android:name="com.shi.xianglixiangqin.activity.splash.UpdateFileProvider"
+            android:authorities="${applicationId}.updatefileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/update_cache_path"/>
+        </provider>
     </application>
 
 </manifest>

@@ -108,22 +108,14 @@ public class InformationCodeUtil {
 	/**用户信息Json数据key**/
 	public static final String KeyUserInfo = "KeyUserInfo";
 
-
-
 	/**强制用户下线的广播过滤器**/
 	public static final String ReceiverFilterPressUserLogout = BuildConfig.APPLICATION_ID+".PRESS_UserLogout";
 	
-
  	/**手机号正则表达式**/
 	public  final static String regExpPhotoNumber = "^[1][0-9]{10}$";
 	/**邮箱号正则表达式**/
 	public final static String regExpEmailNumber = "^([a-z0-9A-Z]+[-|\\.]?)+[a-z0-9A-Z]@([a-z0-9A-Z]+(-[a-z0-9A-Z]+)?\\.)+[a-zA-Z]{2,}$";
 
-
-	//和服务器交互的函数名称
-	/**获取我的代理商品数据**/
-	public static final String methodNameGetAgentProducts = "GetAgentProducts";
-	
 	/**获取我的配送地址**/
 	public static final String methodNameGetAddrList = "GetAddrList";
 	
@@ -175,7 +167,7 @@ public class InformationCodeUtil {
 	
 	/**获取经销商商品详情**/
 	public static final String methodNameGetShopInfo = "GetShopInfo";
-	
+
 	/**G
 	 * 批量改价
 	 * (int customID, string openKey, string Ids, string AgentAddMoneyStr, 
@@ -186,10 +178,7 @@ public class InformationCodeUtil {
 	
 	/**取 一级分类过滤 列表**/
 	public static final String methodNameGetClassFilterList = "GetClassFilterList";
-	/**
-	 *
-	 * **/
-	public static final String methodNameGetSPWhere = "GetSPWhere";
+
 
 	/**取 二级分类过滤 列表**/
 	public static final String methodNameGetSecondFilterList = "GetSecondFilterList";
@@ -281,11 +270,27 @@ public class InformationCodeUtil {
 	 * ,int hotShopCount(好店推荐条数), int newGoodsCount(新品推荐条数), string cityCode=""(城市编号))**/
 	public static final String methodNameHomeIndex = "HomeIndex";
 	
-	/**G 获取店铺商品分类信息 列表(int pageSize(页大小), int pageIndex(第几页), int classID(分类编号,-1取全部), string filterIDS(过滤编号)
-	 * ,int shopID, string keyWord(关键字), int orderIndex(排序方式:0默认/1销售优先/2价格)
-	 * , int customID=0(默认为0), string cityCode=""(城市编码),string wherejson="")**/
+	/**G 普通商品搜索 列表(int pageSize(页大小), int pageIndex(第几页), int classID(分类编号,-1取全部)
+	 * , string filterIDS(筛选过滤编号，现在传空),int shopID, string keyWord(关键字),
+	 * int orderIndex(排序方式:0默认/1销售优先/2价格), int customID=0(默认为0)
+	 * , string cityCode=""(城市编码)
+	 * ,string wherejson=""(属性筛选条件json,举例：[{"商品品牌":"苹果"},{"颜色分类":"土豪金"}]))**/
 	public static final String methodNameGetGoodsList = "GetGoodsList";
-	
+
+	//和服务器交互的函数名称
+	/**C 我的代理商品搜索 列表(int customID, int openKey, string keyWord(关键字), int classID(分类编号,-1取全部)
+	 * , string filterIDS(筛选过滤编号，现在传空), int pageSize(页大小), int pageIndex(第几页)
+	 * , string wherejson(属性筛选条件json,举例：[{"商品品牌":"苹果"},{"颜色分类":"土豪金"}])   )**/
+	public static final String methodNameGetAgentProducts = "GetAgentProducts";
+
+	/**G
+	 * 获取筛选条件
+	 * (int shopid(当前进入的店铺ID), int classid(选择的分类ID,若为0，则返回结果只有品牌，无其他筛选条件
+	 * ，原因：政采云属性(筛选条件)挂在分类下的), string kw="" (搜索关键字))
+	 * **/
+	public static final String methodNameGetSPWhere = "GetSPWhere";
+
+
 	/**C 注册账号  (string phoneNum (手机号), string email (邮箱), string passWord (密码)
 	 * , int roleID=3 (2经销商/3代理商), string cityCode="" (城市编号), int code=0 (邀请码) 
 	 * , string shopName="" (店铺名称), string realName="" (真实姓名)**/
