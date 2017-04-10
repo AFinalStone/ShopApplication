@@ -144,6 +144,7 @@ public class SplashActivity extends MyBaseActivity {
                 PreferencesUtil.putBoolean(mContext,InformationCodeUtil.KeyShowUpdateDialog,false);
             }
             updateDialog.dismiss();
+            controller.cancelToDownApp();
             }
         });
         tv_updateImmediately.setOnClickListener(new View.OnClickListener() {

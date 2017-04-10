@@ -242,7 +242,6 @@ public class MainHomeFragment_JvHe extends MyBaseFragment<MainActivity> implemen
         tv_title.setText("首页");
         et_searchContext.setInputType(InputType.TYPE_NULL);
 
-
         //初始化轮播图
         listData_rollView = new ArrayList<String>();
         LinearLayout.LayoutParams layoutParams = (LinearLayout.LayoutParams) sliderLayout_rollView.getLayoutParams();

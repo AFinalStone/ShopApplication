@@ -124,12 +124,12 @@
         "source": "D:\\AndroidStudioProject\\XiangLiXiangQin\\rongIMKit\\build\\intermediates\\bundles\\debug\\res\\layout\\rc_callside_layout.xml"
     },
     {
-        "merged": "D:\\AndroidStudioProject\\XiangLiXiangQin\\rongIMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\rc_ac_webview.xml",
-        "source": "D:\\AndroidStudioProject\\XiangLiXiangQin\\rongIMKit\\build\\intermediates\\bundles\\debug\\res\\layout\\rc_ac_webview.xml"
-    },
-    {
         "merged": "D:\\AndroidStudioProject\\XiangLiXiangQin\\rongIMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\rc_fragment_base_setting.xml",
         "source": "D:\\AndroidStudioProject\\XiangLiXiangQin\\rongIMKit\\build\\intermediates\\bundles\\debug\\res\\layout\\rc_fragment_base_setting.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProject\\XiangLiXiangQin\\rongIMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\rc_ac_webview.xml",
+        "source": "D:\\AndroidStudioProject\\XiangLiXiangQin\\rongIMKit\\build\\intermediates\\bundles\\debug\\res\\layout\\rc_ac_webview.xml"
     },
     {
         "merged": "D:\\AndroidStudioProject\\XiangLiXiangQin\\rongIMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\rc_fr_conversation.xml",

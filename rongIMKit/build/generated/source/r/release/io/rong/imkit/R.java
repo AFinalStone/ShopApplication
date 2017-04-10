@@ -183,9 +183,9 @@ containing a value of this type.
         public static int rc_voice_color=0x7f07000f;
     }
     public static final class dimen {
-        public static int rc_conversation_item_data_size=0x7f090000;
-        public static int rc_conversation_item_name_size=0x7f090001;
-        public static int rc_message_send_status_image_size=0x7f090002;
+        public static int rc_conversation_item_data_size=0x7f080000;
+        public static int rc_conversation_item_name_size=0x7f080001;
+        public static int rc_message_send_status_image_size=0x7f080002;
     }
     public static final class drawable {
         public static int rc_add_people=0x7f020000;
@@ -464,124 +464,124 @@ containing a value of this type.
         public static int u2b50=0x7f020111;
     }
     public static final class id {
-        public static int C=0x7f08000a;
-        public static int CE=0x7f080009;
-        public static int CES=0x7f080003;
-        public static int CS=0x7f080007;
-        public static int CSE=0x7f080005;
-        public static int EC=0x7f080008;
-        public static int ECS=0x7f080004;
-        public static int RCFill=0x7f08000c;
-        public static int RCStroke=0x7f08000b;
-        public static int SC=0x7f080006;
-        public static int SCE=0x7f080002;
-        public static int account=0x7f08005a;
-        public static int answer_id=0x7f080048;
-        public static int btn_cancel=0x7f08003f;
-        public static int btn_isOK=0x7f080041;
-        public static int button1=0x7f080052;
-        public static int call_finish=0x7f080049;
-        public static int calling_state=0x7f08004d;
-        public static int circle=0x7f080001;
-        public static int container=0x7f080045;
-        public static int description=0x7f08005d;
-        public static int enter=0x7f08005e;
-        public static int follow=0x7f08005f;
-        public static int func=0x7f08005c;
-        public static int hands_off_id=0x7f080050;
-        public static int introduction=0x7f080069;
-        public static int mask_layout=0x7f080051;
-        public static int name=0x7f080059;
-        public static int portrait=0x7f080058;
-        public static int rc_actionbar=0x7f08000d;
-        public static int rc_back=0x7f08000e;
-        public static int rc_btn_cancel=0x7f08000f;
-        public static int rc_btn_ok=0x7f080010;
-        public static int rc_chebox_pictrue=0x7f080043;
-        public static int rc_checkbox=0x7f080011;
-        public static int rc_content=0x7f080012;
-        public static int rc_conversation_content=0x7f080013;
-        public static int rc_conversation_msg_block=0x7f080014;
-        public static int rc_conversation_status=0x7f080015;
-        public static int rc_conversation_time=0x7f080016;
-        public static int rc_conversation_title=0x7f080017;
-        public static int rc_ext=0x7f080074;
-        public static int rc_flow=0x7f08006b;
-        public static int rc_fragment=0x7f080018;
-        public static int rc_frame=0x7f080019;
-        public static int rc_icon=0x7f08001a;
-        public static int rc_img=0x7f08001b;
-        public static int rc_indicator=0x7f08006c;
-        public static int rc_input=0x7f080054;
-        public static int rc_input_custom_menu=0x7f080072;
-        public static int rc_input_extension=0x7f08001c;
-        public static int rc_input_main=0x7f08001d;
-        public static int rc_input_menu=0x7f080070;
-        public static int rc_input_switch=0x7f08001e;
-        public static int rc_item0=0x7f08001f;
-        public static int rc_item1=0x7f080020;
-        public static int rc_item2=0x7f080021;
-        public static int rc_item3=0x7f080022;
-        public static int rc_item4=0x7f080023;
-        public static int rc_item5=0x7f080024;
-        public static int rc_item6=0x7f080025;
-        public static int rc_item7=0x7f080026;
-        public static int rc_item8=0x7f080027;
-        public static int rc_item9=0x7f080028;
-        public static int rc_item_conversation=0x7f080029;
-        public static int rc_layout=0x7f08002a;
-        public static int rc_left=0x7f08002b;
-        public static int rc_list=0x7f08002c;
-        public static int rc_logo=0x7f08002d;
-        public static int rc_menu_item_text=0x7f080067;
-        public static int rc_menu_line=0x7f080068;
-        public static int rc_menu_switch=0x7f08006e;
-        public static int rc_message_send_failed=0x7f08002e;
-        public static int rc_msg=0x7f08002f;
-        public static int rc_new=0x7f080030;
-        public static int rc_new_message_count=0x7f080056;
-        public static int rc_new_message_number=0x7f080057;
-        public static int rc_pager=0x7f080031;
-        public static int rc_plugins=0x7f080073;
-        public static int rc_portrait=0x7f080032;
-        public static int rc_portrait_right=0x7f080033;
-        public static int rc_progress=0x7f080034;
-        public static int rc_right=0x7f080035;
-        public static int rc_search_btn=0x7f080062;
-        public static int rc_search_ed=0x7f080061;
-        public static int rc_search_list=0x7f080063;
-        public static int rc_send=0x7f080036;
-        public static int rc_sent_status=0x7f080037;
-        public static int rc_setting_item=0x7f080064;
-        public static int rc_switcher=0x7f08006d;
-        public static int rc_switcher1=0x7f08006f;
-        public static int rc_switcher2=0x7f080071;
-        public static int rc_time=0x7f080038;
-        public static int rc_title=0x7f080039;
-        public static int rc_title_layout=0x7f08003a;
-        public static int rc_txt=0x7f08003b;
-        public static int rc_unread_message=0x7f08003c;
-        public static int rc_unread_message_count=0x7f080055;
-        public static int rc_unread_message_icon=0x7f080065;
-        public static int rc_unread_message_icon_right=0x7f080066;
-        public static int rc_unread_message_right=0x7f08003d;
-        public static int rc_voice_unread=0x7f08006a;
-        public static int rc_voip_called_layout=0x7f080046;
-        public static int rc_warning=0x7f08003e;
-        public static int rc_webview=0x7f080044;
-        public static int refuse_id=0x7f080047;
-        public static int rel_group_intro=0x7f08005b;
-        public static int show_pictrue=0x7f080040;
-        public static int shownumber=0x7f080042;
-        public static int sound_off_container_id=0x7f080053;
-        public static int sound_off_id=0x7f08004f;
-        public static int square=0x7f080000;
-        public static int unfollow=0x7f080060;
-        public static int user_name=0x7f08004c;
-        public static int user_photo=0x7f08004b;
-        public static int user_photo_container=0x7f08004a;
-        public static int vioce_control_container=0x7f08004e;
-        public static int volume_animation=0x7f080075;
+        public static int C=0x7f090034;
+        public static int CE=0x7f090035;
+        public static int CES=0x7f090036;
+        public static int CS=0x7f090037;
+        public static int CSE=0x7f090038;
+        public static int EC=0x7f090039;
+        public static int ECS=0x7f09003a;
+        public static int RCFill=0x7f09003d;
+        public static int RCStroke=0x7f09003e;
+        public static int SC=0x7f09003b;
+        public static int SCE=0x7f09003c;
+        public static int account=0x7f09005a;
+        public static int answer_id=0x7f090048;
+        public static int btn_cancel=0x7f09003f;
+        public static int btn_isOK=0x7f090041;
+        public static int button1=0x7f090052;
+        public static int call_finish=0x7f090049;
+        public static int calling_state=0x7f09004d;
+        public static int circle=0x7f090032;
+        public static int container=0x7f090045;
+        public static int description=0x7f09005d;
+        public static int enter=0x7f09005e;
+        public static int follow=0x7f09005f;
+        public static int func=0x7f09005c;
+        public static int hands_off_id=0x7f090050;
+        public static int introduction=0x7f090069;
+        public static int mask_layout=0x7f090051;
+        public static int name=0x7f090059;
+        public static int portrait=0x7f090058;
+        public static int rc_actionbar=0x7f090000;
+        public static int rc_back=0x7f090001;
+        public static int rc_btn_cancel=0x7f090002;
+        public static int rc_btn_ok=0x7f090003;
+        public static int rc_chebox_pictrue=0x7f090043;
+        public static int rc_checkbox=0x7f090004;
+        public static int rc_content=0x7f090005;
+        public static int rc_conversation_content=0x7f090006;
+        public static int rc_conversation_msg_block=0x7f090007;
+        public static int rc_conversation_status=0x7f090008;
+        public static int rc_conversation_time=0x7f090009;
+        public static int rc_conversation_title=0x7f09000a;
+        public static int rc_ext=0x7f090074;
+        public static int rc_flow=0x7f09006b;
+        public static int rc_fragment=0x7f09000b;
+        public static int rc_frame=0x7f09000c;
+        public static int rc_icon=0x7f09000d;
+        public static int rc_img=0x7f09000e;
+        public static int rc_indicator=0x7f09006c;
+        public static int rc_input=0x7f090054;
+        public static int rc_input_custom_menu=0x7f090072;
+        public static int rc_input_extension=0x7f09000f;
+        public static int rc_input_main=0x7f090010;
+        public static int rc_input_menu=0x7f090070;
+        public static int rc_input_switch=0x7f090011;
+        public static int rc_item0=0x7f090012;
+        public static int rc_item1=0x7f090013;
+        public static int rc_item2=0x7f090014;
+        public static int rc_item3=0x7f090015;
+        public static int rc_item4=0x7f090016;
+        public static int rc_item5=0x7f090017;
+        public static int rc_item6=0x7f090018;
+        public static int rc_item7=0x7f090019;
+        public static int rc_item8=0x7f09001a;
+        public static int rc_item9=0x7f09001b;
+        public static int rc_item_conversation=0x7f09001c;
+        public static int rc_layout=0x7f09001d;
+        public static int rc_left=0x7f09001e;
+        public static int rc_list=0x7f09001f;
+        public static int rc_logo=0x7f090020;
+        public static int rc_menu_item_text=0x7f090067;
+        public static int rc_menu_line=0x7f090068;
+        public static int rc_menu_switch=0x7f09006e;
+        public static int rc_message_send_failed=0x7f090021;
+        public static int rc_msg=0x7f090022;
+        public static int rc_new=0x7f090023;
+        public static int rc_new_message_count=0x7f090056;
+        public static int rc_new_message_number=0x7f090057;
+        public static int rc_pager=0x7f090024;
+        public static int rc_plugins=0x7f090073;
+        public static int rc_portrait=0x7f090025;
+        public static int rc_portrait_right=0x7f090026;
+        public static int rc_progress=0x7f090027;
+        public static int rc_right=0x7f090028;
+        public static int rc_search_btn=0x7f090062;
+        public static int rc_search_ed=0x7f090061;
+        public static int rc_search_list=0x7f090063;
+        public static int rc_send=0x7f090029;
+        public static int rc_sent_status=0x7f09002a;
+        public static int rc_setting_item=0x7f090064;
+        public static int rc_switcher=0x7f09006d;
+        public static int rc_switcher1=0x7f09006f;
+        public static int rc_switcher2=0x7f090071;
+        public static int rc_time=0x7f09002b;
+        public static int rc_title=0x7f09002c;
+        public static int rc_title_layout=0x7f09002d;
+        public static int rc_txt=0x7f09002e;
+        public static int rc_unread_message=0x7f09002f;
+        public static int rc_unread_message_count=0x7f090055;
+        public static int rc_unread_message_icon=0x7f090065;
+        public static int rc_unread_message_icon_right=0x7f090066;
+        public static int rc_unread_message_right=0x7f090030;
+        public static int rc_voice_unread=0x7f09006a;
+        public static int rc_voip_called_layout=0x7f090046;
+        public static int rc_warning=0x7f090031;
+        public static int rc_webview=0x7f090044;
+        public static int refuse_id=0x7f090047;
+        public static int rel_group_intro=0x7f09005b;
+        public static int show_pictrue=0x7f090040;
+        public static int shownumber=0x7f090042;
+        public static int sound_off_container_id=0x7f090053;
+        public static int sound_off_id=0x7f09004f;
+        public static int square=0x7f090033;
+        public static int unfollow=0x7f090060;
+        public static int user_name=0x7f09004c;
+        public static int user_photo=0x7f09004b;
+        public static int user_photo_container=0x7f09004a;
+        public static int vioce_control_container=0x7f09004e;
+        public static int volume_animation=0x7f090075;
     }
     public static final class integer {
         public static int rc_audio_encoding_bit_rate=0x7f0a0000;
@@ -809,7 +809,7 @@ theme attribute (in the form
 containing a value of this type.
           @attr name io.rong.imkit:RCCornerRadius
         */
-        public static final int AsyncImageView_RCCornerRadius = 1;
+        public static int AsyncImageView_RCCornerRadius = 1;
         /**
           <p>This symbol is the offset where the {@link io.rong.imkit.R.attr#RCDefDrawable}
           attribute's value can be found in the {@link #AsyncImageView} array.
@@ -819,7 +819,7 @@ containing a value of this type.
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           @attr name io.rong.imkit:RCDefDrawable
         */
-        public static final int AsyncImageView_RCDefDrawable = 3;
+        public static int AsyncImageView_RCDefDrawable = 3;
         /**
           <p>This symbol is the offset where the {@link io.rong.imkit.R.attr#RCMinShortSideSize}
           attribute's value can be found in the {@link #AsyncImageView} array.
@@ -835,7 +835,7 @@ theme attribute (in the form
 containing a value of this type.
           @attr name io.rong.imkit:RCMinShortSideSize
         */
-        public static final int AsyncImageView_RCMinShortSideSize = 0;
+        public static int AsyncImageView_RCMinShortSideSize = 0;
         /**
           <p>This symbol is the offset where the {@link io.rong.imkit.R.attr#RCShape}
           attribute's value can be found in the {@link #AsyncImageView} array.
@@ -852,7 +852,7 @@ containing a value of this type.
 </table>
           @attr name io.rong.imkit:RCShape
         */
-        public static final int AsyncImageView_RCShape = 2;
+        public static int AsyncImageView_RCShape = 2;
         /** Attributes that can be used with a InputView.
            <p>Includes the following attributes:</p>
            <table>
@@ -889,7 +889,7 @@ containing a value of this type.
 </table>
           @attr name io.rong.imkit:RCStyle
         */
-        public static final int InputView_RCStyle = 0;
+        public static int InputView_RCStyle = 0;
         /** Attributes that can be used with a RCCircleFlowIndicator.
            <p>Includes the following attributes:</p>
            <table>
@@ -935,7 +935,7 @@ theme attribute (in the form
 containing a value of this type.
           @attr name io.rong.imkit:RCActiveColor
         */
-        public static final int RCCircleFlowIndicator_RCActiveColor = 0;
+        public static int RCCircleFlowIndicator_RCActiveColor = 0;
         /**
           <p>This symbol is the offset where the {@link io.rong.imkit.R.attr#RCActiveType}
           attribute's value can be found in the {@link #RCCircleFlowIndicator} array.
@@ -952,7 +952,7 @@ containing a value of this type.
 </table>
           @attr name io.rong.imkit:RCActiveType
         */
-        public static final int RCCircleFlowIndicator_RCActiveType = 7;
+        public static int RCCircleFlowIndicator_RCActiveType = 7;
         /**
           <p>This symbol is the offset where the {@link io.rong.imkit.R.attr#RCCentered}
           attribute's value can be found in the {@link #RCCircleFlowIndicator} array.
@@ -966,7 +966,7 @@ theme attribute (in the form
 containing a value of this type.
           @attr name io.rong.imkit:RCCentered
         */
-        public static final int RCCircleFlowIndicator_RCCentered = 4;
+        public static int RCCircleFlowIndicator_RCCentered = 4;
         /**
           <p>This symbol is the offset where the {@link io.rong.imkit.R.attr#RCFadeOut}
           attribute's value can be found in the {@link #RCCircleFlowIndicator} array.
@@ -980,7 +980,7 @@ theme attribute (in the form
 containing a value of this type.
           @attr name io.rong.imkit:RCFadeOut
         */
-        public static final int RCCircleFlowIndicator_RCFadeOut = 5;
+        public static int RCCircleFlowIndicator_RCFadeOut = 5;
         /**
           <p>This symbol is the offset where the {@link io.rong.imkit.R.attr#RCInactiveColor}
           attribute's value can be found in the {@link #RCCircleFlowIndicator} array.
@@ -995,7 +995,7 @@ theme attribute (in the form
 containing a value of this type.
           @attr name io.rong.imkit:RCInactiveColor
         */
-        public static final int RCCircleFlowIndicator_RCInactiveColor = 1;
+        public static int RCCircleFlowIndicator_RCInactiveColor = 1;
         /**
           <p>This symbol is the offset where the {@link io.rong.imkit.R.attr#RCInactiveType}
           attribute's value can be found in the {@link #RCCircleFlowIndicator} array.
@@ -1012,7 +1012,7 @@ containing a value of this type.
 </table>
           @attr name io.rong.imkit:RCInactiveType
         */
-        public static final int RCCircleFlowIndicator_RCInactiveType = 6;
+        public static int RCCircleFlowIndicator_RCInactiveType = 6;
         /**
           <p>This symbol is the offset where the {@link io.rong.imkit.R.attr#RCRadius}
           attribute's value can be found in the {@link #RCCircleFlowIndicator} array.
@@ -1028,7 +1028,7 @@ theme attribute (in the form
 containing a value of this type.
           @attr name io.rong.imkit:RCRadius
         */
-        public static final int RCCircleFlowIndicator_RCRadius = 2;
+        public static int RCCircleFlowIndicator_RCRadius = 2;
         /**
           <p>This symbol is the offset where the {@link io.rong.imkit.R.attr#RCSnap}
           attribute's value can be found in the {@link #RCCircleFlowIndicator} array.
@@ -1042,7 +1042,7 @@ theme attribute (in the form
 containing a value of this type.
           @attr name io.rong.imkit:RCSnap
         */
-        public static final int RCCircleFlowIndicator_RCSnap = 8;
+        public static int RCCircleFlowIndicator_RCSnap = 8;
         /**
           <p>This symbol is the offset where the {@link io.rong.imkit.R.attr#RCSpacing}
           attribute's value can be found in the {@link #RCCircleFlowIndicator} array.
@@ -1058,7 +1058,7 @@ theme attribute (in the form
 containing a value of this type.
           @attr name io.rong.imkit:RCSpacing
         */
-        public static final int RCCircleFlowIndicator_RCSpacing = 3;
+        public static int RCCircleFlowIndicator_RCSpacing = 3;
         /** Attributes that can be used with a RCViewFlow.
            <p>Includes the following attributes:</p>
            <table>
@@ -1085,6 +1085,6 @@ theme attribute (in the form
 containing a value of this type.
           @attr name io.rong.imkit:RCSideBuffer
         */
-        public static final int RCViewFlow_RCSideBuffer = 0;
+        public static int RCViewFlow_RCSideBuffer = 0;
     };
 }

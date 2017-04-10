@@ -22,9 +22,9 @@ import cn.jpush.android.api.JPushInterface;
 import com.shi.xianglixiangqin.R;
 import com.shi.xianglixiangqin.adapter.MyBaseAdapter;
 import com.shi.xianglixiangqin.util.ActivityCollectorUtil;
-import com.shi.xianglixiangqin.util.DataCleanManagerUtil;
 import com.shi.xianglixiangqin.util.InformationCodeUtil;
 import com.shi.xianglixiangqin.util.PreferencesUtilMy;
+import com.shi.xianglixiangqin.util.SystemUtil;
 import com.shi.xianglixiangqin.view.FragmentOkAndCancelDialog;
 
 /**
@@ -149,7 +149,7 @@ public class SettingCenterActivity extends MyBaseActivity implements OnClickList
     private void showClearCacheDialog() {
         String strTotalCache = "0";
         try {
-            strTotalCache = DataCleanManagerUtil.getTotalCacheSize(mContext);
+            strTotalCache = SystemUtil.getTotalCacheSize(mContext);
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -162,7 +162,7 @@ public class SettingCenterActivity extends MyBaseActivity implements OnClickList
 
                     @Override
                     public void OnOkClick() {
-                        DataCleanManagerUtil.clearAllCache(mContext);
+                        SystemUtil.clearAllCache(mContext);
                     }
 
                     @Override
