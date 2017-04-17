@@ -86,165 +86,165 @@ android {
             manifestPlaceholders = [ APP_PACKAGE: "com.xianglixiangqin.xianglixiangqin"
                                     , UMENG_APPKEY: "582ab5601061d25c1b000964"]
         }
-//        /*应用宝审核通过 微信分享通过 极光已添加*/
-//        s2_shuimunianhua{
-//            applicationId "com.shuimunianhua.xianglixiangqin"
-//            resValue "string", "app_name", "水木年华"
-//            resValue "string", "jpush_appkey_value", "20e682dfce94fd3b123c9f74"
-//            resValue "string", "jpush_appsecret_value", "fee923344b10278434f36d37"
-//            buildConfigField("String", "LOGIN_SHOPCODE", '"1397"')
-//            buildConfigField("int", "LOGIN_MODEL_NUMBER", "2")
-//            manifestPlaceholders = [APP_PACKAGE: "com.shuimunianhua.xianglixiangqin"
-//                                    , UMENG_APPKEY: "582ab425c62dca41080008f0"]
-//        }
-//        /*应用宝审核通过 极光已添加*/
-//        s3_dongmikeji{
-//            applicationId "com.dongmikeji.xianglixiangqin"
-//            resValue "string", "app_name", "东米科技"
-//            resValue "string", "jpush_appkey_value", "a570a6ca6f58b310a3e6bb20"
-//            resValue "string", "jpush_appsecret_value", "8ba5cb2705f47942648f9d92"
-//            buildConfigField("String", "LOGIN_SHOPCODE", '"1532"')
-//            buildConfigField("int", "LOGIN_MODEL_NUMBER", "3")
-//            manifestPlaceholders = [APP_PACKAGE: "com.dongmikeji.xianglixiangqin"]
-//        }
-//        /*应用宝审核通过 微信分享通过 极光已添加*/
-//        s4_jingzhuoshuma{
-//            applicationId "com.jingzhuoshuma.xianglixiangqin"
-//            resValue "string", "app_name", "精卓数码"
-//            resValue "string", "jpush_appkey_value", "9ac85e04e1781793029b165b"
-//            resValue "string", "jpush_appsecret_value", "986f1af4c8d2d07f89b43b89"
-//            buildConfigField("String", "LOGIN_SHOPCODE", '"1524"')
-//            buildConfigField("int", "LOGIN_MODEL_NUMBER", "3")
-//            manifestPlaceholders = [APP_PACKAGE: "com.jingzhuoshuma.xianglixiangqin"]
-//        }
-//        /*应用宝审核通过 极光已添加*/
-//        s5_taizhoulingdian{
-//            applicationId "com.taizhoulingdian.xianglixiangqin"
-//            resValue "string", "app_name", "台州零点"
-//            resValue "string", "jpush_appkey_value", "fc330e63f1dc7bb2dc1eedd1"
-//            resValue "string", "jpush_appsecret_value", "f5b4f2feb8d253d6d539e472"
-//            buildConfigField("String", "LOGIN_SHOPCODE", '"1463"')
-//            buildConfigField("int", "LOGIN_MODEL_NUMBER", "3")
-//            manifestPlaceholders = [APP_PACKAGE: "com.taizhoulingdian.xianglixiangqin"]
-//        }
-//        /*应用宝审核通过 微信分享通过 极光已添加*/
-//        s6_yongrun{
-//            applicationId "com.yongrun.xianglixiangqin"
-//            resValue "string", "app_name", "杭州永润"
-//            resValue "string", "jpush_appkey_value", "a459dcb1eaa12d838cd63794"
-//            resValue "string", "jpush_appsecret_value", "bc1971827b3ddd05c1687088"
-//            buildConfigField("String", "LOGIN_SHOPCODE", '"1531"')
-//            buildConfigField("int", "LOGIN_MODEL_NUMBER", "3")
-//            manifestPlaceholders = [APP_PACKAGE      : "com.yongrun.xianglixiangqin"]
-//        }
-//        /*应用宝审核通过 微信分享通过 极光已添加*/
-//        s7_xianghaikeji{
-//            applicationId "com.xianghaikeji.xianglixiangqin"
-//            resValue "string", "app_name", "响海科技"
-//            resValue "string", "jpush_appkey_value", "2be3955a4d90c0d9ffa7b008"
-//            resValue "string", "jpush_appsecret_value", "a25d6e2277ee31402603375c"
-//            buildConfigField("String", "LOGIN_SHOPCODE", '"45"')
-//            buildConfigField("int", "LOGIN_MODEL_NUMBER", "3")
-//            manifestPlaceholders = [APP_PACKAGE: "com.xianghaikeji.xianglixiangqin"]
-//        }
-//        /*应用宝审核通过 极光已添加*/
-//        s8_boaodianzi{
-//            applicationId "com.boaodianzi.xianglixiangqin"
-//            resValue "string", "app_name", "博傲电子"
-//            resValue "string", "jpush_appkey_value", "96b6d0beac356cfa612c2952"
-//            resValue "string", "jpush_appsecret_value", "e87e55d912a2dda6d24be215"
-//            buildConfigField("String", "LOGIN_SHOPCODE", '"1534"')
-//            buildConfigField("int", "LOGIN_MODEL_NUMBER", "3")
-//            manifestPlaceholders = [APP_PACKAGE: "com.boaodianzi.xianglixiangqin"]
-//        }
-//        /*应用宝审核通过 微信分享通过 极光已添加*/
-//        s9_jinweini{
-//            applicationId "com.jinweini.xianglixiangqin"
-//            resValue "string", "app_name", "金维尼"
-//            resValue "string", "jpush_appkey_value", "3988042917b08bbc86d6aa38"
-//            resValue "string", "jpush_appsecret_value", "39f8a739b97c23facd1853ba"
-//            buildConfigField("String", "LOGIN_SHOPCODE", '"1550"')
-//            buildConfigField("int", "LOGIN_MODEL_NUMBER", "3")
-//            manifestPlaceholders = [APP_PACKAGE: "com.jinweini.xianglixiangqin"]
-//        }
-//        /*应用宝审核通过  微信分享通过 极光已添加*/
-//        s10_fengtiaoyushun{
-//            applicationId "com.fengtiaoyushun.xianglixiangqin"
-//            resValue "string", "app_name", "锋调宇顺"
-//            resValue "string", "jpush_appkey_value", "7192cf80a2dd3bd8c2ebf600"
-//            resValue "string", "jpush_appsecret_value", "516927420414ea23b8063e6d"
-//            buildConfigField("String", "LOGIN_SHOPCODE", '"74"')
-//            buildConfigField("int", "LOGIN_MODEL_NUMBER", "4")
-//            manifestPlaceholders = [APP_PACKAGE: "com.fengtiaoyushun.xianglixiangqin"]
-//        }
-//        s11_chuanmeikeji{
-//            applicationId "com.chuanmeikeji.xianglixiangqin"
-//            resValue "string", "app_name", "传美科技"
-//            resValue "string", "jpush_appkey_value", "91d484eb7f04845736f2e54a"
-//            resValue "string", "jpush_appsecret_value", "a782d8e37e3db88ed1353895"
-//            buildConfigField("String", "LOGIN_SHOPCODE", '"1533"')
-//            buildConfigField("int", "LOGIN_MODEL_NUMBER", "4")
-//            manifestPlaceholders = [APP_PACKAGE: "com.chuanmeikeji.xianglixiangqin"]
-//        }
-//        /*应用宝审核通过 微信分享通过 极光已添加*/
-//        s12_hangzhouhengshuo{
-//            applicationId "com.hangzhouhengshuo.xianglixiangqin"
-//            resValue "string", "app_name", "杭州恒硕"
-//            resValue "string", "jpush_appkey_value", "91d484eb7f04845736f2e54a"
-//            resValue "string", "jpush_appsecret_value", "a782d8e37e3db88ed1353895"
-//            buildConfigField("String", "LOGIN_SHOPCODE", '"1647"')
-//            buildConfigField("int", "LOGIN_MODEL_NUMBER", "4")
-//            manifestPlaceholders = [APP_PACKAGE: "com.hangzhouhengshuo.xianglixiangqin"]
-//        }
-//        /*应用宝审核通过 微信分享通过 极光已添加*/
-//        s13_degoukeji{
-//            applicationId "com.degoukeji.xianglixiangqin"
-//            resValue "string", "app_name", "德购科技"
-//            resValue "string", "jpush_appkey_value", "f36c15b9c193464887159c36"
-//            resValue "string", "jpush_appsecret_value", "78818b92fc563c5558f13624"
-//            buildConfigField("String", "LOGIN_SHOPCODE", '"1577"')
-//            buildConfigField("int", "LOGIN_MODEL_NUMBER", "5")
-//            manifestPlaceholders = [APP_PACKAGE: "com.degoukeji.xianglixiangqin"]
-//        }
-//        /*应用宝审核通过 极光已添加*/
-//        s14_nuotengugou{
-//            applicationId "com.nuotengugou.xianglixiangqin"
-//            resValue "string", "app_name", "诺腾U购"
-//            resValue "string", "jpush_appkey_value", "91d484eb7f04845736f2e54a"
-//            resValue "string", "jpush_appsecret_value", "a782d8e37e3db88ed1353895"
-//            buildConfigField("String", "LOGIN_SHOPCODE", '"1688"')
-//            buildConfigField("int", "LOGIN_MODEL_NUMBER", "4")
-//            manifestPlaceholders = [APP_PACKAGE: "com.nuotengugou.xianglixiangqin"]
-//        }
-//        /*应用宝审核通过 极光已添加*/
-//        s15_xianghongshuma{
-//            applicationId "com.xianghongshuma.xianglixiangqin"
-//            resValue "string", "app_name", "翔鸿数码"
-//            resValue "string", "jpush_appkey_value", "312c006229bb84a93ca19b2d"
-//            resValue "string", "jpush_appsecret_value", "ed520452595d18c47d7907be"
-//            buildConfigField("String", "LOGIN_SHOPCODE", '"1658"')
-//            buildConfigField("int", "LOGIN_MODEL_NUMBER", "5")
-//            manifestPlaceholders = [APP_PACKAGE: "com.xianghongshuma.xianglixiangqin"]
-//        }
-//        /*应用宝审核通过 极光已添加*/
-//        s16_haijiaowangluo{
-//            applicationId "com.haijiaowangluo.xianglixiangqin"
-//            manifestPlaceholders = [APP_PACKAGE: "com.haijiaowangluo.xianglixiangqin"]
-//            resValue "string", "app_name", "海角网络"
-//            resValue "string", "jpush_appkey_value", "36a37ae93b8f5aa3e819498d"
-//            resValue "string", "jpush_appsecret_value", "ef02c59158f41d2431d677f2"
-//            buildConfigField("String", "LOGIN_SHOPCODE", '"1712"')
-//            buildConfigField("int", "LOGIN_MODEL_NUMBER", "6")
-//        }
-//        s17_guangjindianzi{
-//            applicationId "com.guangjindianzi.xianglixiangqin"
-//            manifestPlaceholders = [APP_PACKAGE: "com.guangjindianzi.xianglixiangqin"]
-//            resValue "string", "app_name", "广进电子"
-//            resValue "string", "jpush_appkey_value", "0d6401e7ed35413d937a8cb2"
-//            resValue "string", "jpush_appsecret_value", "078dd6cf6838ae11155446c4"
-//            buildConfigField("String", "LOGIN_SHOPCODE", '"1751"')
-//            buildConfigField("int", "LOGIN_MODEL_NUMBER", "6")
-//        }
+        /*应用宝审核通过 微信分享通过 极光已添加*/
+        s2_shuimunianhua{
+            applicationId "com.shuimunianhua.xianglixiangqin"
+            resValue "string", "app_name", "水木年华"
+            resValue "string", "jpush_appkey_value", "20e682dfce94fd3b123c9f74"
+            resValue "string", "jpush_appsecret_value", "fee923344b10278434f36d37"
+            buildConfigField("String", "LOGIN_SHOPCODE", '"1397"')
+            buildConfigField("int", "LOGIN_MODEL_NUMBER", "2")
+            manifestPlaceholders = [APP_PACKAGE: "com.shuimunianhua.xianglixiangqin"
+                                    , UMENG_APPKEY: "582ab425c62dca41080008f0"]
+        }
+        /*应用宝审核通过 极光已添加*/
+        s3_dongmikeji{
+            applicationId "com.dongmikeji.xianglixiangqin"
+            resValue "string", "app_name", "东米科技"
+            resValue "string", "jpush_appkey_value", "a570a6ca6f58b310a3e6bb20"
+            resValue "string", "jpush_appsecret_value", "8ba5cb2705f47942648f9d92"
+            buildConfigField("String", "LOGIN_SHOPCODE", '"1532"')
+            buildConfigField("int", "LOGIN_MODEL_NUMBER", "3")
+            manifestPlaceholders = [APP_PACKAGE: "com.dongmikeji.xianglixiangqin"]
+        }
+        /*应用宝审核通过 微信分享通过 极光已添加*/
+        s4_jingzhuoshuma{
+            applicationId "com.jingzhuoshuma.xianglixiangqin"
+            resValue "string", "app_name", "精卓数码"
+            resValue "string", "jpush_appkey_value", "9ac85e04e1781793029b165b"
+            resValue "string", "jpush_appsecret_value", "986f1af4c8d2d07f89b43b89"
+            buildConfigField("String", "LOGIN_SHOPCODE", '"1524"')
+            buildConfigField("int", "LOGIN_MODEL_NUMBER", "3")
+            manifestPlaceholders = [APP_PACKAGE: "com.jingzhuoshuma.xianglixiangqin"]
+        }
+        /*应用宝审核通过 极光已添加*/
+        s5_taizhoulingdian{
+            applicationId "com.taizhoulingdian.xianglixiangqin"
+            resValue "string", "app_name", "台州零点"
+            resValue "string", "jpush_appkey_value", "fc330e63f1dc7bb2dc1eedd1"
+            resValue "string", "jpush_appsecret_value", "f5b4f2feb8d253d6d539e472"
+            buildConfigField("String", "LOGIN_SHOPCODE", '"1463"')
+            buildConfigField("int", "LOGIN_MODEL_NUMBER", "3")
+            manifestPlaceholders = [APP_PACKAGE: "com.taizhoulingdian.xianglixiangqin"]
+        }
+        /*应用宝审核通过 微信分享通过 极光已添加*/
+        s6_yongrun{
+            applicationId "com.yongrun.xianglixiangqin"
+            resValue "string", "app_name", "杭州永润"
+            resValue "string", "jpush_appkey_value", "a459dcb1eaa12d838cd63794"
+            resValue "string", "jpush_appsecret_value", "bc1971827b3ddd05c1687088"
+            buildConfigField("String", "LOGIN_SHOPCODE", '"1531"')
+            buildConfigField("int", "LOGIN_MODEL_NUMBER", "3")
+            manifestPlaceholders = [APP_PACKAGE      : "com.yongrun.xianglixiangqin"]
+        }
+        /*应用宝审核通过 微信分享通过 极光已添加*/
+        s7_xianghaikeji{
+            applicationId "com.xianghaikeji.xianglixiangqin"
+            resValue "string", "app_name", "响海科技"
+            resValue "string", "jpush_appkey_value", "2be3955a4d90c0d9ffa7b008"
+            resValue "string", "jpush_appsecret_value", "a25d6e2277ee31402603375c"
+            buildConfigField("String", "LOGIN_SHOPCODE", '"45"')
+            buildConfigField("int", "LOGIN_MODEL_NUMBER", "3")
+            manifestPlaceholders = [APP_PACKAGE: "com.xianghaikeji.xianglixiangqin"]
+        }
+        /*应用宝审核通过 极光已添加*/
+        s8_boaodianzi{
+            applicationId "com.boaodianzi.xianglixiangqin"
+            resValue "string", "app_name", "博傲电子"
+            resValue "string", "jpush_appkey_value", "96b6d0beac356cfa612c2952"
+            resValue "string", "jpush_appsecret_value", "e87e55d912a2dda6d24be215"
+            buildConfigField("String", "LOGIN_SHOPCODE", '"1534"')
+            buildConfigField("int", "LOGIN_MODEL_NUMBER", "3")
+            manifestPlaceholders = [APP_PACKAGE: "com.boaodianzi.xianglixiangqin"]
+        }
+        /*应用宝审核通过 微信分享通过 极光已添加*/
+        s9_jinweini{
+            applicationId "com.jinweini.xianglixiangqin"
+            resValue "string", "app_name", "金维尼"
+            resValue "string", "jpush_appkey_value", "3988042917b08bbc86d6aa38"
+            resValue "string", "jpush_appsecret_value", "39f8a739b97c23facd1853ba"
+            buildConfigField("String", "LOGIN_SHOPCODE", '"1550"')
+            buildConfigField("int", "LOGIN_MODEL_NUMBER", "3")
+            manifestPlaceholders = [APP_PACKAGE: "com.jinweini.xianglixiangqin"]
+        }
+        /*应用宝审核通过  微信分享通过 极光已添加*/
+        s10_fengtiaoyushun{
+            applicationId "com.fengtiaoyushun.xianglixiangqin"
+            resValue "string", "app_name", "锋调宇顺"
+            resValue "string", "jpush_appkey_value", "7192cf80a2dd3bd8c2ebf600"
+            resValue "string", "jpush_appsecret_value", "516927420414ea23b8063e6d"
+            buildConfigField("String", "LOGIN_SHOPCODE", '"74"')
+            buildConfigField("int", "LOGIN_MODEL_NUMBER", "4")
+            manifestPlaceholders = [APP_PACKAGE: "com.fengtiaoyushun.xianglixiangqin"]
+        }
+        s11_chuanmeikeji{
+            applicationId "com.chuanmeikeji.xianglixiangqin"
+            resValue "string", "app_name", "传美科技"
+            resValue "string", "jpush_appkey_value", "91d484eb7f04845736f2e54a"
+            resValue "string", "jpush_appsecret_value", "a782d8e37e3db88ed1353895"
+            buildConfigField("String", "LOGIN_SHOPCODE", '"1533"')
+            buildConfigField("int", "LOGIN_MODEL_NUMBER", "4")
+            manifestPlaceholders = [APP_PACKAGE: "com.chuanmeikeji.xianglixiangqin"]
+        }
+        /*应用宝审核通过 微信分享通过 极光已添加*/
+        s12_hangzhouhengshuo{
+            applicationId "com.hangzhouhengshuo.xianglixiangqin"
+            resValue "string", "app_name", "杭州恒硕"
+            resValue "string", "jpush_appkey_value", "91d484eb7f04845736f2e54a"
+            resValue "string", "jpush_appsecret_value", "a782d8e37e3db88ed1353895"
+            buildConfigField("String", "LOGIN_SHOPCODE", '"1647"')
+            buildConfigField("int", "LOGIN_MODEL_NUMBER", "4")
+            manifestPlaceholders = [APP_PACKAGE: "com.hangzhouhengshuo.xianglixiangqin"]
+        }
+        /*应用宝审核通过 微信分享通过 极光已添加*/
+        s13_degoukeji{
+            applicationId "com.degoukeji.xianglixiangqin"
+            resValue "string", "app_name", "德购科技"
+            resValue "string", "jpush_appkey_value", "f36c15b9c193464887159c36"
+            resValue "string", "jpush_appsecret_value", "78818b92fc563c5558f13624"
+            buildConfigField("String", "LOGIN_SHOPCODE", '"1577"')
+            buildConfigField("int", "LOGIN_MODEL_NUMBER", "5")
+            manifestPlaceholders = [APP_PACKAGE: "com.degoukeji.xianglixiangqin"]
+        }
+        /*应用宝审核通过 极光已添加*/
+        s14_nuotengugou{
+            applicationId "com.nuotengugou.xianglixiangqin"
+            resValue "string", "app_name", "诺腾U购"
+            resValue "string", "jpush_appkey_value", "91d484eb7f04845736f2e54a"
+            resValue "string", "jpush_appsecret_value", "a782d8e37e3db88ed1353895"
+            buildConfigField("String", "LOGIN_SHOPCODE", '"1688"')
+            buildConfigField("int", "LOGIN_MODEL_NUMBER", "4")
+            manifestPlaceholders = [APP_PACKAGE: "com.nuotengugou.xianglixiangqin"]
+        }
+        /*应用宝审核通过 极光已添加*/
+        s15_xianghongshuma{
+            applicationId "com.xianghongshuma.xianglixiangqin"
+            resValue "string", "app_name", "翔鸿数码"
+            resValue "string", "jpush_appkey_value", "312c006229bb84a93ca19b2d"
+            resValue "string", "jpush_appsecret_value", "ed520452595d18c47d7907be"
+            buildConfigField("String", "LOGIN_SHOPCODE", '"1658"')
+            buildConfigField("int", "LOGIN_MODEL_NUMBER", "5")
+            manifestPlaceholders = [APP_PACKAGE: "com.xianghongshuma.xianglixiangqin"]
+        }
+        /*应用宝审核通过 极光已添加*/
+        s16_haijiaowangluo{
+            applicationId "com.haijiaowangluo.xianglixiangqin"
+            manifestPlaceholders = [APP_PACKAGE: "com.haijiaowangluo.xianglixiangqin"]
+            resValue "string", "app_name", "海角网络"
+            resValue "string", "jpush_appkey_value", "36a37ae93b8f5aa3e819498d"
+            resValue "string", "jpush_appsecret_value", "ef02c59158f41d2431d677f2"
+            buildConfigField("String", "LOGIN_SHOPCODE", '"1712"')
+            buildConfigField("int", "LOGIN_MODEL_NUMBER", "6")
+        }
+        s17_guangjindianzi{
+            applicationId "com.guangjindianzi.xianglixiangqin"
+            manifestPlaceholders = [APP_PACKAGE: "com.guangjindianzi.xianglixiangqin"]
+            resValue "string", "app_name", "广进电子"
+            resValue "string", "jpush_appkey_value", "0d6401e7ed35413d937a8cb2"
+            resValue "string", "jpush_appsecret_value", "078dd6cf6838ae11155446c4"
+            buildConfigField("String", "LOGIN_SHOPCODE", '"1751"')
+            buildConfigField("int", "LOGIN_MODEL_NUMBER", "6")
+        }
     }
     //移除lint检测的error
     lintOptions {
